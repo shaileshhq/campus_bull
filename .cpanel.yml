@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/neetpg/public_html/
+    - export DEPLOYPATH=/home/rankpredictor/public_html/
     - /bin/cp -R * $DEPLOYPATH
