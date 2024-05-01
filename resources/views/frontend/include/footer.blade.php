@@ -1,9 +1,10 @@
 <div class="footer-section section">
     <div class="container">
-        
+
 
         <!-- Footer Widget Wrapper Start -->
         <div class="footer-widget-wrapper">
+            
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <!-- Footer Widget Start -->
