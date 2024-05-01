@@ -3,15 +3,12 @@
 
         <!-- Page Banner Start -->
         <div class="section page-banner-section bg-color-1">
-            <img class="shape-4" src="{{asset('public/front_css/assets/images/shape/shape-21.png')}}" alt="shape">
-            <img class="shape-5" src="{{asset('public/front_css/assets/images/shape/shape-21.png')}}" alt="shape">
-
             <div class="container">
                 <!-- Page Banner Content Start -->
                 <div class="page-banner-content">
                     <h2 class="title">Login</h2>
                     <ul class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item active">Login Now </li>
                     </ul>
                 </div>
@@ -21,18 +18,10 @@
         <!-- Page Banner End -->
 
         <!-- Login Start -->
-        <div class="section section-padding mb-5">
-            <div class="container mb-5">
-
-                <!-- Login & Register Wrapper Start -->
-                <div class="login-register-wrapper">
+        <div class="section section-padding">
+            <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 mb-3">
-                        <div class="bg-light">
-                         <img src="{{asset('public/front_css/assets/images/login.png')}}" class="auth-side-image">
-                         </div>
-                        </div>
-                        <div class="col-lg-6 mb-3">
+                        <div class="col-lg-6 mb-3 m-auto">
                             <!-- Login & Register Box Start -->
                             <div class="login-register-box">
                                 <div class="login-register-form">
@@ -73,9 +62,6 @@
                             <!-- Login & Register Box End -->
                         </div>
                     </div>
-                </div>
-                <!-- Login & Register Wrapper End -->
-
             </div>
         </div>
 @endsection
