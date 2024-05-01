@@ -27,29 +27,20 @@
     <link rel="stylesheet" href="{{asset('public/dashboard_css/plugins/toastr/toastr.min.css')}}">
     <link rel="stylesheet" href="{{asset('public/dashboard_css/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css')}}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBDEVHGJP5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-LBDEVHGJP5');
-</script>
    </head>
    <body oncopy="return false" oncut="return false"  onselectstart="return false">
       <div class="main-wrapper">
          <!-- Preloader Start  -->
-         <div class="preloader">
+         {{-- <div class="preloader">
             <div class="loader"></div>
-         </div>
+         </div> --}}
          <!-- Preloader End  -->
   
-@include('frontend.include.header-2')
+      @include('frontend.include.header-2')
 
+         @yield('content')
 
-    @yield('content')
-
-
-@include('frontend.include.footer')
+      @include('frontend.include.footer')
 
 <button class="back-btn" id="backBtn"><i class="fa fa-angle-up"></i></button>
 <!-- Back to Top End -->
