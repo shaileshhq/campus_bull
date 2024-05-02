@@ -35,7 +35,7 @@
                         <ul class="main-menu">
                         <li><a href="@if(Auth::check()) {{route('home_user')}} @else {{route('index')}} @endif" class="active">Home </a></li>
                         <li><a href="{{route('about_us')}}">About Us</a></li>
-                        <li><a href="{{route('help')}}">Help </a></li>
+                        <li><a href="{{route('help')}}">Contact Us </a></li>
                         @if(Auth::check())
                         <li><a href="{{route('subscription_plans')}}">Subscription Plans </a></li>
                         <li><a href="{{route('user_dashboard')}}">Profile </a></li>
@@ -88,7 +88,7 @@
                     <ul class="main-menu">
                         <li><a href="@if(Auth::check()) {{route('home_user')}} @else {{'/'}} @endif">Home </a></li>
                         <li><a href="{{route('about_us')}}">About Us</a></li>
-                        <li><a href="{{route('help')}}">Help </a></li>
+                        <li><a href="{{route('help')}}">Contact Us </a></li>
                         @if(Auth::check())
                         <li><a href="{{route('subscription_plans')}}">Subscription Plans </a></li>
                         <li><a href="{{route('user_dashboard')}}">Profile </a></li>
