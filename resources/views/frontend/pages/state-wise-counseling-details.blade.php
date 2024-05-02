@@ -13,14 +13,14 @@
                                         <!-- Category Item Start -->
                                         <div class="single-category-item">
                                           @if(request('state')=='uttar_pradeshes')
-                                            <a href="https://drive.google.com/drive/folders/1_ahiBPP-xgl0scHIcfbtWuX2Q6RyJOCg?usp=sharing">
+                                            <a href="#">
                                                @elseif(request('state')=='gujarats')
-                                            <a href="https://drive.google.com/drive/folders/1E4YIyAWpRkQ5Vy6sPjvjKtWEzulOsQk_?usp=sharing">
+                                            <a href="#">
                                                @elseif(request('state')=='maharashtras')
-                                            <a href="https://drive.google.com/drive/folders/1TJxMSx0sV7YfnNDXMFQVIVbE_nLWB35M?usp=sharing">
+                                            <a href="#">
                                               @else
                                                <a href="#">
-                                              @endif
+                                              @endif 
                                                 <img class="item-icon" src="{{asset('public/front_css/assets/images/icon-13.png')}}" alt="">
                                                 <span class="title">Choice Filling</span>
                                             </a>

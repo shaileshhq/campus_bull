@@ -1,5 +1,5 @@
-<div class="course-learn-list">
-    <table class="my-4 mx-auto w-75 table">
+<div class="course-learn-list card">
+    <table class="mx-auto table">
         <tbody>
             <tr>
                 <td>Name</td>

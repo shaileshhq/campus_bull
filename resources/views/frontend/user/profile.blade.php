@@ -1,6 +1,15 @@
 @extends('frontend.layouts.front_app')
 @section('content')
-
+<style>
+    .course-details-wrapper .course-learn-list {
+        background-color: #fff !important;
+        padding: 30px !important;
+        box-shadow: 0 0 11px #e8e0e0;
+    }
+    tr>td {
+      border: 0 !important;
+    }
+</style>
     <!-- Profile List Start -->
     <div class="section section-padding mb-5">
         <div class="container  mb-5">
@@ -12,7 +21,7 @@
 
                         <!-- Sidebar Details Video Description Start -->
                         <div class="sidebar-details-video-description">
-                            <div class="sidebar-video">
+                            <div class="sidebar-video text-center">
                                 @if(empty(Auth::user()->profile_img))
                                   <img src="{{ asset('public/front_css/assets/images/profile.png')}}" alt="User Profile">
                                 @else
@@ -21,10 +30,11 @@
                             </div>
                             <div class="sidebar-description">
                                 <ul class="description-list">
-                                    <li><a href="#dashboard" onclick="show_div('#dashboard')"><i class="fa fa-clock-o"></i> Dashboard</a></li>
+                                    <li><a href="#dashboard" onclick="show_div('#dashboard')"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a></li>
                                     <li><a href="#"><i class="fa fa-sliders"></i> Subscription Plans </a></li>
                                     <!-- <li><a href="#"><i class="fa fa-file-o"></i> Lectures </a></li> -->
-                                    <li><a href="#profile" onclick="show_div('#profile')"><i class="fa fa-language"></i> Manage Profile </a></li>
+                                    <li><a href="#profile" onclick="show_div('#profile')"><i class="fa fa-user-circle-o"></i> Manage Profile </a></li>
+                                    <li><a href="#" onclick="show_div('#logout')"><i class="fa fa-sign-out"></i> Logout </a></li>
                                 </ul>
                                 {{-- <a class="btn btn-outline-primary w-100" href="#"><i class="fa fa-share"></i> Edit
                                     Profile</a> --}}

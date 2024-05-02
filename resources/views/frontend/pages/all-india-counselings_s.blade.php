@@ -25,7 +25,7 @@
                         <div class="tab-pane fade show active" id="all_india">
                             <div class="card-body">
                                 <!-- End State -->
-                                <div class="feature-category-body">
+                                <div class="feature-category-body mb-3">
                                         <div class="row">
                                             <div class="col-lg-3 col-sm-6 col-xs-6">
                                                 <!-- Category Item Start -->
@@ -122,7 +122,7 @@
                                                 <!-- Category Item Start -->
                                                 <div class="single-category-item">
                                                     <a href="{{route('bond_details','state=all_indias&type=deemed')}}">
-                                                        <img class="item-icon" src="{{asset('public/front_css/assets/images/icon-18.png')}}" alt="">
+                                                        <img class="item-icon" src="{{asset('public/front_css/assets/images/bond.png')}}" alt="">
                                                         <span class="title">Bond Details</span>
                                                     </a>
                                                 </div>

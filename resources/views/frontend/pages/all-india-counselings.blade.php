@@ -51,7 +51,7 @@
                                                 <!-- Category Item Start -->
                                                 <div class="single-category-item">
                                                     <a href="{{route('bond_details','state=all_indias&type=all')}}">
-                                                        <img class="item-icon" src="{{asset('public/front_css/assets/images/icon-18.png')}}" alt="">
+                                                        <img class="item-icon" src="{{asset('public/front_css/assets/images/bond.png')}}" alt="">
                                                         <span class="title">Bond Details</span>
                                                     </a>
                                                 </div>
@@ -71,7 +71,7 @@
                                                 <!-- Category Item Start -->
                                                 <div class="single-category-item">
                                                     <a href="{{route('all_india_stipend_details','state=all_indias&type=all')}}">
-                                                        <img class="item-icon" src="{{asset('public/front_css/assets/images/icon-12.png')}}" alt="">
+                                                        <img class="item-icon" src="{{asset('public/front_css/assets/images/stipend.png')}}" alt="">
                                                         <span class="title">@if(empty(optional(Auth::user()->payment)->user_id)) <i class="fa fa-lock"></i> @endif  Stipend Details</span>
                                                     </a>
                                                 </div>

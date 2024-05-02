@@ -13,7 +13,7 @@
                    <tbody>
                       @foreach($list as $data)
                       <tr>
-                         <td><a class="btn btn-primary btn-hover-heading-color" href="{{route('closing_rank_details','state='.str_replace(' ','_',strtolower($state)).'&counseling_type='.$data->counseling_type)}}">{{strtoupper(str_replace('_',' ',strtolower(rtrim($state, 's'))))}}</a></td>
+                         <td><a class="btn btn-primary btn-sm btn-hover-heading-color" href="{{route('closing_rank_details','state='.str_replace(' ','_',strtolower($state)).'&counseling_type='.$data->counseling_type)}}">{{strtoupper(str_replace('_',' ',strtolower(rtrim($state, 's'))))}}</a></td>
                          <td>{{$data->counseling_type}}</td>
                       </tr>
                       @endforeach

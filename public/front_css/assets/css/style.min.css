@@ -303,7 +303,9 @@ textarea:-ms-input-placeholder {
 .bg-color-2 {
 	background-color: #f6f7f9
 }
-
+.bg-header{
+	background-color: #d42d2a;
+}
 .bg-primary {
 	background-color: #EB5353; !important
 }
@@ -964,6 +966,7 @@ textarea.form-control {
 	color: #ffffff;
 	transition: transform .2s;
 	margin-right: 10px;
+	border-radius: 6px;
 }
 
 .btn-primary:active,
@@ -1277,10 +1280,9 @@ textarea.form-control {
 }
 
 .btn-hover-heading-color:hover {
-    background-color: #EB5353;
-    border-color: #EB5353;
+    background-color: #000;
+    border-color: #000;
 	color: #ffffff;
-	transform: scale(1.05);
 }
 
 .btn-android {
@@ -6375,20 +6377,22 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 .single-category-item {
 	margin-top: 20px
 }
-
+.single-category-item img{
+	width: 60px;
+}
 
 .single-category-item a {
     display: block;
     height: 100px;
     line-height: 20px;
-    background-color: #f6f7f9;
+    background-color:#e626270d;
     position: relative;
     padding-left: 100px;
     border-radius: 5px;
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
-
+    border: 2px solid #eb5353;
 }
 
 .single-category-items {
@@ -6429,10 +6433,10 @@ only screen and (max-width: 767px) {
 .single-category-item a .item-icon {
 	position: absolute;
 	top: 50%;
-	left: 30px;
+	left: 20px;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	transform: translateY(-50%)
+	transform: translateY(-50%);
 }
 
 
@@ -9934,7 +9938,7 @@ only screen and (min-width: 1200px) and (max-width: 1499px) {
 }
 
 .pricing-wrapper .tab-content {
-	padding-top: 50px
+	padding-top: 15px
 }
 
 .pricing-btn {
@@ -11658,7 +11662,7 @@ only screen and (max-width: 767px) {
 	position: relative;
     overflow: hidden;
     border-radius: 5px;
-    padding: 20px 92px;
+    padding: 20px 0;
 }
 
 .sidebar-details-video-description .sidebar-video::before {
@@ -12110,15 +12114,17 @@ only screen and (max-width: 575px) {
 }
 
 .custom-link {
-	color: #333;
+	color: #fff;
     display: inline-block;
-    padding: 0px 8px 0px 7px;
+    padding: 10px 8px 10px 7px;
 }
 .custom-link.active {
-    color: #EB5353;
+    background: #b70000;
     text-underline-offset: 5px;
 }
-
+.custom-link a:hover{
+	color: #fff;
+}
  .list li {
     font-size: 16px;
     color: #8c8c8c;
@@ -12126,7 +12132,6 @@ only screen and (max-width: 575px) {
     display: inline-block;
     margin-right: -4px;
     text-transform: capitalize;
-    margin-bottom: 5px;
 }
 .list li:last-child{
 	border-right:0;
@@ -12293,9 +12298,10 @@ ul.footer-nav-menu li:after {
 	margin-right: 10px;
 	padding: 0px 15px;
 	color: #fff;
+	border-radius: 6px;
 }
 .pricing-btns li button.active {
-    background-color: #2f58ca;
+    background-color: #000;
     color: #ffffff;
 }
 
@@ -12322,17 +12328,16 @@ ul.footer-nav-menu li:after {
     border-radius: 20px;
 }
 .btn-hover-heading-color1:hover {
-    background-color: #eb5353;
-    border-color: #eb5353;
+    background-color: #000;
+    border-color: #000;
     color: #ffffff;
-    transform: scale(1.05);
 }
 .select2-container {
     width: 100% !important;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__rendered {
-    padding: 0px 20px !important;
+    padding: 0px 10px !important;
 }
 
 .login-register-form a{
@@ -12395,3 +12400,20 @@ border-radius:30px;
 .footer-widget a img{
 	width: 300px;
 }
+.hor-swipe {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.c-scrollbar-light{
+    scrollbar-color: rgba(24, 28, 41, 0.08);
+    scrollbar-width: thin;
+}
+    tr:nth-child(odd)>td {
+    background-color: #fff;
+    }
+
+    tr:nth-child(even)>td {
+    background-color: #e626270d;
+    }

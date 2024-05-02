@@ -39,10 +39,6 @@
                         @if(Auth::check())
                         <li><a href="{{route('subscription_plans')}}">Subscription Plans </a></li>
                         <li><a href="{{route('user_dashboard')}}">Profile </a></li>
-                        <li><a href="{{route('user_logout')}}">Logout</a></li>
-                        @else
-                        <li><a href="{{route('user-login')}}">Login</a></li>
-                        <li><a href="{{route('user-register')}}">Register</a></li>
                         @endif
                         </ul>
                     </div>
@@ -51,8 +47,13 @@
                     <!-- Header Meta Start -->
                         <div class="header-meta">
                             <div class="header-login d-none d-lg-flex">
+                                @if(Auth::check())
+                                <a class="link" href="{{route('user_logout')}}"><i class="fa fa-sign-out"></i> Logout</a>
+                                @else
+                               
                                 <a class="link" href="{{route('user-login')}}"><i class="fa fa-user-o"></i> Login</a>
                                 <a class="link" href="{{route('user-register')}}">Register</a>
+                                @endif
                             </div>
     
                             <div class="header-toggle d-lg-none">
@@ -104,10 +105,10 @@
 
 
         @if(Auth::check())
-        <div class="section bg-color-1" style="border-bottom: 1px solid #dddddd6b;">
-        <div class="container mt-3 mb-2">
+        <div class="section bg-header" style="border-bottom: 1px solid #dddddd6b;">
+        <div class="container">
             <div class="bg-custom-theme">
-            <ul class="navbar-navs list">
+            <ul class="navbar-navs list hor-swipe c-scrollbar-light">
                 <li class="nav-item ">
                 <a href="{{route('home_user')}}" class="custom-link">Announcements & Events</a>
                 </li>
