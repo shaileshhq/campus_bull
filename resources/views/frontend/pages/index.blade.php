@@ -666,9 +666,6 @@
                     <div class="swiper-slide">
                         <!-- Single Testimonial Start -->
                         <div class="single-testimonial-02">
-                            <div class="testimonial-thumb">
-                                <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
-                            </div>
                             <div class="testimonial-text">
                                 <p>Campus Bull are great team of professional to work with. Even when i got the seat then
                                     also
@@ -677,7 +674,7 @@
                             </div>
                             <div class="testimonial-meta">
                                 <div class="testimonial-quote">
-                                    <i class="flaticon-left-quotes-sign"></i>
+                                    <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
                                 </div>
                                 <div class="meta-content">
                                     <h5 class="name">Shailesh Ravat</h5>
@@ -690,9 +687,6 @@
                     <div class="swiper-slide">
                         <!-- Single Testimonial Start -->
                         <div class="single-testimonial-02">
-                            <div class="testimonial-thumb">
-                                <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
-                            </div>
                             <div class="testimonial-text">
                                 <p>Campus Bull are great team of professional to work with. Even when i got the seat then
                                     also
@@ -701,7 +695,7 @@
                             </div>
                             <div class="testimonial-meta">
                                 <div class="testimonial-quote">
-                                    <i class="flaticon-left-quotes-sign"></i>
+                                    <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
                                 </div>
                                 <div class="meta-content">
                                     <h5 class="name">Shailesh Ravat</h5>
@@ -714,9 +708,6 @@
                     <div class="swiper-slide">
                         <!-- Single Testimonial Start -->
                         <div class="single-testimonial-02">
-                            <div class="testimonial-thumb">
-                                <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
-                            </div>
                             <div class="testimonial-text">
                                 <p>Campus Bull are great team of professional to work with. Even when i got the seat then
                                     also
@@ -725,7 +716,7 @@
                             </div>
                             <div class="testimonial-meta">
                                 <div class="testimonial-quote">
-                                    <i class="flaticon-left-quotes-sign"></i>
+                                    <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
                                 </div>
                                 <div class="meta-content">
                                     <h5 class="name">Shailesh Ravat</h5>
@@ -738,9 +729,6 @@
                     <div class="swiper-slide">
                         <!-- Single Testimonial Start -->
                         <div class="single-testimonial-02">
-                            <div class="testimonial-thumb">
-                                <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
-                            </div>
                             <div class="testimonial-text">
                                 <p>Campus Bull are great team of professional to work with. Even when i got the seat then
                                     also
@@ -749,7 +737,7 @@
                             </div>
                             <div class="testimonial-meta">
                                 <div class="testimonial-quote">
-                                    <i class="flaticon-left-quotes-sign"></i>
+                                    <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
                                 </div>
                                 <div class="meta-content">
                                     <h5 class="name">Shailesh Ravat</h5>

@@ -72,7 +72,7 @@
 
         <!-- Footer Copyright End -->
         <div class="footer-copyright text-center">
-            <p>&copy; Copyrights 2024 Campus Bull All rights reserved. </p>
+            <p>&copy;2024 Campus Bull All rights reserved. </p>
         </div>
         <!-- Footer Copyright End -->
 

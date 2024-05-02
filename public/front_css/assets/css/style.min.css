@@ -537,7 +537,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .swiper-button-prev {
 	border-radius: 50%;
 	background-color: #ebebeb;
-	width: 42px;
+	width: 40px;
 	height: 42px;
 	line-height: 42px;
 	text-align: center;
@@ -587,7 +587,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .swiper-button-next {
-	right: -48px
+	right: -20px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -597,7 +597,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .swiper-button-prev {
-	left: -48px
+	left: -20px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -6129,7 +6129,7 @@ only screen and (max-width: 767px) {
     background-color: #ffffff;
     /* -webkit-box-shadow: 0px 0px 62px 0px rgba(0, 0, 0, 0.05); */
     box-shadow: 0px 0px 62px 0px rgba(0, 0, 0, 0.05);
-    height: 175px;
+    height: 170px;
     border: 1px solid #ddd;
 }
 
@@ -6688,9 +6688,8 @@ only screen and (max-width: 767px) {
 .single-testimonial-02 {
     background-color: #f6f7f9;
     padding: 20px;
-    padding-top: 50px;
+    padding-top: 35px;
     position: relative;
-    margin-top: 50px;
     border-radius: 10px;
 	height: 280px;
 }
@@ -6754,15 +6753,21 @@ only screen and (max-width: 575px) {
 
 .single-testimonial-02 .testimonial-meta .testimonial-quote {
     border-radius: 50%;
-    background-color: #EB5353;
+    /* background-color: #EB5353; */
     width: 50px;
-    height: 50px;
+    /* height: 50px; */
     line-height: 60px;
     text-align: center;
-    font-size: 20px;
-    color: #ffffff;
 }
-
+.single-testimonial-02:after {
+	content: "";
+    width: 50%;
+    height: 2px;
+    background: #e52629;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px),
 only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (max-width: 767px) {
