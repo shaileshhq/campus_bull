@@ -6,10 +6,10 @@
             <div class="container">
                 <!-- Page Banner Content Start -->
                 <div class="page-banner-content">
-                    <h2 class="title">Help</h2>
+                    <h2 class="title">Contact</h2>
                     <ul class="breadcrumb justify-content-center">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active">Need Help </li>
+                        <li class="breadcrumb-item active">Contact Us </li>
                     </ul>
                 </div>
                 <!-- Page Banner Content End -->
