@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *,
 *::after,
@@ -14,7 +13,7 @@ body {
 	font-size: 15px;
 	line-height: 1.75;
 	font-weight: 400;
-	font-family: "Nunito Sans",sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: #333;
 	outline: none;
 	visibility: visible;
@@ -485,7 +484,7 @@ only screen and (max-width: 767px) {
 .section-title-2 .sub-title {
 	font-size: 12px;
 	line-height: 24px;
-	font-weight: 700;
+	font-weight: 500;
 	text-transform: uppercase;
 	color: #f6520a;
 	display: inline-block;
@@ -515,7 +514,7 @@ only screen and (max-width: 767px) {
 
 .section-title-3 .title {
 	font-size: 54px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 1.2;
 	color: #271344
 }
@@ -582,7 +581,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .swiper-button-next::after,
 .swiper-button-prev::after {
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #072f60;
 	-webkit-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
@@ -850,7 +849,7 @@ textarea.form-control {
     color: #666666;
     border-radius: 0px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     height: 50px;
     line-height: 40px;
     padding: 0px 15px;
@@ -1988,7 +1987,7 @@ textarea.form-control {
 
 .single-comment .comment-content .name {
 	font-size: 16px;
-	font-weight: 700
+	font-weight: 500
 }
 
 .single-comment .comment-content p {
@@ -2795,7 +2794,7 @@ only screen and (max-width: 767px) {
 
 .cart-total .value {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #EB5353;
 }
 
@@ -2998,11 +2997,9 @@ only screen and (max-width: 767px) {
 }
 
 .header-top-wrapper .header-top-info ul li span {
-	font-weight: 700;
+	font-weight: 500;
     display: inline-block;
-    margin-left: 5px;
-    /*background: #eb5353;*/
-    padding: 6px 10px;
+    padding: 6px 7px;
     border-radius: 20px;
 }
 
@@ -3011,13 +3008,13 @@ only screen and (max-width: 767px) {
     color: #ffffff;
     position: relative;
     top: 1px;
-    margin-right: 7px;
+    margin-right: 5px;
     font-weight: 500;
 }
 
 .header-top-wrapper .header-top-info ul li+li {
-    padding-left: 10px;
-    margin-left: 10px;
+    padding-left: 5px;
+    margin-left: 0px;
 }
 
 .header-top-wrapper .header-top-info ul li+li::before {
@@ -4779,7 +4776,7 @@ only screen and (max-width: 767px) {
 
 .single-counter .counter-box .counter-content .count {
 	font-size: 32px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #fff;
 	line-height: 1.2
 }
@@ -5151,7 +5148,7 @@ only screen and (max-width: 767px) {
 
 .single-course .courses-content .title {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 1.3;
 	margin-top: 15px;
 	margin-bottom: 5px;
@@ -5312,7 +5309,7 @@ only screen and (max-width: 767px) {
 
 .course-hover .title {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 1.3;
 	margin-top: 15px
 }
@@ -5343,7 +5340,7 @@ only screen and (max-width: 767px) {
 
 .course-hover .courses-key-future .title {
 	font-size: 16px;
-	font-weight: 700
+	font-weight: 500
 }
 
 .course-hover .courses-key-future .future-list {
@@ -5555,7 +5552,7 @@ only screen and (max-width: 767px) {
 }
 
 .course-top-text p span {
-	font-weight: 700;
+	font-weight: 500;
 	color: #072f60
 }
 
@@ -5638,7 +5635,7 @@ only screen and (max-width: 767px) {
 	padding-right: 20px;
 	border: 0;
 	color: #072f60;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 15px;
 	background: none
 }
@@ -5789,7 +5786,7 @@ only screen and (max-width: 767px) {
 
 .single-course-list .course-content .title {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 1.3;
 	margin-top: 15px
 }
@@ -5928,7 +5925,7 @@ only screen and (max-width: 767px) {
 	font-size: 18px;
 	line-height: 32px;
 	padding: 0 18px;
-	font-weight: 700;
+	font-weight: 500;
 	background: #ffa300;
 	border-radius: 5px;
 	color: #1e1e1e
@@ -6072,7 +6069,7 @@ only screen and (max-width: 767px) {
 
 .single-category .category-content .category-title .title {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #ffffff
 }
 
@@ -6353,7 +6350,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
 .single-feature-02 .feature-content .title {
 	font-size: 20px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #072f60
 }
 
@@ -7503,7 +7500,7 @@ only screen and (max-width: 767px) {
 }
 
 .brand-title span {
-	font-weight: 700;
+	font-weight: 500;
 	color: #EB5353;
 }
 
@@ -7613,7 +7610,7 @@ only screen and (max-width: 767px) {
 
 .single-blog .blog-content .title {
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #333;
 	line-height: 1.4;
 	margin-top: 10px;
@@ -8049,7 +8046,7 @@ only screen and (max-width: 767px) {
 
 .call-to-action-content-03 .title {
 	font-size: 36px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #ffffff
 }
 
@@ -8122,7 +8119,7 @@ only screen and (max-width: 767px) {
 
 .call-to-action-content-04 .title {
 	font-size: 30px;
-	font-weight: 700
+	font-weight: 500
 }
 
 .call-to-action-content-04 p {
@@ -8345,7 +8342,7 @@ only screen and (max-width: 767px) {
 .call-to-action-content-06 .number {
 	font-size: 54px;
 	line-height: 72px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #ffc000
 }
 
@@ -8542,13 +8539,13 @@ only screen and (max-width: 767px) {
 
 .single-banner .banner-content .sub-title {
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #EB5353;
 }
 
 .single-banner .banner-content .title {
 	font-size: 26px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #072f60;
 	line-height: 1.3
 }
@@ -8610,7 +8607,7 @@ only screen and (max-width: 767px) {
 .banner-section-02 .banner-wrap-02 .single-item .banner-content .discount {
 	font-size: 22px;
 	line-height: 30px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #f6520a
 }
 
@@ -8674,7 +8671,7 @@ only screen and (max-width: 767px) {
 
 .single-course-category .course-category-content .title {
 	font-size: 22px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 1.3
 }
 
@@ -8755,13 +8752,13 @@ only screen and (max-width: 767px) {
 .single-event .event-content .date {
 	color: #EB5353;;
 	font-family: "Heebo", sans-serif;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 14px
 }
 
 .single-event .event-content .title {
 	font-size: 18px;
-	font-weight: 700
+	font-weight: 500
 }
 
 .single-event .event-content p {
@@ -8807,7 +8804,7 @@ only screen and (max-width: 767px) {
 	line-height: 20px;
 	border-radius: 50%;
 	font-family: "Heebo", sans-serif;
-	font-weight: 700;
+	font-weight: 500;
 	display: inline-block;
 	text-align: center;
 	padding: 28px
@@ -8852,7 +8849,7 @@ only screen and (max-width: 767px) {
 .single-event-02 .event-content .title {
 	font-size: 24px;
 	line-height: 30px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #271344;
 	margin-top: 5px
 }
@@ -8865,7 +8862,7 @@ only screen and (max-width: 767px) {
 	font-size: 14px;
 	line-height: 18px;
 	font-family: "Heebo", sans-serif;
-	font-weight: 700;
+	font-weight: 500;
 	color: #ffc000;
 	margin-top: 10px;
 	position: relative
@@ -9516,7 +9513,7 @@ only screen and (max-width: 767px) {
 .single-instructor .instructor-content .name {
 	color: #ffffff;
 	font-size: 20px;
-	font-weight: 700
+	font-weight: 500
 }
 
 .single-instructor .instructor-content p {
@@ -9625,7 +9622,7 @@ only screen and (max-width: 767px) {
 
 .blog-details-content .title {
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #072f60;
 	line-height: 1.4;
 	margin-top: 10px
@@ -10071,7 +10068,7 @@ only screen and (max-width: 575px) {
 	text-align: left;
 }
 .single-pricing .pricig-body .pricig-list li span {
-	font-weight: 700
+	font-weight: 500
 }
 
 .single-pricing.active {
@@ -10158,7 +10155,7 @@ only screen and (max-width: 767px) {
 	background-color: #ffffff;
 	font-size: 22px;
 	line-height: 1.4;
-	font-weight: 700;
+	font-weight: 500;
 	color: #072f60;
 	padding: 0
 }
@@ -10225,7 +10222,7 @@ only screen and (max-width: 767px) {
 
 .single-contact-info .info-content .title {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	margin-bottom: 5px
 }
 
@@ -10415,7 +10412,7 @@ only screen and (max-width: 767px) {
 
 .course-details-wrapper .title {
 	font-size: 22px;
-	font-weight: 700;
+	font-weight: 500;
 	margin-top: -5px
 }
 
@@ -10533,7 +10530,7 @@ only screen and (max-width: 767px) {
 
 .course-accordion .accordion-item button {
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #072f60;
 	width: 100%;
 	text-align: left;
@@ -10617,7 +10614,7 @@ only screen and (max-width: 767px) {
 
 .instructor-profile .profile-content .name {
 	font-size: 20px;
-	font-weight: 700
+	font-weight: 500
 }
 
 .instructor-profile .profile-content .profile-meta {
@@ -10677,7 +10674,7 @@ only screen and (max-width: 767px) {
 
 .instructor-profile .profile-content .profile-meta .rating span {
 	font-size: 13px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #666666
 }
 
@@ -10725,7 +10722,7 @@ only screen and (max-width: 767px) {
 .review-rating .rating-box .count {
 	display: block;
 	font-size: 48px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #072f60;
 	line-height: 1
 }
@@ -10876,7 +10873,7 @@ only screen and (max-width: 767px) {
 
 .single-review .review-content .review-top .name {
 	font-size: 18px;
-	font-weight: 700
+	font-weight: 500
 }
 
 .single-review .review-content .review-top .rating-star {
@@ -11133,7 +11130,7 @@ only screen and (max-width: 767px) {
 	text-align: center;
 	border-radius: 50%;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #ffffff
 }
 
@@ -11195,7 +11192,7 @@ only screen and (max-width: 767px) {
 }
 
 .program-item .program-content .program-meta ul li span {
-	font-weight: 700;
+	font-weight: 500;
 	color: #271344
 }
 
@@ -11271,7 +11268,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .single-team .team-content .title {
 	font-size: 24px;
 	line-height: 1;
-	font-weight: 700;
+	font-weight: 500;
 	margin-top: 25px
 }
 
@@ -11424,7 +11421,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .widget-title {
 	font-size: 18px;
-	font-weight: 700
+	font-weight: 500
 }
 
 .sidebar-widget {
@@ -11747,7 +11744,7 @@ only screen and (max-width: 575px) {
 
 .sidebar-details-video-description .sidebar-description .price .sale-price {
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #072f60
 }
 
@@ -11769,7 +11766,7 @@ only screen and (max-width: 575px) {
 }
 
 .sidebar-details-video-description .sidebar-description .description-list li {
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 16px;
 	color: #666666;
 	border-bottom: 1px solid #ebebeb;
@@ -11799,7 +11796,7 @@ only screen and (max-width: 575px) {
 
 .sidebar-details-title {
 	font-size: 22px;
-	font-weight: 700
+	font-weight: 500
 }
 
 .sidebar-details-courses li {
@@ -11862,7 +11859,7 @@ only screen and (max-width: 575px) {
 }
 
 .sidebar-course-item .item-content .price strong {
-	font-weight: 700;
+	font-weight: 500;
 	color: #EB5353;;
 	font-size: 16px
 }
@@ -11889,7 +11886,7 @@ only screen and (max-width: 575px) {
 
 .footer-widget-title {
 	font-size: 20px;
-	font-weight: 700
+	font-weight: 600
 }
 
 .widget-info {
@@ -11899,7 +11896,7 @@ only screen and (max-width: 575px) {
 .widget-info p {
 	font-size: 16px;
 	font-weight: 500;
-	color: #666666;
+	color: #333;
 	margin-top: 10px;
 	text-align: justify;
 	padding-right: 10px;
@@ -11932,7 +11929,7 @@ only screen and (max-width: 575px) {
 	width: 35px;
 	height: 35px;
 	line-height: 33px;
-	border: 1px solid #666666;
+	border: 1px solid #333;
 	text-align: center;
 	border-radius: 50%;
 	color: #666666
@@ -11966,8 +11963,9 @@ only screen and (max-width: 575px) {
 }
 
 .widget-link .link li a {
-	font-size: 16px;
-	color: #666666
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
 }
 
 .widget-link .link li a:hover {
@@ -12302,7 +12300,6 @@ ul.footer-nav-menu li:after {
 .pd{
 	list-style: circle;
     padding-left: 24px;
-	font-family: 'Roboto Slab', serif;
 	font-weight: 600;
 }
 .pd li{
@@ -12463,7 +12460,7 @@ border-radius:30px;
 		-webkit-box-orient: vertical;
 		display: -webkit-box;
 		font-size: 18px;
-		font-weight: 700;
+		font-weight: 500;
 		margin: 0 5px 5px 0;
 		overflow: hidden;
 		text-overflow: ellipsis
@@ -12524,7 +12521,7 @@ border-radius:30px;
 	.general_text {
 		display: block;
 		font-size: 16px;
-		font-weight: 700;
+		font-weight: 500;
 		margin-bottom: 5px;
 		text-decoration: underline !important;
 	}
