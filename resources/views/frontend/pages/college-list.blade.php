@@ -108,17 +108,17 @@
                             <h3 class="title">Filters By</h3> <hr/>
                             <!-- Sidebar Wrapper Start -->
                             <div class="sidebar-widget-02">
-                                <h3 class="widget-title">Type of Courses</h3>
+                                <h3 class="widget-title">Exam</h3>
 
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="checkbox1">
-                                            <label class="form-check-label" for="checkbox1">Free (11)</label>
+                                            <label class="form-check-label" for="checkbox1">Neet PG</label>
                                         </li>
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="checkbox2">
-                                            <label class="form-check-label" for="checkbox2">Paid (11)</label>
+                                            <label class="form-check-label" for="checkbox2">Neet MDS</label>
                                         </li>
                                     </ul>
                                 </div>
@@ -127,23 +127,18 @@
 
                             <!-- Sidebar Wrapper Start -->
                             <div class="sidebar-widget-02">
-                                <h3 class="widget-title">Categories</h3>
+                                <h3 class="widget-title">OWNERSHIP</h3>
 
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="checkbox3">
-                                            <label class="form-check-label" for="checkbox3">Technology (11)</label>
+                                            <label class="form-check-label" for="checkbox3">Private</label>
                                         </li>
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value=""
                                                 id="checkbox4">
-                                            <label class="form-check-label" for="checkbox4">Business (07)</label>
-                                        </li>
-                                        <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="checkbox5">
-                                            <label class="form-check-label" for="checkbox5">Development (11)</label>
+                                            <label class="form-check-label" for="checkbox4">Government</label>
                                         </li>
                                     </ul>
                                 </div>
@@ -152,24 +147,24 @@
 
                             <!-- Sidebar Wrapper Start -->
                             <div class="sidebar-widget-02">
-                                <h3 class="widget-title">Instructor</h3>
+                                <h3 class="widget-title">FEE</h3>
 
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value=""
                                                 id="checkbox6">
-                                            <label class="form-check-label" for="checkbox6">Jimmy Jason (11)</label>
+                                            <label class="form-check-label" for="checkbox6">Up to 1 Lakh</label>
                                         </li>
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value=""
                                                 id="checkbox7">
-                                            <label class="form-check-label" for="checkbox7">Harnold (07)</label>
+                                            <label class="form-check-label" for="checkbox7">Up to 2 Lakh</label>
                                         </li>
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value=""
                                                 id="checkbox8">
-                                            <label class="form-check-label" for="checkbox8">Eric Madny (11)</label>
+                                            <label class="form-check-label" for="checkbox8">Up to 3 Lakh</label>
                                         </li>
                                     </ul>
                                 </div>
@@ -178,57 +173,24 @@
 
                             <!-- Sidebar Wrapper Start -->
                             <div class="sidebar-widget-02">
-                                <h3 class="widget-title">Ratings</h3>
-
-                                <div class="widget-checkbox">
-                                    <ul class="checkbox-list">
-                                        <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="checkbox9">
-                                            <label class="form-check-label" for="checkbox9">
-                                                <div class="rating">
-                                                    <div class="rating-on" style="width: 100%;"></div>
-                                                </div> (4.5)
-                                            </label>
-                                        </li>
-                                        <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="checkbox10">
-                                            <label class="form-check-label" for="checkbox10">
-                                                <div class="rating">
-                                                    <div class="rating-on" style="width: 60%;"></div>
-                                                </div> (3.5)
-                                            </label>
-                                        </li>
-                                        <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="checkbox11">
-                                            <label class="form-check-label" for="checkbox11">
-                                                <div class="rating">
-                                                    <div class="rating-on" style="width: 40%;"></div>
-                                                </div> (2)
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- Sidebar Wrapper End -->
-
-                            <!-- Sidebar Wrapper Start -->
-                            <div class="sidebar-widget-02">
-                                <h3 class="widget-title">Lavel</h3>
+                                <h3 class="widget-title">State</h3>
 
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value=""
                                                 id="checkbox12">
-                                            <label class="form-check-label" for="checkbox12">Beginner (11)</label>
+                                            <label class="form-check-label" for="checkbox12">Uttar Peadesh</label>
                                         </li>
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value=""
-                                                id="checkbox13">
-                                            <label class="form-check-label" for="checkbox13">Advanced (07)</label>
+                                                id="checkbox14">
+                                            <label class="form-check-label" for="checkbox14">Kolkata</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="checkbox15">
+                                            <label class="form-check-label" for="checkbox15">Mumbai</label>
                                         </li>
                                     </ul>
                                 </div>
