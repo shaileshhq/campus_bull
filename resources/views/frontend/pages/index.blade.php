@@ -7,10 +7,13 @@
                 <div class="col-md-6">
                     <!-- Slider Start -->
                     <div class="slider-content">
-                        <h2 class="title">India’s Best Ever <br> Admission Counselling Portal for NEET PG</h2>
-                        <h5 class="sub-title mt-3">One Stop Solution for every NEET PG Student</h5>
-                        <p>A portal designed to provide <b>step by step Campus Bull</b> guidance to students with
-                            timely information and accurate precision.</p>
+                        <h2 class="title">India’s Best Ever Admission Counselling Portal for NEET UG & PG</h2>
+                        {{-- <h5 class="sub-title mt-3">One Stop Solution for every NEET PG Student</h5> --}}
+                        <p>Welcome to our premier Admission Counseling Portal for NEET PG! Dive into a wealth of resources
+                            tailored to guide your journey towards postgraduate medical studies in India. Access exam
+                            insights, preparation materials, counseling guidance, expert advice, and a vibrant community
+                            forum. Stay updated with the latest news and connect with successful candidates. Empower your
+                            aspirations with our comprehensive support system. Start exploring today!</p>
                         <a href="#" class="btn btn-primary btn-hover-heading-color">Explore All Courses</a>
                     </div>
                     <!-- Slider End -->
@@ -35,13 +38,11 @@
     <!-- Feature Category Start -->
     <div class="section section-padding">
         <div class="container">
-
             <!-- Section Title Start -->
             <div class="section-title text-center">
                 <h2 class="title"><span>Top Study Places</span></h2>
             </div>
             <!-- Section Title End -->
-
             <!-- Feature Category Wrapper Start -->
             <div class="feature-category-wrapper feature-category-active">
                 <div class="swiper-container">
@@ -146,11 +147,9 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-
                 <div class="swiper-pagination"></div>
             </div>
             <!-- Feature Category End -->
-
         </div>
     </div>
     <!-- Feature Category End -->
@@ -163,13 +162,10 @@
                 <h2 class="title"><span>Explore Courses</span></h2>
             </div>
             <!-- Section Title End -->
-
             <!-- Courses Wrapper Start -->
             <div class="courses-wrapper">
-
                 <!-- Courses Tab Start -->
                 <div class="courses-tab">
-
                     <div class="tab-menu">
                         <ul class="nav justify-content-center">
                             <li><button class="active" data-bs-toggle="tab" data-bs-target="#tab1">Neet PG</button></li>
@@ -179,11 +175,9 @@
                             <li><button data-bs-toggle="tab" data-bs-target="#tab5">Neet UG</button></li>
                         </ul>
                     </div>
-
                     <!-- Courses Tab Content Start -->
                     <div class="tab-content courses-tab-content">
                         <div class="tab-pane active" id="tab1">
-
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <!-- Single Courses Start -->
@@ -226,10 +220,8 @@
                                     <!-- Single Courses End -->
                                 </div>
                             </div>
-
                         </div>
                         <div class="tab-pane" id="tab2">
-
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <!-- Single Courses Start -->
@@ -272,10 +264,8 @@
                                     <!-- Single Courses End -->
                                 </div>
                             </div>
-
                         </div>
                         <div class="tab-pane" id="tab3">
-
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <!-- Single Courses Start -->
@@ -318,10 +308,8 @@
                                     <!-- Single Courses End -->
                                 </div>
                             </div>
-
                         </div>
                         <div class="tab-pane" id="tab4">
-
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <!-- Single Courses Start -->
@@ -364,10 +352,8 @@
                                     <!-- Single Courses End -->
                                 </div>
                             </div>
-
                         </div>
                         <div class="tab-pane" id="tab5">
-
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <!-- Single Courses Start -->
@@ -410,24 +396,326 @@
                                     <!-- Single Courses End -->
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <!-- Courses Tab Content End -->
-
                 </div>
                 <!-- Courses Tab End -->
-
                 <div class="courses-more text-center">
                     <p><strong>200+</strong> more skillful courses you can explore</p>
                     <a href="#" class="btn btn-primary btn-hover-heading-color">Explore All Courses</a>
+                </div>
+            </div>
+            <!-- Courses Wrapper End -->
+        </div>
+    </div>
+    <!-- Courses End -->
+
+    <!-- College Start -->
+    <div class="section  courses-section-02 section-padding">
+        <div class="container">
+            <!-- Section Title Start -->
+            <div class="section-title text-center">
+                <h2 class="title"><span>Explore College List</span></h2>
+            </div>
+            <!-- Section Title End -->
+
+            <!-- Courses Wrapper Start -->
+            <div class="courses-wrapper courses-02-active">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card_block">
+                                <div class="tupple">
+                                    <div class="d-md-flex justify-content-between">
+                                        <div class="left_side_tupple">
+                                            <div class="tupple_top_block">
+                                                <div class="image_block mb-2">
+                                                    <a href="#">
+                                                        <img class="border_radius5" quality="100" src="https://cache.careers360.mobi/media/presets/60X60/colleges/social-media/logo/Logo_of_Aarupadai_Veedu_Medical_College_and_Hospital_Puducherry_Logo.webp" alt="AVMC Puducherry" width="62" height="62">
+                                                    </a>
+                                                </div>
+                                                <div class="content_block d-block d-md-none"><span><i class="fa fa-map-marker" aria-hidden="true"></i>Kirumampakkam, Puducherry</span><br>
+                                                    <div class="block_border"></div><span>Private</span>
+                                                </div>
+                                                <div class="tupple_right_block d-none d-md-block">
+                                                    <h3 class="college_name"
+                                                        title="AVMC Puducherry - Aarupadai Veedu Medical College and Hospital, Puducherry"
+                                                        data-testid="college_name"><a
+                                                            href="#">AVMC
+                                                            Puducherry - Aarupadai Veedu Medical College and Hospital,
+                                                            Puducherry</a></h3>
+                                                    <div
+                                                        class="content_block d-none d-md-block d-md-flex flex-row justify-content-between">
+                                                        <div><span><i class="fa fa-map-marker" aria-hidden="true"></i> Kirumampakkam, Puducherry</span> <span>Private</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="general_text" href="#">MD General Medicine</a>
+                                            <div class="snippet_block">
+                                                <ul class="snippet_list">
+                                                    <li><span class="gray_text">Exams : </span>
+                                                        <a class="exam_black_link" href="#">NEET PG</a> </li>
+                                                    <li><span class="gray_text">Fees : </span> ₹ 129 Lakhs</li>
+                                                    <li><a href="#">M.D.<span>(14 Courses)</span></a> </li>
+                                                    <li><a href="">M.S.<span>(5 Courses)</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="combined_block d-md-none">
+                                            <div class="important_links">
+                                                <ul class="links_list">
+                                                    <li> <a href="#">Admissions</a></li>
+                                                    <li><a href="#">Cut-off</a></li>
+                                                    <li><a href="#">Placements</a></li>
+                                                    <li><a href="#">Courses</a></li>
+                                                    <li><a href="#">Facilities</a></li>
+                                                    <li><a href="#">QnA</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <div class="combined_block">
+                                            <div class="important_links">
+                                                <ul class="links_list">
+                                                    <li><a href="#">Admissions</a></li>
+                                                    <li><a href="#">Cut-off</a></li>
+                                                    <li><a href="#">Placements</a></li>
+                                                    <li><a  href="#">Courses</a></li>
+                                                    <li><a href="#">Facilities</a></li>
+                                                    <li><a href="#">QnA</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card_block">
+                                <div class="tupple">
+                                    <div class="d-md-flex justify-content-between">
+                                        <div class="left_side_tupple">
+                                            <div class="tupple_top_block">
+                                                <div class="image_block mb-2">
+                                                    <a href="#">
+                                                        <img class="border_radius5" quality="100" src="https://cache.careers360.mobi/media/presets/60X60/colleges/social-media/logo/Logo_of_Aarupadai_Veedu_Medical_College_and_Hospital_Puducherry_Logo.webp" alt="AVMC Puducherry" width="62" height="62">
+                                                    </a>
+                                                </div>
+                                                <div class="content_block d-block d-md-none"><span><i class="fa fa-map-marker" aria-hidden="true"></i>Kirumampakkam, Puducherry</span><br>
+                                                    <div class="block_border"></div><span>Private</span>
+                                                </div>
+                                                <div class="tupple_right_block d-none d-md-block">
+                                                    <h3 class="college_name"
+                                                        title="AVMC Puducherry - Aarupadai Veedu Medical College and Hospital, Puducherry"
+                                                        data-testid="college_name"><a
+                                                            href="#">AVMC
+                                                            Puducherry - Aarupadai Veedu Medical College and Hospital,
+                                                            Puducherry</a></h3>
+                                                    <div
+                                                        class="content_block d-none d-md-block d-md-flex flex-row justify-content-between">
+                                                        <div><span><i class="fa fa-map-marker" aria-hidden="true"></i> Kirumampakkam, Puducherry</span> <span>Private</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="general_text" href="#">MD General Medicine</a>
+                                            <div class="snippet_block">
+                                                <ul class="snippet_list">
+                                                    <li><span class="gray_text">Exams : </span>
+                                                        <a class="exam_black_link" href="#">NEET PG</a> </li>
+                                                    <li><span class="gray_text">Fees : </span> ₹ 129 Lakhs</li>
+                                                    <li><a href="#">M.D.<span>(14 Courses)</span></a> </li>
+                                                    <li><a href="">M.S.<span>(5 Courses)</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="combined_block d-md-none">
+                                            <div class="important_links">
+                                                <ul class="links_list">
+                                                    <li> <a href="#">Admissions</a></li>
+                                                    <li><a href="#">Cut-off</a></li>
+                                                    <li><a href="#">Placements</a></li>
+                                                    <li><a href="#">Courses</a></li>
+                                                    <li><a href="#">Facilities</a></li>
+                                                    <li><a href="#">QnA</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <div class="combined_block">
+                                            <div class="important_links">
+                                                <ul class="links_list">
+                                                    <li><a href="#">Admissions</a></li>
+                                                    <li><a href="#">Cut-off</a></li>
+                                                    <li><a href="#">Placements</a></li>
+                                                    <li><a  href="#">Courses</a></li>
+                                                    <li><a href="#">Facilities</a></li>
+                                                    <li><a href="#">QnA</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card_block">
+                                <div class="tupple">
+                                    <div class="d-md-flex justify-content-between">
+                                        <div class="left_side_tupple">
+                                            <div class="tupple_top_block">
+                                                <div class="image_block mb-2">
+                                                    <a href="#">
+                                                        <img class="border_radius5" quality="100" src="https://cache.careers360.mobi/media/presets/60X60/colleges/social-media/logo/Logo_of_Aarupadai_Veedu_Medical_College_and_Hospital_Puducherry_Logo.webp" alt="AVMC Puducherry" width="62" height="62">
+                                                    </a>
+                                                </div>
+                                                <div class="content_block d-block d-md-none"><span><i class="fa fa-map-marker" aria-hidden="true"></i>Kirumampakkam, Puducherry</span><br>
+                                                    <div class="block_border"></div><span>Private</span>
+                                                </div>
+                                                <div class="tupple_right_block d-none d-md-block">
+                                                    <h3 class="college_name"
+                                                        title="AVMC Puducherry - Aarupadai Veedu Medical College and Hospital, Puducherry"
+                                                        data-testid="college_name"><a
+                                                            href="#">AVMC
+                                                            Puducherry - Aarupadai Veedu Medical College and Hospital,
+                                                            Puducherry</a></h3>
+                                                    <div
+                                                        class="content_block d-none d-md-block d-md-flex flex-row justify-content-between">
+                                                        <div><span><i class="fa fa-map-marker" aria-hidden="true"></i> Kirumampakkam, Puducherry</span> <span>Private</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="general_text" href="#">MD General Medicine</a>
+                                            <div class="snippet_block">
+                                                <ul class="snippet_list">
+                                                    <li><span class="gray_text">Exams : </span>
+                                                        <a class="exam_black_link" href="#">NEET PG</a> </li>
+                                                    <li><span class="gray_text">Fees : </span> ₹ 129 Lakhs</li>
+                                                    <li><a href="#">M.D.<span>(14 Courses)</span></a> </li>
+                                                    <li><a href="">M.S.<span>(5 Courses)</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="combined_block d-md-none">
+                                            <div class="important_links">
+                                                <ul class="links_list">
+                                                    <li> <a href="#">Admissions</a></li>
+                                                    <li><a href="#">Cut-off</a></li>
+                                                    <li><a href="#">Placements</a></li>
+                                                    <li><a href="#">Courses</a></li>
+                                                    <li><a href="#">Facilities</a></li>
+                                                    <li><a href="#">QnA</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <div class="combined_block">
+                                            <div class="important_links">
+                                                <ul class="links_list">
+                                                    <li><a href="#">Admissions</a></li>
+                                                    <li><a href="#">Cut-off</a></li>
+                                                    <li><a href="#">Placements</a></li>
+                                                    <li><a  href="#">Courses</a></li>
+                                                    <li><a href="#">Facilities</a></li>
+                                                    <li><a href="#">QnA</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card_block">
+                                <div class="tupple">
+                                    <div class="d-md-flex justify-content-between">
+                                        <div class="left_side_tupple">
+                                            <div class="tupple_top_block">
+                                                <div class="image_block mb-2">
+                                                    <a href="#">
+                                                        <img class="border_radius5" quality="100" src="https://cache.careers360.mobi/media/presets/60X60/colleges/social-media/logo/Logo_of_Aarupadai_Veedu_Medical_College_and_Hospital_Puducherry_Logo.webp" alt="AVMC Puducherry" width="62" height="62">
+                                                    </a>
+                                                </div>
+                                                <div class="content_block d-block d-md-none"><span><i class="fa fa-map-marker" aria-hidden="true"></i>Kirumampakkam, Puducherry</span><br>
+                                                    <div class="block_border"></div><span>Private</span>
+                                                </div>
+                                                <div class="tupple_right_block d-none d-md-block">
+                                                    <h3 class="college_name"
+                                                        title="AVMC Puducherry - Aarupadai Veedu Medical College and Hospital, Puducherry"
+                                                        data-testid="college_name"><a
+                                                            href="#">AVMC
+                                                            Puducherry - Aarupadai Veedu Medical College and Hospital,
+                                                            Puducherry</a></h3>
+                                                    <div
+                                                        class="content_block d-none d-md-block d-md-flex flex-row justify-content-between">
+                                                        <div><span><i class="fa fa-map-marker" aria-hidden="true"></i> Kirumampakkam, Puducherry</span> <span>Private</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="general_text" href="#">MD General Medicine</a>
+                                            <div class="snippet_block">
+                                                <ul class="snippet_list">
+                                                    <li><span class="gray_text">Exams : </span>
+                                                        <a class="exam_black_link" href="#">NEET PG</a> </li>
+                                                    <li><span class="gray_text">Fees : </span> ₹ 129 Lakhs</li>
+                                                    <li><a href="#">M.D.<span>(14 Courses)</span></a> </li>
+                                                    <li><a href="">M.S.<span>(5 Courses)</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="combined_block d-md-none">
+                                            <div class="important_links">
+                                                <ul class="links_list">
+                                                    <li> <a href="#">Admissions</a></li>
+                                                    <li><a href="#">Cut-off</a></li>
+                                                    <li><a href="#">Placements</a></li>
+                                                    <li><a href="#">Courses</a></li>
+                                                    <li><a href="#">Facilities</a></li>
+                                                    <li><a href="#">QnA</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="d-none d-md-block">
+                                        <div class="combined_block">
+                                            <div class="important_links">
+                                                <ul class="links_list">
+                                                    <li><a href="#">Admissions</a></li>
+                                                    <li><a href="#">Cut-off</a></li>
+                                                    <li><a href="#">Placements</a></li>
+                                                    <li><a  href="#">Courses</a></li>
+                                                    <li><a href="#">Facilities</a></li>
+                                                    <li><a href="#">QnA</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses-more text-center">
+                        <a href="#" class="btn btn-primary btn-hover-heading-color">Explore All College List</a>
+                    </div>
                 </div>
 
             </div>
             <!-- Courses Wrapper End -->
         </div>
     </div>
-    <!-- Courses End -->
+    <!-- College End -->
+
     <!-- Counter Start -->
     <div class="section counter-section feature-section">
         <div class="container">
@@ -502,6 +790,7 @@
         </div>
     </div>
     <!-- Counter End -->
+
     <!-- Courses Start -->
     <div class="section section-padding">
         <div class="container">
@@ -510,7 +799,6 @@
                 <h2 class="title"><span>The Next-Gen Counselling Platform</span></h2>
             </div>
             <!-- Section Title End -->
-
             <!-- Courses Wrapper Start -->
             <div class="courses-wrapper">
                 <!-- Courses Tab Start -->
@@ -579,7 +867,6 @@
                         </div>
                     </div>
                     <!-- Courses Tab Content End -->
-
                 </div>
                 <!-- Courses Tab End -->
             </div>
@@ -587,6 +874,7 @@
         </div>
     </div>
     <!-- Courses End -->
+
     <!-- Call To Action Start -->
     <div class="section bg-color-2 call-to-action-bg">
         <div class="container">
@@ -648,7 +936,6 @@
         <div class="call-to-action-shape-03"></div>
     </div>
     <!-- Call To Action End -->
-
 
     <!-- Testimonial End -->
     <div class="section section-padding">

@@ -357,7 +357,7 @@ var swiper = new Swiper(".testimonial-active-04 .swiper-container", {
 -----------------------------------*/
 var swiper = new Swiper(".courses-02-active .swiper-container", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 10,
     loop: true,
     pagination: {
         el: ".courses-02-active .swiper-pagination",
@@ -374,10 +374,10 @@ var swiper = new Swiper(".courses-02-active .swiper-container", {
         slidesPerView: 2,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 2,
       }
     },
 });

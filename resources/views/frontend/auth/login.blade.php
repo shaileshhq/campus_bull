@@ -21,6 +21,11 @@
         <div class="section section-padding">
             <div class="container">
                     <div class="row">
+                        <div class="col-lg-6 mb-3">
+                            <div class="bg-light">
+                              <img src="{{asset('public/front_css/assets/images/login.png')}}" class="auth-side-image img-fluid">
+                            </div>
+                        </div>
                         <div class="col-lg-6 mb-3 m-auto">
                             <!-- Login & Register Box Start -->
                             <div class="login-register-box">

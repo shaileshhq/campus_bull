@@ -2612,7 +2612,7 @@ textarea.form-control-lg {
 }
 
 .form-check-input[type=checkbox] {
-	border-radius: .25em
+	border-radius: 30px
 }
 
 .form-check-input[type=radio] {
@@ -4469,6 +4469,7 @@ fieldset:disabled .btn {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     border: 1px solid #ddd;
     margin: 5px;
+	border-radius: 6px;
 }
 
 @media (prefers-reduced-motion:reduce) {

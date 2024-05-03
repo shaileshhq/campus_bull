@@ -16,31 +16,15 @@
             </div>
         </div>
         <!-- Page Banner End -->
-
-        <!-- Login Start -->
         <div class="section section-padding">
-            <div class="container mb-2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
 
-                <!-- Login & Register Wrapper Start -->
-                <div class="login-register-wrapper">
-                    <div class="row">
-                        <div class="col-lg-5">
-                        <div class="bg-light">
-                         <img src="{{asset('public/front_css/assets/images/help.png')}}" class="auth-side-image">
-                         </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <!-- Login & Register Box Start -->
-                            <div class="login-register-box">
-                                <!-- Section Title Start -->
-                                <div class="section-title">
-                                    <h2 class="title text-center">Have Some Questions?</h2>
-                                </div>
-                                <!-- Section Title End -->
-                               <hr>
-                               <div class="contact-info-wrapper">
+                        <!-- Contact Info Wrapper Start -->
+                        <div class="contact-info-wrapper">
                             <div class="row gx-0">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <!-- Single Contact Info Start -->
                                     <div class="single-contact-info">
                                         <div class="info-icon">
@@ -48,12 +32,13 @@
                                         </div>
                                         <div class="info-content">
                                             <h5 class="title">Telephone</h5>
-                                            <p><a href="tel:+91-1234567890">+91-1234567890</a></p>
+                                            <p><a href="tel:1234567890">+91-1234567890</a></p>
+                                            <p><a href="tel:1234567890">+91-1234567890</a></p>
                                         </div>
                                     </div>
                                     <!-- Single Contact Info End -->
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <!-- Single Contact Info Start -->
                                     <div class="single-contact-info">
                                         <div class="info-icon">
@@ -62,27 +47,96 @@
                                         <div class="info-content">
                                             <h5 class="title">Our Mail</h5>
                                             <p><a href="mailto:info@campusbull.com">info@campusbull.com</a></p>
+                                            <p><a href="mailto:info@campusbull.com">info@campusbull.com</a></p>
                                         </div>
                                     </div>
                                     <!-- Single Contact Info End -->
                                 </div>
-                                </div>
-                            <div class="row gx-0">
-                                <div class="col-md-12">
+                                <div class="col-md-4">
                                     <!-- Single Contact Info Start -->
                                     <div class="single-contact-info">
                                         <div class="info-icon">
                                             <i class="flaticon-placeholder"></i>
                                         </div>
                                         <div class="info-content">
-                                            <h5 class="title">Varanasi Office</h5>
-                                             <p>Varanasi, Uttar Pradesh, India(221010)</p>
+                                            <h5 class="title">Location</h5>
+                                            <p>Varanasi, Uttar Pradesh, India(221010)</p>
                                         </div>
                                     </div>
                                     <!-- Single Contact Info End -->
                                 </div>
                             </div>
                         </div>
+                        <!-- Contact Info Wrapper End -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Login Start -->
+        <div class="section section-padding">
+            <div class="container mb-2">
+
+                <!-- Login & Register Wrapper Start -->
+                <div class="login-register-wrapper">
+                    <div class="row">
+                        <div class="col-lg-6">
+                        <div class="bg-light">
+                         <img src="{{asset('public/front_css/assets/images/help.png')}}" class="auth-side-image img-fluid">
+                         </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Login & Register Box Start -->
+                            <div class="login-register-box">
+
+                                <div class="contact-form-wrapper">
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <!-- Single Form Start -->
+                                                <div class="single-form">
+                                                    <input type="text" class="form-control" placeholder="Your Name*">
+                                                </div>
+                                                <!-- Single Form End -->
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!-- Single Form Start -->
+                                                <div class="single-form">
+                                                    <input type="email" class="form-control" placeholder="Your Email*">
+                                                </div>
+                                                <!-- Single Form End -->
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!-- Single Form Start -->
+                                                <div class="single-form">
+                                                    <input type="text" class="form-control" placeholder="Your Phone*">
+                                                </div>
+                                                <!-- Single Form End -->
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!-- Single Form Start -->
+                                                <div class="single-form">
+                                                    <input type="text" class="form-control" placeholder="Subject*">
+                                                </div>
+                                                <!-- Single Form End -->
+                                            </div>
+                                            <div class="col-md-12">
+                                                <!-- Single Form Start -->
+                                                <div class="single-form">
+                                                    <textarea class="form-control" placeholder="Write A Massage*"></textarea>
+                                                </div>
+                                                <!-- Single Form End -->
+                                            </div>
+                                            <div class="col-md-12">
+                                                <!-- Single Form Start -->
+                                                <div class="single-form text-center">
+                                                    <button class="btn btn-primary btn-hover-heading-color">Send Message</button>
+                                                </div>
+                                                <!-- Single Form End -->
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                                 <div class="blog-tags-social">
                                     <div class="blog-social m-auto">
                                         <div class="slider-btn d-flex">
@@ -92,6 +146,7 @@
                                         </div>
                                     </div>
                                 </div>
+                        </div>
                             </div>
                             <!-- Login & Register Box End -->
                         </div>
