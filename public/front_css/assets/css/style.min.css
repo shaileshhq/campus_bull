@@ -47,6 +47,15 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) {
+	.snippet_list li {
+		font-size: 14px;
+	}
+	.content_block span{
+		font-size: 13px !important;
+	}
+	.college_name a {
+		font-size: 14px !important;
+	}
     .m_hide{
         display:none;
     }
@@ -5039,7 +5048,8 @@ only screen and (max-width: 767px) {
 
 @media only screen and (max-width: 767px) {
 	.tab-menu .nav li button {
-		font-size: 15px
+		font-size: 14px;
+		padding: 2px 5px;
 	}
 }
 
@@ -6465,6 +6475,7 @@ only screen and (max-width: 767px) {
 only screen and (max-width: 767px) {
 	.single-category-item a .item-icon {
     height: 35px;
+	width: 35px;
     left: 8px;
 	}
 	.single-category-items a .item-icon {
@@ -12222,7 +12233,11 @@ ul.footer-nav-menu li:after {
 }
 /* width */
 ::-webkit-scrollbar {
-
+	height: 4px;              /* height of horizontal scrollbar ← You're missing this */
+	width: 4px;               /* width of vertical scrollbar */
+	border: 1px solid #d5d5d5;
+  }
+::-webkit-scrollbar {
 	width: 5px;
   }
   
@@ -12234,7 +12249,7 @@ ul.footer-nav-menu li:after {
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-	background: #EB5353; 
+	background: #555; 
   }
   .copyright p{
 	  color: #fff;
@@ -12425,7 +12440,7 @@ border-radius:30px;
 }
 .c-scrollbar-light{
     scrollbar-color: rgba(24, 28, 41, 0.08);
-    scrollbar-width: thin;
+    /* scrollbar-width: thin; */
 }
     tr:nth-child(odd)>td {
     background-color: #fff;
@@ -12443,8 +12458,8 @@ border-radius:30px;
 		padding: 20px;
 		position: relative
 	}
-	.college_name {
-		-webkit-line-clamp: 1;
+	.college_name a{
+		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
 		display: -webkit-box;
 		font-size: 18px;
