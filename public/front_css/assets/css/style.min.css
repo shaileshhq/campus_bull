@@ -3422,13 +3422,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.slider-content {
-		padding-top: 80px
+		padding-top: 50px
 	}
 }
 
 @media only screen and (max-width: 767px) {
 	.slider-content {
-		padding-top: 100px;
+		padding-top: 25px;
 		padding-bottom: 0px
 	}
 }
