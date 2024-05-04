@@ -5023,7 +5023,7 @@ only screen and (max-width: 767px) {
 }
 
 .tab-menu .nav li {
-	margin: 0 17px;
+	margin: 0 5px;
 	padding-top: 10px
 }
 
@@ -5038,8 +5038,8 @@ only screen and (max-width: 767px) {
     font-weight: 600;
     color: #000;
     border: 1px solid;
-    padding: 8px 20px;
-    border-radius: 37px;
+    padding: 6px 10px;
+    border-radius: 5px;
     background: #e3262403;
 }
 
