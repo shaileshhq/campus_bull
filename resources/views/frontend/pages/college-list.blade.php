@@ -30,7 +30,7 @@
                                                 <div class="tupple_right_block d-none d-md-block">
                                                     <h3 class="college_name"
                                                         title="AVMC Puducherry - Aarupadai Veedu Medical College and Hospital, Puducherry"
-                                                        data-testid="college_name"><a href="#">AVMC
+                                                        data-testid="college_name"><a href="{{route('college_details')}}">AVMC
                                                             Puducherry - Aarupadai Veedu Medical College and Hospital,
                                                             Puducherry</a></h3>
                                                     <div

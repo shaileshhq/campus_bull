@@ -80,6 +80,61 @@
 </div>
 
 
+<div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-bs-backdrop="static" style="z-index:999999999;">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel" >Request A Call Back!</h5>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                   <div class="col-md-6"> 
+                 <form method="post" action="#">
+                    <div class="col-lg-12 col-md-12 mb-3">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" required="" Placeholder="Enter your name" placeholder="Name">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 mb-3">
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" required="" Placeholder="Enter your email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 mb-3">
+                        <div class="form-group">
+                            <input type="text" name="phone" required="" Placeholder="Enter your number" class="form-control" placeholder="Phone">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 mb-3">
+                        <div class="form-group">
+                            <input type="text" name="message" class="form-control" required="" Placeholder="Remark (If Any)... " placeholder="Remark (If Any)... ">
+                        </div>
+                    </div>
+                     <div class="col-lg-12 col-md-12 mb-3">
+                     <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I hereby confirm that I have filled in all the details in the registration form, correct and absolute to the best of my understanding. *</label>
+                      </div>
+                       </div>
+                    <div class="send-btn text-center mt-3">
+                        <button type="submit" class="btn btn-primary btn-hover-heading-color w-100" style="border-radius:5px;">Submit <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <img src="http://innovativeconsultants.in/frontend_css/assets/img/Book-Free-Study-Abroad-Counselling-Session.png" alt="img" class="img-fluid">
+               
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
         <div class="whatsp">
             <!--- whatsapp icon start here -->
             <a href="#" target="_blank">

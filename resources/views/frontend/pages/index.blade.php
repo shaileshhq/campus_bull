@@ -207,7 +207,7 @@
                                             </div>
                                         </div>
                                         <div class="courses-meta">
-                                            <a href="#">
+                                            <a href="{{route('course_details')}}">
                                                 <p class="student"> Course Overview</p>
                                                 <div class="rating">
                                                     <div class="rating-star">
