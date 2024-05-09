@@ -183,7 +183,7 @@
                                     <!-- Single Courses Start -->
                                     <div class="single-course">
                                         <div class="courses-content">
-                                            <div class="top-meta">
+                                            <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
                                             <h3 class="title"><a href="#">MBBS (MD)</a></h3>
@@ -209,10 +209,8 @@
                                         <div class="courses-meta">
                                             <a href="{{route('course_details')}}">
                                                 <p class="student"> Course Overview</p>
-                                                <div class="rating">
-                                                    <div class="rating-star">
-                                                        <div class="rating-active" style="width: 60%;"></div>
-                                                    </div>
+                                                <div class="arw-rigt">
+                                                    <i class="fa fa-angle-right"></i>
                                                 </div>
                                             </a>
                                         </div>
@@ -227,7 +225,7 @@
                                     <!-- Single Courses Start -->
                                     <div class="single-course">
                                         <div class="courses-content">
-                                            <div class="top-meta">
+                                            <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
                                             <h3 class="title"><a href="#">MBBS (MD)</a></h3>
@@ -253,10 +251,8 @@
                                         <div class="courses-meta">
                                             <a href="#">
                                                 <p class="student"> Course Overview</p>
-                                                <div class="rating">
-                                                    <div class="rating-star">
-                                                        <div class="rating-active" style="width: 60%;"></div>
-                                                    </div>
+                                                <div class="arw-rigt">
+                                                    <i class="fa fa-angle-right"></i>
                                                 </div>
                                             </a>
                                         </div>
@@ -271,7 +267,7 @@
                                     <!-- Single Courses Start -->
                                     <div class="single-course">
                                         <div class="courses-content">
-                                            <div class="top-meta">
+                                            <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
                                             <h3 class="title"><a href="#">MBBS (MD)</a></h3>
@@ -297,10 +293,8 @@
                                         <div class="courses-meta">
                                             <a href="#">
                                                 <p class="student"> Course Overview</p>
-                                                <div class="rating">
-                                                    <div class="rating-star">
-                                                        <div class="rating-active" style="width: 60%;"></div>
-                                                    </div>
+                                                <div class="arw-rigt">
+                                                    <i class="fa fa-angle-right"></i>
                                                 </div>
                                             </a>
                                         </div>
@@ -315,7 +309,7 @@
                                     <!-- Single Courses Start -->
                                     <div class="single-course">
                                         <div class="courses-content">
-                                            <div class="top-meta">
+                                            <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
                                             <h3 class="title"><a href="#">MBBS (MD)</a></h3>
@@ -341,10 +335,8 @@
                                         <div class="courses-meta">
                                             <a href="#">
                                                 <p class="student"> Course Overview</p>
-                                                <div class="rating">
-                                                    <div class="rating-star">
-                                                        <div class="rating-active" style="width: 60%;"></div>
-                                                    </div>
+                                                <div class="arw-rigt">
+                                                    <i class="fa fa-angle-right"></i>
                                                 </div>
                                             </a>
                                         </div>
@@ -359,7 +351,7 @@
                                     <!-- Single Courses Start -->
                                     <div class="single-course">
                                         <div class="courses-content">
-                                            <div class="top-meta">
+                                            <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
                                             <h3 class="title"><a href="#">MBBS (MD)</a></h3>
@@ -385,10 +377,8 @@
                                         <div class="courses-meta">
                                             <a href="#">
                                                 <p class="student"> Course Overview</p>
-                                                <div class="rating">
-                                                    <div class="rating-star">
-                                                        <div class="rating-active" style="width: 60%;"></div>
-                                                    </div>
+                                                <div class="arw-rigt">
+                                                    <i class="fa fa-angle-right"></i>
                                                 </div>
                                             </a>
                                         </div>

@@ -858,9 +858,9 @@ textarea.form-control {
     font-size: 16px;
     font-weight: 500;
     height: 50px;
-    line-height: 40px;
+    line-height: 44px;
     padding: 0px 15px;
-    height: 40px;
+    height: 45px;
     border-width: 0;
     border-style: solid;
     -webkit-box-shadow: none;
@@ -7671,7 +7671,7 @@ only screen and (max-width: 575px) {
 	border-bottom-right-radius: 8px;
 	background-color: #ffffff;
 	padding: 20px;
-	height: 250px;
+	/* height: 250px; */
 }
 
 @media only screen and (max-width: 575px) {
@@ -10201,7 +10201,7 @@ only screen and (max-width: 767px) {
 .login-register-box {
     border: 1px solid #eeeeee;
     padding: 20px 20px;
-    box-shadow: 0px 0px 0px 5px rgb(255 255 255 / 40%), 0px 4px 20px rgb(0 0 0 / 33%);
+    /* box-shadow: 0px 0px 0px 5px rgb(255 255 255 / 40%), 0px 4px 20px rgb(0 0 0 / 33%); */
 }
 
 .contact-info-wrapper {
@@ -11936,7 +11936,8 @@ only screen and (max-width: 575px) {
 
 .footer-widget-title {
 	font-size: 20px;
-	font-weight: 600
+	font-weight: 600;
+	color: #fff;
 }
 
 .widget-info {
@@ -11944,12 +11945,12 @@ only screen and (max-width: 575px) {
 }
 
 .widget-info p {
-	font-size: 16px;
-	font-weight: 500;
-	color: #333;
-	margin-top: 10px;
-	text-align: justify;
-	padding-right: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: justify;
+    padding-right: 10px;
+	color: #c3bfbf;
 }
 
 .widget-info p i {
@@ -11976,13 +11977,13 @@ only screen and (max-width: 575px) {
 }
 
 .widget-info .social li a {
-	width: 35px;
-	height: 35px;
-	line-height: 33px;
-	border: 1px solid #333;
-	text-align: center;
-	border-radius: 50%;
-	color: #666666
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    border: 1px solid #a29698;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
 }
 
 .widget-info .social li a:hover {
@@ -12014,8 +12015,8 @@ only screen and (max-width: 575px) {
 
 .widget-link .link li a {
     font-size: 16px;
-    color: #333;
-    font-weight: 500;
+    color: #c3bfbf;
+    font-weight: 300;
 }
 
 .widget-link .link li a:hover {
@@ -12105,11 +12106,11 @@ only screen and (max-width: 575px) {
 	color: #ff4880
 }
 
-.footer-section {
+/* .footer-section {
 	background-color: #e32d3024;
 	bottom: 0;
 	width: 100%;
-}
+} */
 
 .footer-section-02 {
 	background-color: #072f60
@@ -12128,7 +12129,8 @@ only screen and (max-width: 575px) {
 
 .footer-copyright {
 	border-top: 1px solid #eb53536e;
-	padding: 10px 0
+	padding: 10px 0;
+	color: #fff;
 }
 
 .footer-copyright p {
@@ -12727,4 +12729,25 @@ border-radius:30px;
 		position: absolute;
 		right: 30px;
 		top: 65px;
+	}
+	.arw-rigt i{
+		color: #fff;
+		font-size: 20px;
+		margin-top: 5px;
+	}
+	.footer-bg {
+		background-color: #161C26;
+		position: relative;
+	}
+	.footer-bg::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		background-image: url(../images/bg-footer.png);
+		background-position: center center;
+		background-repeat: no-repeat;
 	}
