@@ -34,7 +34,7 @@
                                         <p>₹<span>1990</span> + 18% tax/-</p>
                                         <hr>
                                     </div>
-                                    
+
                                     <div class="pricig-body">
                                         <p>Access to complete College wise Cutoffs, Fees Structure.</p>
                                         <p>Access to all Updated Bond & Stipends.</p>
@@ -54,13 +54,13 @@
                                     </div><br><br>
                                     <div class="pricig-header">
                                         @if (empty(optional(Auth::user()->payment)->user_id))
-                                            <a class="btn btn-white btn-hover-heading-color" id="pay-btn" >Pay
+                                            <a class="btn btn-white btn-hover-heading-color" id="pay-btn">Pay
                                                 Now</a>
                                         @else
-                                            <a class="btn btn-white btn-hover-heading-color" >Subscribed</a>
+                                            <a class="btn btn-white btn-hover-heading-color">Subscribed</a>
                                         @endif
                                     </div>
-                                    
+
 
                                 </div>
                                 <!-- Single Pricing End -->
@@ -140,15 +140,15 @@
             </div>
         </div>
     </div>
-    
-    
-        <div class="modal" id="paymentmodel" style="background: #212529cf;">
+
+
+    <div class="modal" id="paymentmodel" style="background: #212529cf;">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                      <div id="payment-form"></div>
+                    <div id="payment-form"></div>
                 </div>
 
             </div>
@@ -164,86 +164,85 @@
             $('#myModal').hide();
             location.reload();
         });
-        
     </script>
-    <script>
+    {{-- <script>
         let orderToken = "";
-const cashfree = new Cashfree();
-const paymentDom = document.getElementById("payment-form");
-const success = function(data) {
-    if (data.order && data.order.status == "PAID") {
-        $.ajax({
-            url: "{{route('checkstatus')}}" +'?order_id='+ data.order.orderId,
-            success: function(result) {
-                if (result.order_status == "PAID") {
-                   $('#paymentmodel').hide();
-                   $('#myModal').show();
-                }
-            },
-        });
-    } else {
-        //order is still active
-        alert("Order is ACTIVE")
-    }
-}
-let failure = function(data) {
-    alert(data.order.errorText)
-}
-document.getElementById("pay-btn").addEventListener("click", () => {
-      $('#paymentmodel').show();
-    const dropConfig = {
-        "components": [
-            "order-details",
-            "card",
-            "app",
-            "upi"
-        ],
-        "orderToken": orderToken,
-        "onSuccess": success,
-        "onFailure": failure,
-        "style": {
-            "backgroundColor": "#ffffff",
-            "color": "#11385b",
-            "fontFamily": "Lato",
-            "fontSize": "14px",
-            "errorColor": "#ff0000",
-            "theme": "light", //(or dark)
+        const cashfree = new Cashfree();
+        const paymentDom = document.getElementById("payment-form");
+        const success = function(data) {
+            if (data.order && data.order.status == "PAID") {
+                $.ajax({
+                    url: "{{ route('checkstatus') }}" + '?order_id=' + data.order.orderId,
+                    success: function(result) {
+                        if (result.order_status == "PAID") {
+                            $('#paymentmodel').hide();
+                            $('#myModal').show();
+                        }
+                    },
+                });
+            } else {
+                //order is still active
+                alert("Order is ACTIVE")
+            }
         }
-    }
-    if(orderToken == "") {
-        $.ajax({
-            url: "{{route('fetchtoken')}}",
-            success: function(result) {
-                orderToken = result["order_token"];
-                const dropConfig = {
-                    "components": [
-                        "order-details",
-                        "card",
-                        "netbanking",
-                        "app",
-                        "upi"
-                    ],
-                    "orderToken": orderToken,
-                    "onSuccess": success,
-                    "onFailure": failure,
-                    "style": {
-                        "backgroundColor": "#ffffff",
-                        "color": "#11385b",
-                        "fontFamily": "Lato",
-                        "fontSize": "14px",
-                        "errorColor": "#ff0000",
-                        "theme": "light", //(or dark)
-                    }
+        let failure = function(data) {
+            alert(data.order.errorText)
+        }
+        document.getElementById("pay-btn").addEventListener("click", () => {
+            $('#paymentmodel').show();
+            const dropConfig = {
+                "components": [
+                    "order-details",
+                    "card",
+                    "app",
+                    "upi"
+                ],
+                "orderToken": orderToken,
+                "onSuccess": success,
+                "onFailure": failure,
+                "style": {
+                    "backgroundColor": "#ffffff",
+                    "color": "#11385b",
+                    "fontFamily": "Lato",
+                    "fontSize": "14px",
+                    "errorColor": "#ff0000",
+                    "theme": "light", //(or dark)
                 }
-                const cashfree = new Cashfree();
-                const paymentDom = document.getElementById("payment-form");
+            }
+            if (orderToken == "") {
+                $.ajax({
+                    url: "{{ route('fetchtoken') }}",
+                    success: function(result) {
+                        orderToken = result["order_token"];
+                        const dropConfig = {
+                            "components": [
+                                "order-details",
+                                "card",
+                                "netbanking",
+                                "app",
+                                "upi"
+                            ],
+                            "orderToken": orderToken,
+                            "onSuccess": success,
+                            "onFailure": failure,
+                            "style": {
+                                "backgroundColor": "#ffffff",
+                                "color": "#11385b",
+                                "fontFamily": "Lato",
+                                "fontSize": "14px",
+                                "errorColor": "#ff0000",
+                                "theme": "light", //(or dark)
+                            }
+                        }
+                        const cashfree = new Cashfree();
+                        const paymentDom = document.getElementById("payment-form");
+                        cashfree.initialiseDropin(paymentDom, dropConfig);
+                    },
+                });
+            } else {
                 cashfree.initialiseDropin(paymentDom, dropConfig);
-            },
-        });
-    } else {
-        cashfree.initialiseDropin(paymentDom, dropConfig);
-    }
+            }
 
-})
-    </script>
+        })
+    </script> --}}
 @endsection

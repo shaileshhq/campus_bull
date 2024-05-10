@@ -28,18 +28,14 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
+               
                 <li class="nav-item">
-                    <a href="{{ route('ranks_import') }}" class="nav-link @if (Route::currentRouteName() == 'ranks_import') active @endif">
-                        <i class="nav-icon fas fa-file-import"></i>
-                        <p>Rank Import</p>
+                    <a href="{{ route('course.index') }}" class="nav-link @if (Route::currentRouteName() == 'course.index') active @endif">
+                        <i class="fas fa-user-graduate nav-icon"></i>
+                        <p>Course </p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ route('rank.index') }}" class="nav-link @if (Route::currentRouteName() == 'rank.index') active @endif">
-                        <i class="fas fa-sort-numeric-up-alt nav-icon"></i>
-                        <p>Rank </p>
-                    </a>
-                </li>
+             
                 <li class="nav-item">
                     <a href="{{ route('student.index') }}" class="nav-link @if (Route::currentRouteName() == 'student.index') active @endif">
                         <i class="fas fa-user-graduate nav-icon"></i>
@@ -77,17 +73,11 @@
                         <p>Notices</p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ route('state_document.index') }}" class="nav-link @if (Route::currentRouteName() == 'state_document.index') active @endif">
-                        <i class="nav-icon fas fa-book"></i>
-                        <p>State Document </p>
-                    </a>
-                </li>
               
                <li class="nav-item">
-                    <a href="{{ route('medical_form_enquiry') }}" class="nav-link @if (Route::currentRouteName() == 'student.index') active @endif">
+                    <a href="{{ route('medical_form_enquiry') }}" class="nav-link @if (Route::currentRouteName() == 'medical_form_enquiry.index') active @endif">
                         <i class="fas fa-user-graduate nav-icon"></i>
-                        <p>Landing Page Enquiry </p>
+                        <p>Enquiry </p>
                     </a>
                 </li>
                 
