@@ -29,11 +29,11 @@
                                     <!-- Single Blog Start -->
                                     <div class="single-blog single-blog-02">
                                         <div class="blog-image">
-                                            <a href="#"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png')}}" alt="Blog"></a>
+                                            <a href="{{route('service_details')}}"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png')}}" alt="Blog"></a>
                                             <span class="tags">Education</span>
                                         </div>
                                         <div class="blog-content">
-                                            <h3 class="title"><a href="#">NEET UG Counselling</a></h3>
+                                            <h3 class="title"><a href="{{route('service_details')}}">NEET UG Counselling</a></h3>
                                         </div>
                                     </div>
                                     <!-- Single Blog End -->
@@ -42,11 +42,11 @@
                                     <!-- Single Blog Start -->
                                     <div class="single-blog single-blog-02">
                                         <div class="blog-image">
-                                            <a href="#"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png')}}" alt="Blog"></a>
+                                            <a href="{{route('service_details')}}"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png')}}" alt="Blog"></a>
                                             <span class="tags">Education</span>
                                         </div>
                                         <div class="blog-content">
-                                            <h3 class="title"><a href="#">NEET PG Counselling</a></h3>
+                                            <h3 class="title"><a href="{{route('service_details')}}">NEET PG Counselling</a></h3>
                                         </div>
                                     </div>
                                     <!-- Single Blog End -->
