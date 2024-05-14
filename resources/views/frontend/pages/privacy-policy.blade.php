@@ -26,7 +26,7 @@
 
 
 
-<p>At Campus Bull, accessible from www.theneetpgcounselling.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Campus Bull and how we use it.</p>
+<p>At Campus Bull, accessible from www.campusbull.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Campus Bull and how we use it.</p>
 
 
 

@@ -21,10 +21,10 @@
                         <h4 class="footer-widget-title">Useful Links</h4>
                         <div class="widget-link">
                             <ul class="link">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Pricing</a></li>
+                                <li><a href="{{route('index')}}">Home</a></li>
+                                <li><a href="{{route('about_us')}}">About Us</a></li>
+                                <li><a href="{{route('college_list')}}">College</a></li>
+                                <li><a href="{{route('services')}}">Pricing</a></li>
                             </ul>
                         </div>
                     </div>
@@ -36,10 +36,8 @@
                         <h4 class="footer-widget-title">Our Policies</h4>
                         <div class="widget-link">
                             <ul class="link">
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">Privacy & Policy</a></li>
-                                <li><a href="#">Affiliates</a></li>
-                                <li><a href="#">Partners</a></li>
+                                <li><a href="{{route('privacy_policy')}}">Privacy & Policy</a></li>
+                                <li><a href="{{route('term_condition')}}">Terms & Condition</a></li>
                             </ul>
                         </div>
                     </div>
