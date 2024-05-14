@@ -1,5 +1,14 @@
 @extends('frontend.layouts.front_app')
 @section('content')
+<style>
+    .single-testimonial-02 {
+       background-color: #e626270d;
+    }
+    .featured-content p {
+       color: #000;
+       text-align: justify;
+    }
+</style>
     <!-- Page Banner Start -->
     <div class="section mb-2">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -233,6 +242,7 @@
     <div class="section section-padding">
         <div class="container">
             <div class="row">
+                <div class="col-md-7">
                 <!-- Course Lessons Start -->
                 <div class="course-lessons">
                     <div class="lessons-top">
@@ -289,12 +299,102 @@
                 </div>
                 <!-- Course Lessons End -->
             </div>
+            <div class="col-md-5">
+               <img src="{{ asset('public/front_css/assets/images/faq.jpg') }}" alt="" class="img-fluid">
+            </div>
+            </div>
         </div>
     </div>
 
+            <!-- Pricing Start -->
+            <div class="section section-padding bg-color-1">
+                <div class="container">
+                    <!-- Section Title Start -->
+                    <div class="section-title text-center">
+                        <h2 class="title">Campus Bull Packages Price</h2>
+                    </div>
+                    <!-- Section Title End -->
+    
+                    <!-- Pricing Wrapper End -->
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-lg-4 col-md-8">
+                            <!-- Single Pricing Start -->
+                            <div class="single-pricing">
+                                <div class="pricig-header">
+                                    <h3 class="title">Basic</h3>
+                                    <p>₹<span>2999</span>/mo</p>
+                                </div>
+                                <div class="pricig-body">
+                                    <ul class="pricig-list">
+                                        <li><span>10</span> HD Videos</li>
+                                        <li><span>3</span> Personal Instructor</li>
+                                        <li><span>Unlimited</span> Courses</li>
+                                        <li><span>Unlimited</span> Students</li>
+                                        <li><span>10,000</span> Quiezzes</li>
+                                        <li><span>1,000</span> Active Members</li>
+                                        <li><span>1</span> Website</li>
+                                        <li><span>1</span> Admin User</li>
+                                    </ul>
+                                </div>
+                                <a class="btn btn-primary btn-hover-heading-color w-100 mt-3" href="#">Start For Free</a>
+                            </div>
+                            <!-- Single Pricing End -->
+                        </div>
+                        <div class="col-lg-4 col-md-8">
+                            <!-- Single Pricing Start -->
+                            <div class="single-pricing active">
+                                <div class="pricig-header">
+                                    <h3 class="title">Professional</h3>
+                                    <p>₹<span>7999</span>/mo</p>
+                                </div>
+                                <div class="pricig-body">
+                                    <ul class="pricig-list">
+                                        <li><span>10</span> HD Videos</li>
+                                        <li><span>3</span> Personal Instructor</li>
+                                        <li><span>Unlimited</span> Courses</li>
+                                        <li><span>Unlimited</span> Students</li>
+                                        <li><span>10,000</span> Quiezzes</li>
+                                        <li><span>1,000</span> Active Members</li>
+                                        <li><span>1</span> Website</li>
+                                        <li><span>1</span> Admin User</li>
+                                    </ul>
+                                    <a class="btn btn-white btn-hover-heading-color mt-3 w-100" href="#">Start For Free</a>
+                                </div>
+                            </div>
+                            <!-- Single Pricing End -->
+                        </div>
+                        <div class="col-lg-4 col-md-8">
+                            <!-- Single Pricing Start -->
+                            <div class="single-pricing">
+                                <div class="pricig-header">
+                                    <h3 class="title">Advanced</h3>
+                                    <p>₹<span>9999</span>/mo</p>
+                                </div>
+                                <div class="pricig-body">
+                                    <ul class="pricig-list">
+                                        <li><span>10</span> HD Videos</li>
+                                        <li><span>3</span> Personal Instructor</li>
+                                        <li><span>Unlimited</span> Courses</li>
+                                        <li><span>Unlimited</span> Students</li>
+                                        <li><span>10,000</span> Quiezzes</li>
+                                        <li><span>1,000</span> Active Members</li>
+                                        <li><span>1</span> Website</li>
+                                        <li><span>1</span> Admin User</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary btn-hover-heading-color w-100 mt-3" href="#">Start For Free</a>
+                            <!-- Single Pricing End -->
+                        </div>
+                    </div>
+                    <!-- Pricing Wrapper End -->
+    
+                </div>
+            </div>
+            <!-- Pricing End -->
 
             <!-- Gallery Start -->
-            <div class="section pb-4 pt-5 bg-color-1">
+            <div class="section pb-4 pt-5">
                 <div class="container">
                     <!-- Section Title Start -->
                     <div class="section-title text-center">
@@ -308,64 +408,64 @@
                     <div class="row g-0">
                         <div class="col-md-3 col-6">
                             <div class="gallery-img">
-                                <div class="image"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" alt=""> </div>
-                                <a href="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" class="gallery-plus videoLightbox">
+                                <div class="image"><img src="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" alt=""> </div>
+                                <a href="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" class="gallery-plus videoLightbox">
                                     <span></span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
                             <div class="gallery-img">
-                                <div class="image"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" alt=""> </div>
-                                <a href="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" class="gallery-plus videoLightbox">
+                                <div class="image"><img src="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" alt=""> </div>
+                                <a href="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" class="gallery-plus videoLightbox">
                                     <span></span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
                             <div class="gallery-img">
-                                <div class="image"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" alt=""> </div>
-                                <a href="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" class="gallery-plus videoLightbox">
+                                <div class="image"><img src="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" alt=""> </div>
+                                <a href="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" class="gallery-plus videoLightbox">
                                     <span></span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
                             <div class="gallery-img">
-                                <div class="image"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" alt=""> </div>
-                                <a href="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" class="gallery-plus videoLightbox">
+                                <div class="image"><img src="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" alt=""> </div>
+                                <a href="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" class="gallery-plus videoLightbox">
                                     <span></span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
                             <div class="gallery-img">
-                                <div class="image"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" alt=""> </div>
-                                <a href="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" class="gallery-plus videoLightbox">
+                                <div class="image"><img src="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" alt=""> </div>
+                                <a href="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" class="gallery-plus videoLightbox">
                                     <span></span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
                             <div class="gallery-img">
-                                <div class="image"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" alt=""> </div>
-                                <a href="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" class="gallery-plus videoLightbox">
+                                <div class="image"><img src="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" alt=""> </div>
+                                <a href="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" class="gallery-plus videoLightbox">
                                     <span></span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
                             <div class="gallery-img">
-                                <div class="image"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" alt=""> </div>
-                                <a href="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" class="gallery-plus videoLightbox">
+                                <div class="image"><img src="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" alt=""> </div>
+                                <a href="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" class="gallery-plus videoLightbox">
                                     <span></span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-3 col-6">
                             <div class="gallery-img">
-                                <div class="image"><img src="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" alt=""> </div>
-                                <a href="{{ asset('public/front_css/assets/images/blog/blog-1.png') }}" class="gallery-plus videoLightbox">
+                                <div class="image"><img src="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" alt=""> </div>
+                                <a href="{{ asset('public/front_css/assets/images/neet-pg.jpg') }}" class="gallery-plus videoLightbox">
                                     <span></span>
                                 </a>
                             </div>
@@ -375,7 +475,97 @@
                 <!-- Gallery Image End -->
             </div>
             <!-- Gallery End -->
-
+            <section class="section section-padding bg-color-1">
+                <div class="container">
+                    <!-- Section Title Start -->
+                    <div class="section-title text-center">
+                        <h2 class="title"><span>How We Work just 4 simple Steps</span> </h2><br>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            <div class="container aos-init aos-animate" data-aos="fade-up">
+                <div class="rs-process">
+                    <div class="row mt_15">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <!-- featured-imagebox -->
+                            <div class="featured-imagebox featured-imagebox-procedure">
+                                <div class="image-procedure">
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid auto_size" width="210" height="210" src="{{ asset('public/front_css/assets/images/free-councelling.jpg')}}" alt="image">
+                                        <div class="process-num"><span class="number">01</span></div>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Free Counseling</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>Collaborate with team &amp; partners. Get your work over the finish line.</p>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox end-->
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <!-- featured-imagebox -->
+                            <div class="featured-imagebox featured-imagebox-procedure">
+                                <div class="image-procedure">
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid auto_size" width="210" height="210" src="{{ asset('public/front_css/assets/images/college-admission.jpg')}}" alt="image">
+                                        <div class="process-num"><span class="number">02</span></div>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Admission Process</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>'Campus Bull' has a team of expert and trained counselors who help students for their self assessment</p>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox end-->
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <!-- featured-imagebox -->
+                            <div class="featured-imagebox featured-imagebox-procedure">
+                                <div class="image-procedure">
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid auto_size" width="210" height="210" src="{{ asset('public/front_css/assets/images/documantaion.jpg')}}" alt="image">
+                                        <div class="process-num"><span class="number">03</span></div>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Documentation Assistance</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>NEET PG Counselingity' helps you and guides you throughout the process of passport application</p>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox end-->
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <!-- featured-imagebox -->
+                            <div class="featured-imagebox featured-imagebox-procedure">
+                                <div class="image-procedure">
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid auto_size" width="210" height="210" src="{{ asset('public/front_css/assets/images/guidence.jpg')}}" alt="image">
+                                        <div class="process-num"><span class="number">04</span></div>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Post - Departure Guidance</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>At 'Campus Bull' we provide our students with some of the following post departure facilities. </p>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Testimonial End -->
         <div class="section pb-5 pt-5">
             <div class="container">
