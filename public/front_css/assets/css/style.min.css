@@ -10107,6 +10107,7 @@ only screen and (min-width: 1200px) and (max-width: 1499px) {
     text-align: center;
     border-radius: 10px;
     margin-top: 20px;
+	background: #fff;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -10130,14 +10131,15 @@ only screen and (max-width: 575px) {
 }
 
 .single-pricing .pricig-header p span {
-	font-size: 36px
+	font-size: 32px
 }
 
 .single-pricing .pricig-header .btn {
 	width: 100%;
 	margin-top: 30px;
 	-webkit-box-shadow: none;
-	box-shadow: none
+	box-shadow: none;
+	border-radius: 6px;
 }
 .pricig-body ul{
 	list-style: square;
@@ -10639,7 +10641,8 @@ only screen and (max-width: 767px) {
 	border: 0;
 	-webkit-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
-	transition: all 0.3s linear
+	transition: all 0.3s linear;
+	background: #fef4f4;
 }
 
 .course-accordion .accordion-item button::before {
@@ -11443,7 +11446,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 	left: 0;
 	bottom: 0;
 	height: 100%;
-	background-color: #ff4880;
+	background-color: #e42727;
 	opacity: 0;
 	visibility: hidden;
 	-webkit-transition: all 0.3s linear;
@@ -12834,4 +12837,137 @@ border-radius:30px;
 	marquee a:hover {
 		text-decoration: none;
 		color: #000;
+	}
+	.rs-process {
+		background-image: url(../images/steps.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		margin-bottom: 0px;
+		background-position: 190px 115px;
+	}
+	
+	.featured-imagebox-procedure {
+		text-align: center;
+		overflow: visible;
+	}
+	.featured-imagebox, .featured-imagebox .featured-thumbnail {
+		position: relative;
+		overflow: hidden;
+	}
+	.featured-imagebox {
+		margin: 15px 0;
+	}
+	.featured-imagebox-procedure .image-procedure .featured-thumbnail {
+		position: relative;
+		transition: all 500ms ease;
+	}
+	.featured-imagebox-procedure .featured-thumbnail {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		border-radius: 50%;
+		border: 2px solid var(--base-skin);
+	}
+	.featured-imagebox-procedure .featured-thumbnail {
+		overflow: hidden;
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	.featured-imagebox-procedure .image-procedure .featured-thumbnail img {
+		padding: 10px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+		height: 200px;
+		width: 200px;
+	}
+	.featured-imagebox-procedure .featured-thumbnail img, .featured-imagebox-procedure:hover .featured-thumbnail img {
+		transform: unset;
+	}
+	.featured-imagebox-procedure .featured-thumbnail img {
+		border-radius: 50%;
+		min-width: auto;
+		width: auto;
+		transition: all 0.8s ease 0s;
+		border-radius: 0;
+		overflow: hidden;
+	}
+	.featured-imagebox .featured-thumbnail img {
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+		width: 100%;
+		-webkit-transition: all .6s ease-in-out;
+		-moz-transition: all .6s ease-in-out;
+		-ms-transition: all .6s ease-in-out;
+		-o-transition: all .6s ease-in-out;
+	}
+	.featured-imagebox-procedure .process-num {
+		position: absolute;
+		text-align: center;
+		top: 20%;
+		bottom: auto;
+		left: 0;
+		right: 0;
+	}
+	.featured-imagebox-procedure .process-num .number {
+		font-size: 70px;
+		font-weight: 700;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: #fff;
+		-webkit-text-fill-color: transparent;
+		position: relative;
+		z-index: 1;
+	}
+	
+	.featured-imagebox-procedure .process-num span {
+		font-size: 14px;
+		font-weight: 700;
+	}
+	
+	.featured-imagebox-procedure .featured-thumbnail:after {
+		content: '';
+		background: rgba(0,0,0,0.3);
+		width: 85%;
+		height: 85%;
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		right: 15px;
+		bottom: 15px;
+		margin: auto;
+		border-radius: 50%;
+	}
+	.featured-imagebox-procedure .featured-thumbnail {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		border-radius: 50%;
+		border: 2px solid red;
+	}
+	.featured-imagebox-procedure .featured-content {
+		padding: 5px 15px 0px;
+	}
+	.featured-imagebox .featured-content .featured-title h3 {
+		/* text-overflow: ellipsis;
+		overflow: hidden;
+		display: -webkit-box;
+		text-transform: uppercase;
+		margin: 0;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical; */
+	}
+	.featured-imagebox-procedure .featured-title h3 {
+		font-size: 17px;
+		line-height: 30px;
+		margin-bottom: 5px;
+	}
+	.featured-title h3 {
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: 0.5px;
+		margin-bottom: 15px;
+		font-weight: 600;
+		text-transform: capitalize;
 	}
