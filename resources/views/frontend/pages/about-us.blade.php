@@ -22,17 +22,6 @@
            <div class="row align-items-center">
                <div class="col-lg-6">
                    <!-- About Images Start -->
-                   <div class="about-images">
-                     <div class="">
-                        <div class="image">
-                           <img src="{{asset('public/front_css/assets/images/hero-1.png')}}" alt="Hero">
-                        </div>
-                     </div>
-                   </div>
-                   <!-- About Images End -->
-               </div>
-               <div class="col-lg-6">
-                   <!-- About Images Start -->
                    <div class="about-content">
                        <h3 class="title">Campus Bull</h3>
                        <p>We at Campus Bull(Campus Bull), helps students in getting the besest posible college in their desied Branch. We try to make the counselling process very smooth for each student, so that they can take the most imortant decision of choosing their college easily.  </p>
@@ -44,6 +33,17 @@
                      </div>
                    <!-- About Images End -->
                </div>
+               <div class="col-lg-6">
+                <!-- About Images Start -->
+                <div class="about-images">
+                  <div class="">
+                     <div class="image">
+                        <img src="{{asset('public/front_css/assets/images/hero-1.png')}}" alt="Hero">
+                     </div>
+                  </div>
+                </div>
+                <!-- About Images End -->
+            </div>
            </div>
        </div>
        <!-- About Wrapper End -->
