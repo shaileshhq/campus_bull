@@ -341,6 +341,8 @@ class FrontController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'phone' => ['required', 'unique:users'],
             'password' => ['required'],
+            'exam_type'=>'required',
+            'score'=>'required',
         ]);
 
         if ($validator->fails()) {
@@ -359,7 +361,8 @@ class FrontController extends Controller
 
             $customer = new Customer;
             $customer->user_id = $user->id;
-            $customer->neet_score = $request->neet_score;
+            $customer->exam_type = $request->exam_type;
+            $customer->score = $request->score;
             $customer->save();
 
             auth()->login($user, true);

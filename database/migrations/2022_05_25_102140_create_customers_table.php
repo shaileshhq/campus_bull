@@ -19,7 +19,8 @@ class CreateCustomersTable extends Migration
             $table->string('profile_image');
             $table->string('state')->nullable();
             $table->string('dob')->nullable();
-            $table->string('neet_score')->nullable();
+            $table->string('exam_type')->nullable();
+            $table->string('score')->nullable();
             $table->timestamps();
         });
     }

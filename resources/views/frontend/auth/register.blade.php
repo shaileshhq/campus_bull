@@ -49,8 +49,16 @@
                                             <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                                         </div>
                                         <div class="single-form">
-                                            <label>NEET PG Score</label>
-                                            <input type="text" class="form-control" name="neet_score" id="neet_score" placeholder="NEET PG Score " required>
+                                            <label>Exam Type</label>
+                                            <select class="form-control" name="exam_type" required>
+                                                <option value="">Select</option>
+                                                <option value="UG">UG</option>
+                                                <option value="PG">PG</option>
+                                            </select>
+                                        </div>
+                                        <div class="single-form">
+                                            <label>Score</label>
+                                            <input type="text" class="form-control" name="score" id="score" placeholder="Enter Your Score " required>
                                         </div>
                                         <div class="single-form">
                                             <label>Phone</label>
