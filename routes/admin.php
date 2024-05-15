@@ -33,8 +33,6 @@ Route::group(['middleware' => ['auth', 'can:accessAdminpanel']], function() {
     
     Route::get('/dashboard', [HomeController::class, 'index'])->name('home');
   
-   
-    
     
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
