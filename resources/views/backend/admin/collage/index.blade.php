@@ -7,9 +7,9 @@
         <div class="col-md-12">
             <div class="card card-outline card-info">
                 <div class="card-header">
-                    <h3 class="card-title">Collage List</h3>
+                    <h3 class="card-title">College List</h3>
                     <a class="btn btn-primary btn-info float-right" href="{{ route('collage.create') }}"><i class="fa fa-plus"
-                            aria-hidden="true"></i>Add Collage</a>
+                            aria-hidden="true"></i>Add College</a>
                     <div class="card-tools">
                         <form class="mt-1 mr-4" action="" method="GET" id="valid_form">
                             <div class="input-group input-group" style="width: 250px;">

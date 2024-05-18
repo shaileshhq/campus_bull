@@ -38,7 +38,7 @@
                 <li class="nav-item">
                     <a href="{{ route('collage.index') }}" class="nav-link @if (Route::currentRouteName() == 'collage.index') active @endif">
                         <i class="fas fa-user-graduate nav-icon"></i>
-                        <p>Collage </p>
+                        <p>College </p>
                     </a>
                 </li>
              
