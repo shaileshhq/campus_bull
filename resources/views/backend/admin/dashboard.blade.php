@@ -27,8 +27,44 @@
                     <div class="info-box bg-gradient-primary">
                         <span class="info-box-icon"><i class="fa fa-business-time"></i></span>
                         <div class="info-box-content">
-                            <span class="info-box-text">Likes</span>
-                            <span class="info-box-number">10</span>
+                            <span class="info-box-text">Collage</span>
+                            <span class="info-box-number">{{App\Models\Collage::get()->count()}}</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="info-box bg-gradient-primary">
+                        <span class="info-box-icon"><i class="fa fa-business-time"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Course</span>
+                            <span class="info-box-number">{{App\Models\Course::get()->count()}}</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="info-box bg-gradient-primary">
+                        <span class="info-box-icon"><i class="fa fa-business-time"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Users</span>
+                            <span class="info-box-number">{{App\Models\User::where('user_type','customer')->get()->count()}}</span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="info-box bg-gradient-primary">
+                        <span class="info-box-icon"><i class="fa fa-business-time"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Enquiries</span>
+                            <span class="info-box-number">{{App\Models\Enquiry::get()->count()}}</span>
                         </div>
                         <!-- /.info-box-content -->
                     </div>

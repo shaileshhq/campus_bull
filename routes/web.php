@@ -102,7 +102,7 @@ Route::view('pg-medical-admission', 'frontend.pages.landing-page')->name('pg-med
 
 Route::post('medical-admission-form', [FrontController::class, 'medical_form_submit'])->name('medical-admission-form');
 
-Route::get('medical_form_enquiry', [FrontController::class, 'medical_form_view'])->name('medical_form_enquiry');
+
 
 
 

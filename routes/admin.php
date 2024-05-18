@@ -8,6 +8,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CollageController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\Front\FrontController;
 use App\Http\Controllers\SchoolNoticeController;
 use App\Http\Controllers\StateDocumentController;
 use App\Http\Controllers\ExcelImportExportController;
@@ -53,6 +54,8 @@ Route::group(['middleware' => ['auth', 'can:accessAdminpanel']], function() {
 
     //Notice
     Route::resource('notice', SchoolNoticeController::class);
+
+    Route::get('enquiry', [FrontController::class, 'all_enquiry'])->name('all_enquiry');
     
     Route::get('/student-bulk-export', [CustomerController::class,'export'])->name('student_bulk_export');
     

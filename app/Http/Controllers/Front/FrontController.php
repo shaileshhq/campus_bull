@@ -356,7 +356,7 @@ class FrontController extends Controller
             $user->user_type = 'customer';
             $user->name = $request->name;
             $user->phone = $request->phone;
-            $user->password = Hash::make($request->password);;
+            $user->password = Hash::make($request->password);
             $user->save();
 
             $customer = new Customer;
@@ -2190,7 +2190,7 @@ class FrontController extends Controller
     }
 
 
-    public function medical_form_view(Request $request)
+    public function all_enquiry(Request $request)
     {
 
 

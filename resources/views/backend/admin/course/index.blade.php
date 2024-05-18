@@ -44,7 +44,7 @@
                             <td>{{$data->name}}</td>
                             <td>{{$data->course_level}}</td>
                             <td>{{$data->mode_of_study}}</td>
-                            <td  >
+                            <td>
                                 <a class="btn btn-primary btn-sm mr-1" href="{{route('course.edit',$data->id)}}"><i class="far fa-edit"></i></a>
                                 <a class="btn btn-primary btn-sm mr-1" href=""><i class="fa fa-trash"></i></a>
                             </td>

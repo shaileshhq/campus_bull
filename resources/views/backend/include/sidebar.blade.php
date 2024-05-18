@@ -81,7 +81,7 @@
                 </li>
               
                <li class="nav-item">
-                    <a href="{{ route('medical_form_enquiry') }}" class="nav-link @if (Route::currentRouteName() == 'medical_form_enquiry.index') active @endif">
+                    <a href="{{ route('all_enquiry') }}" class="nav-link @if (Route::currentRouteName() == 'all_enquiry') active @endif">
                         <i class="fas fa-user-graduate nav-icon"></i>
                         <p>Enquiry </p>
                     </a>
