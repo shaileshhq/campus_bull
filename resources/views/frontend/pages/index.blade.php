@@ -11,7 +11,12 @@
                         <h2 class="title">Experience a learning platform that take you next level</h2>
                         <div class="slider-form">
                             <form action="#">
-                                <input type="text" placeholder="Search here...">
+                                <select class="category">
+                                    <option>Select Course</option>
+                                    <option value="NEET UG">NEET UG</option>
+                                    <option value="NEET PG">NEET PG</option>
+                                  </select>
+                                <input type="text" placeholder="Rank...">
                                 <button class="btn btn-primary btn-hover-heading-color"><i class="fa fa-search"></i></button>
                             </form>
                             <span>What are of courses would you like for search? <a href="#">Click Here..</a></span>
