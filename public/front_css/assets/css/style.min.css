@@ -3189,12 +3189,12 @@ only screen and (max-width: 767px) {
 }
 
 .offcanvas {
-	width: 320px
+	width: 300px
 }
 
 @media only screen and (max-width: 575px) {
 	.offcanvas {
-		width: 280px
+		width: 300px
 	}
 }
 
@@ -5292,7 +5292,7 @@ only screen and (max-width: 767px) {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding: 3px 20px 9px;
+	padding: 3px 20px 9px !important;
     border-top: 1px solid #ebebeb;
     background: #e53939;
 }
@@ -13009,4 +13009,7 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
+}
+.custom-select option{
+	padding: 10px;
 }

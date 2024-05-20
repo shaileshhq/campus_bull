@@ -11,7 +11,7 @@
                         <h2 class="title">Experience a learning platform that take you next level</h2>
                         <div class="slider-form">
                             <form action="#">
-                                <select class="category">
+                                <select class="custom-select">
                                     <option>Select Course</option>
                                     <option value="NEET UG">NEET UG</option>
                                     <option value="NEET PG">NEET PG</option>
