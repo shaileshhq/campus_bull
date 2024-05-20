@@ -58,6 +58,7 @@ class CollageController extends Controller
         $course->stream=$request->stream;
         $course->pincode=$request->pincode;
         $course->state=$request->state;
+        $course->city=$request->city;
         $course->address=$request->address;
 
 
@@ -129,6 +130,7 @@ class CollageController extends Controller
         $course->stream=$request->stream;
         $course->pincode=$request->pincode;
         $course->state=$request->state;
+        $course->city=$request->city;
         $course->address=$request->address;
 
         if (!empty($request->cover_image)) {

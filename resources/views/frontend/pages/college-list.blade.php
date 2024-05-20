@@ -8,6 +8,7 @@
                 <div class="row flex-row-reverse">
                     <div class="col-lg-8">
                         <!-- Course List Start -->
+                        @foreach ($collages as $key=>$value)
                         <div class="course-list-items">
                             <!-- Course List Start -->
                             <div class="card_block">
@@ -23,35 +24,26 @@
                                                     </a>
                                                 </div>
                                                 <div class="content_block d-block d-md-none"><span><i
-                                                            class="fa fa-map-marker" aria-hidden="true"></i>Kirumampakkam,
-                                                        Puducherry</span><br>
-                                                    <div class="block_border"></div><span>Private</span>
+                                                            class="fa fa-map-marker" aria-hidden="true"></i>{{$value->address}}</span><br>
+                                                    <div class="block_border"></div><span>{{$value->type}}</span>
                                                 </div>
                                                 <div class="tupple_right_block d-none d-md-block">
                                                     <h3 class="college_name"
                                                         title="AVMC Puducherry - Aarupadai Veedu Medical College and Hospital, Puducherry"
-                                                        data-testid="college_name"><a href="{{route('college_details')}}">AVMC
-                                                            Puducherry - Aarupadai Veedu Medical College and Hospital,
-                                                            Puducherry</a></h3>
+                                                        data-testid="college_name"><a href="{{route('college_details',$value->id)}}">{{$value->name}}</a></h3>
                                                     <div
                                                         class="content_block d-none d-md-block d-md-flex flex-row justify-content-between">
                                                         <div><span><i class="fa fa-map-marker" aria-hidden="true"></i>
-                                                                Kirumampakkam, Puducherry</span> <span>Private</span>
+                                                            {{$value->address}}</span> <span>{{$value->type}}</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="general_text" href="#">MD General Medicine</a>
-                                            <div class="snippet_block">
-                                                <ul class="snippet_list">
-                                                    <li><span class="gray_text">Exams : </span>
-                                                        <a class="exam_black_link" href="#">NEET PG</a>
-                                                    </li>
-                                                    <li><span class="gray_text">Fees : </span> ₹ 129 Lakhs</li>
-                                                    <li><a href="#">M.D.<span>(14 Courses)</span></a> </li>
-                                                    <li><a href="">M.S.<span>(5 Courses)</span></a></li>
-                                                </ul>
-                                            </div>
+                                            <a class="general_text" href="#">
+                                                @foreach($value->course_id as $course_id)
+                                                    {{App\Models\Course::find($course_id)->name}} ,
+                                                @endforeach
+                                            </a>
                                         </div>
                                         <div class="combined_block d-md-none">
                                             <div class="important_links">
@@ -86,22 +78,12 @@
                             <!-- Course List End -->
 
                         </div>
-                        <!-- Course List End -->
-
-                        <!-- Page Pagination Start -->
-                        <div class="page-pagination">
-                            <ul class="pagination justify-content-center">
-                                <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a class="active" href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><span>...</span></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                            </ul>
-                        </div>
-                        <!-- Page Pagination End -->
+                        @endforeach
+                       
+                        {{$collages->links()}}
 
                     </div>
+
                     <div class="col-lg-4">
                         <!-- Sidebar Wrapper Start -->
                         <div class="sidebar-wrap-02">
@@ -200,6 +182,7 @@
                         </div>
                         <!-- Sidebar Wrapper End -->
                     </div>
+
                 </div>
             </div>
             <!-- Course List Wrapper End -->

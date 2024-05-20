@@ -86,6 +86,13 @@
                         <p>Enquiry </p>
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('all_contact') }}" class="nav-link @if (Route::currentRouteName() == 'all_contact') active @endif">
+                        <i class="fas fa-user-graduate nav-icon"></i>
+                        <p>Contact Us </p>
+                    </a>
+                </li>
                 
             </ul>
         </nav>

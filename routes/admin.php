@@ -56,6 +56,8 @@ Route::group(['middleware' => ['auth', 'can:accessAdminpanel']], function() {
     Route::resource('notice', SchoolNoticeController::class);
 
     Route::get('enquiry', [FrontController::class, 'all_enquiry'])->name('all_enquiry');
+
+    Route::get('all_contact', [FrontController::class, 'all_contact'])->name('all_contact');
     
     Route::get('/student-bulk-export', [CustomerController::class,'export'])->name('student_bulk_export');
     

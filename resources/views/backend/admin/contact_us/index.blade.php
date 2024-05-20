@@ -15,21 +15,22 @@
                             <tr>
                                 
                                 <th>Name</th>
-                                <th>Collage Name</th>
                                 <th>Phone</th>
                                 <th>Email</th>
+                                <th>Subject</th>
                                 <th>Message</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            @if (!empty($enquirys) && $enquirys->count())
-                                @foreach ($enquirys as $key => $enquiry)
+                            @if (!empty($contact_us) && $contact_us->count())
+                                @foreach ($contact_us as $key => $contact)
                                     <tr>
                                         
-                                        <td>{{ $enquiry->name }}</td>
-                                        <td>{{ $enquiry->collage->name }}</td>
-                                        <td><a href="tel:{{ $enquiry->phone }}"> {{ $enquiry->phone }}</a></td>
-                                        <td>{{ $enquiry->email }}</td>
-                                        <td>{{ $enquiry->message }}</td>
+                                        <td>{{ $contact->name }}</td>
+                                        <td><a href="tel:{{ $contact->phone }}"> {{ $contact->phone }}</a></td>
+                                        <td>{{ $contact->email }}</td>
+                                        <td>{{ $contact->subject }}</td>
+                                        <td>{{ $contact->message }}</td>
                                     </tr>
                                 @endforeach
                             @else

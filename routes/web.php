@@ -43,8 +43,8 @@ Route::get('/state-wise-counselings', [FrontController::class, 'state_wise_couns
 Route::get('/state-wise-counseling-details-andhra', [FrontController::class, 'state_wise_counseling_details'])->name('state_wise_counseling_details_andhra');
 Route::get('/state-wise-counseling-details', [FrontController::class, 'state_wise_counseling_details'])->name('state_wise_counseling_details')->middleware("checkSubscription");
 Route::get('/about-us', [FrontController::class, 'about_us'])->name('about_us');
-Route::view('/college-list', 'frontend.pages.college-list')->name('college_list');
-Route::view('/college-details', 'frontend.pages.college-details')->name('college_details');
+Route::get('/college-list',[FrontController::class, 'collage_list'])->name('college_list');
+Route::get('/college-details/{id}', [FrontController::class, 'collage_details'])->name('college_details');
 Route::get('/term-and-condition', [FrontController::class, 'term_condition'])->name('term_condition');
 Route::get('/privacy-policy', [FrontController::class, 'privacy_policy'])->name('privacy_policy');
 Route::get('/state-document', [FrontController::class, 'state_document'])->name('state_document');
@@ -100,6 +100,10 @@ Route::get('/update_sql', [FrontController::class, 'update_sql'])->name('update_
 Route::view('pg-medical-admission', 'frontend.pages.landing-page')->name('pg-medical-admission');
 
 Route::post('medical-admission-form', [FrontController::class, 'medical_form_submit'])->name('medical-admission-form');
+
+Route::post('contact_us', [FrontController::class, 'contact_us'])->name('contact_us');
+
+Route::post('enquiry', [FrontController::class, 'enquiry'])->name('enquiry');
 
 
 

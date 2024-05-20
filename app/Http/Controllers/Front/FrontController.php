@@ -4,27 +4,29 @@ namespace App\Http\Controllers\Front;
 
 
 use DB;
+use PDF;
 use Auth;
 use Hash;
 use Session;
 use App\Models\Rank;
 use App\Models\User;
 use Razorpay\Api\Api;
-use App\Models\Payment;
+use App\Models\Collage;
 use App\Models\Enquiry;
+use App\Models\Payment;
 use App\Models\Customer;
+use App\Models\all_india;
+use App\Models\ContactUs;
+use App\Models\tamil_nadu;
+use App\Models\west_bengal;
 use Illuminate\Http\Request;
 use App\Models\StateDocument;
 use Craftsys\Msg91\Facade\Msg91;
-use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Validator;
-use App\Models\west_bengal;
-use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Collection;
+use App\Http\Controllers\Controller;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Pagination\LengthAwarePaginator;
-use PDF;
-use App\Models\all_india;
-use App\Models\tamil_nadu;
 
 
 
@@ -2189,6 +2191,36 @@ class FrontController extends Controller
         return redirect()->back()->with('success', 'Form Submitted successfully.');
     }
 
+    public function contact_us(Request $request)
+    {
+
+
+        $contact=new ContactUs;
+        $contact->name=$request->name;
+        $contact->phone=$request->phone;
+        $contact->email=$request->email;
+        $contact->subject=$request->subject;
+        $contact->message=$request->message;
+        $contact->save();
+
+        return redirect()->back()->with('success', 'Form Submitted successfully.');
+    }
+
+    public function enquiry(Request $request)
+    {
+
+
+        $enquiry=new Enquiry;
+        $enquiry->name=$request->name;
+        $enquiry->phone=$request->phone;
+        $enquiry->email=$request->email;
+        $enquiry->message=$request->message;
+        $enquiry->collage_id=$request->collage_id;
+        $enquiry->save();
+
+        return redirect()->back()->with('success', 'Form Submitted successfully.');
+    }
+
 
     public function all_enquiry(Request $request)
     {
@@ -2196,5 +2228,23 @@ class FrontController extends Controller
 
         $enquirys = Enquiry::orderBy('id', 'desc')->get();
         return view('backend.admin.landingpage.index', compact('enquirys'));
+    }
+
+    public function all_contact(Request $request)
+    {
+        $contact_us = ContactUs::orderBy('id', 'desc')->get();
+        return view('backend.admin.contact_us.index', compact('contact_us'));
+    }
+
+    public function collage_list(Request $request)
+    {
+        $collages = Collage::orderBy('id', 'desc')->paginate(10);
+        return view('frontend.pages.college-list', compact('collages'));
+    }
+
+    public function collage_details($id)
+    {
+        $collage = Collage::find($id);
+        return view('frontend.pages.college-details', compact('collage'));
     }
 }

@@ -90,47 +90,48 @@
                             <div class="login-register-box">
 
                                 <div class="contact-form-wrapper">
-                                    <form action="#">
+                                    <form action="{{route('contact_us')}}" method="POST">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="text" class="form-control" placeholder="Your Name*">
+                                                    <input type="text" name="name" class="form-control" placeholder="Your Name*">
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-md-6">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="email" class="form-control" placeholder="Your Email*">
+                                                    <input type="email" name="email" class="form-control" placeholder="Your Email*">
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-md-6">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="text" class="form-control" placeholder="Your Phone*">
+                                                    <input type="text" name="phone" class="form-control" placeholder="Your Phone*">
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-md-6">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <input type="text" class="form-control" placeholder="Subject*">
+                                                    <input type="text" name="subject" class="form-control" placeholder="Subject*">
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-md-12">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form">
-                                                    <textarea class="form-control" placeholder="Write A Massage*"></textarea>
+                                                    <textarea class="form-control" name="message" placeholder="Write A Message*"></textarea>
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
                                             <div class="col-md-12">
                                                 <!-- Single Form Start -->
                                                 <div class="single-form text-center">
-                                                    <button class="btn btn-primary btn-hover-heading-color">Send Message</button>
+                                                    <button type="submit" class="btn btn-primary btn-hover-heading-color">Send Message</button>
                                                 </div>
                                                 <!-- Single Form End -->
                                             </div>
