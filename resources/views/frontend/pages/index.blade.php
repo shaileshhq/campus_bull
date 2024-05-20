@@ -1,35 +1,22 @@
 @extends('frontend.layouts.front_app')
 @section('content')
+
     <!-- Slider Start -->
     <div class="slider-section-04 section">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-6">
-                    <!-- Slider Start -->
+                <div class="col-md-8 m-auto">
                     <div class="slider-content">
-                        <h2 class="title">India’s Best Ever Admission Counselling Portal for NEET UG & PG</h2>
-                        {{-- <h5 class="sub-title mt-3">One Stop Solution for every NEET PG Student</h5> --}}
-                        <p>Welcome to our premier Admission Counseling Portal for NEET PG! Dive into a wealth of resources
-                            tailored to guide your journey towards postgraduate medical studies in India. Access exam
-                            insights, preparation materials, counseling guidance, expert advice, and a vibrant community
-                            forum. Stay updated with the latest news and connect with successful candidates. Empower your
-                            aspirations with our comprehensive support system. Start exploring today!</p>
-                        <a href="#" class="btn btn-primary btn-hover-heading-color">Explore All Courses</a>
-                    </div>
-                    <!-- Slider End -->
-                </div>
-
-                <div class="col-md-6 col-sm-8">
-                    <!-- Slider Images Start -->
-                    <div class="slider-images-04">
-                        <img class="image-shape-01 parallaxed animate-01"
-                            src="{{ asset('public/front_css/assets/images/shape-17.png') }}" alt="Shape">
-
-                        <div class="image">
-                            <img src="{{ asset('public/front_css/assets/images/hero-3.png') }}" alt="Hero">
+                        <h5 class="sub-title">Start to new journey</h5>
+                        <h2 class="title">Experience a learning platform that take you next level</h2>
+                        <div class="slider-form">
+                            <form action="#">
+                                <input type="text" placeholder="Search here...">
+                                <button class="btn btn-primary btn-hover-heading-color"><i class="fa fa-search"></i></button>
+                            </form>
+                            <span>What are of courses would you like for search? <a href="#">Click Here..</a></span>
                         </div>
                     </div>
-                    <!-- Slider Images End -->
                 </div>
             </div>
         </div>

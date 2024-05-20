@@ -46,6 +46,10 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) {
+	.slider-form form {
+		position: relative;
+		width: 300px !important;
+	}
 	.snippet_list li {
 		font-size: 14px;
 	}
@@ -3423,8 +3427,10 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .slider-content {
-	/* padding-top: 75px; */
-	max-width: 520px
+	padding-top: 75px;
+	padding-bottom: 50px;
+	text-align: center;
+	/* max-width: 520px */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3436,14 +3442,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 @media only screen and (max-width: 767px) {
 	.slider-content {
 		padding-top: 25px;
-		padding-bottom: 0px
+        padding-bottom: 20px;
 	}
 }
 
 .slider-content .sub-title {
 	font-size: 14px;
 	text-transform: uppercase;
-	color: #EB5353;;
 	letter-spacing: 1px
 }
 
@@ -3469,7 +3474,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 @media only screen and (max-width: 575px) {
 	.slider-content .title {
-		font-size: 28px
+		font-size: 22px
 	}
 }
 
@@ -3491,11 +3496,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .slider-form {
-	margin-top: 50px
+	margin-top: 20px
 }
 
 .slider-form form {
-	position: relative
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
 }
 
 .slider-form form input {
@@ -3522,7 +3529,7 @@ only screen and (max-width: 575px) {
 .slider-form form .btn {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: -7px;
 	height: 60px;
 	line-height: 60px;
 	border-top-left-radius: 0;
@@ -3532,12 +3539,8 @@ only screen and (max-width: 575px) {
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (max-width: 575px) {
 	.slider-form form .btn {
-		position: relative;
-		width: 100%;
-		display: block;
-		margin-top: 10px;
 		height: 50px;
-		line-height: 50px
+		line-height: 50px;
 	}
 }
 
