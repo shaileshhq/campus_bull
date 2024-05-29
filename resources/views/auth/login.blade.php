@@ -14,11 +14,11 @@
 
 <link rel="stylesheet" href="{{asset('public/dashboard_css/dist/css/adminlte.min.css?v=3.2.0')}}">
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background: url('{{asset('public/dashboard_css/dist/img/bg.jpg')}}');background-repeat: no-repeat; background-size: cover;">
 <div class="login-box">
-<div class="card">
+<div class="card card-outline card-danger">
     <div class="card-header text-center">
-        <img src="{{asset('public/front_css/assets/images/logo.png')}}">
+        <img src="{{asset('public/front_css/assets/images/logo.png')}}" class="img-fluid" style="height: 100px;">
     </div>
 <div class="card-body login-card-body">
 <p class="login-box-msg">Sign in to start your session</p>
@@ -62,7 +62,7 @@ Remember Me
 </div>
 
 <div class="col-4">
-<button type="submit" class="btn btn-primary btn-block">Sign In</button>
+<button type="submit" class="btn btn-danger btn-block">Sign In</button>
 </div>
 
 </div>

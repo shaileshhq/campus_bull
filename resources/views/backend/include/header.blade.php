@@ -44,12 +44,12 @@
     <link rel="stylesheet" href="{{asset('public/dashboard_css/plugins/ekko-lightbox/ekko-lightbox.css')}}">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="{{ asset('public/assets/css/vendors.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('public/assets/css/vendors.css') }}">
 
     <link rel="stylesheet" href="{{ asset('public/assets/css/aiz-core.css') }}">
     <script>
         var AIZ = AIZ || {};
-    </script>
+    </script> --}}
 
 
     <script>

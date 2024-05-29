@@ -23,56 +23,63 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="info-box bg-gradient-primary">
-                        <span class="info-box-icon"><i class="fa fa-business-time"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Collage</span>
-                            <span class="info-box-number">{{App\Models\Collage::get()->count()}}</span>
+                <div class="col-lg-3 col-6">
+                    <!-- small box -->
+                    <div class="small-box bg-info">
+                        <div class="inner">
+                            <h3><span class="counter-value">{{App\Models\Collage::get()->count()}}</span></h3>
+                            <p>Collage</p>
                         </div>
-                        <!-- /.info-box-content -->
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
-                    <!-- /.info-box -->
                 </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6">
+                    <!-- small box -->
+                    <div class="small-box bg-success">
+                        <div class="inner">
+                            <h3><span class="counter-value">{{App\Models\Course::get()->count()}}</span></h3>
+                            <p>Course</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-stats-bars"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6">
+                    <!-- small box -->
+                    <div class="small-box bg-warning">
+                        <div class="inner">
+                            <h3><span class="counter-value">{{App\Models\User::where('user_type','customer')->get()->count()}}</span></h3>
 
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="info-box bg-gradient-primary">
-                        <span class="info-box-icon"><i class="fa fa-business-time"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Course</span>
-                            <span class="info-box-number">{{App\Models\Course::get()->count()}}</span>
+                            <p>Users</p>
                         </div>
-                        <!-- /.info-box-content -->
+                        <div class="icon">
+                            <i class="ion ion-person-add"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
-                    <!-- /.info-box -->
                 </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6">
+                    <!-- small box -->
+                    <div class="small-box bg-danger">
+                        <div class="inner">
+                            <h3><span class="counter-value">{{App\Models\Enquiry::get()->count()}}</span></h3>
 
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="info-box bg-gradient-primary">
-                        <span class="info-box-icon"><i class="fa fa-business-time"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Users</span>
-                            <span class="info-box-number">{{App\Models\User::where('user_type','customer')->get()->count()}}</span>
+                            <p>Enquiry </p>
                         </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="info-box bg-gradient-primary">
-                        <span class="info-box-icon"><i class="fa fa-business-time"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Enquiries</span>
-                            <span class="info-box-number">{{App\Models\Enquiry::get()->count()}}</span>
+                        <div class="icon">
+                            <i class="ion ion-pie-graph"></i>
                         </div>
-                        <!-- /.info-box-content -->
+                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
-                    <!-- /.info-box -->
                 </div>
-                <!-- /.col -->
-               
-                <!-- /.col -->
             </div>
         </div><!-- /.container-fluid -->
     </section>

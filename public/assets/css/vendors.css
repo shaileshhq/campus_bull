@@ -3503,9 +3503,9 @@ input[type=submit].btn-block {
 	border-top-right-radius: 0
 }
 
-.nav-pills .nav-link {
+/* .nav-pills .nav-link {
 	border-radius: .25rem
-}
+} */
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {

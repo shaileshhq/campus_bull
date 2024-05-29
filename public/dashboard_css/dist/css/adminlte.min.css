@@ -2123,7 +2123,7 @@ pre code {
 .form-control {
 	display: block;
     width: 100%;
-    height: calc(2.5rem + 2px);
+    height: calc(2.5rem + 5px);
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -2665,7 +2665,7 @@ textarea.form-control.is-invalid {
 	user-select: none;
 	background-color: transparent;
 	border: 1px solid transparent;
-	padding: .375rem .75rem;
+	padding: .5rem .75rem;
 	font-size: 1rem;
 	line-height: 1.6;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
@@ -4509,7 +4509,7 @@ input[type=submit].btn-block {
 
 .nav-link {
 	display: block;
-	padding: .5rem 1rem
+	padding: .85rem 1rem
 }
 
 .nav-link:focus,
@@ -4559,7 +4559,7 @@ input[type=submit].btn-block {
 }
 
 .nav-pills .nav-link {
-	border-radius: .25rem
+	border-radius: 0
 }
 
 .nav-pills .nav-link.active,
@@ -13000,7 +13000,7 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 }
 
 .nav-sidebar .nav-item>.nav-link {
-	margin-bottom: .2rem
+	/* margin-bottom: .2rem */
 }
 
 .nav-sidebar .nav-item>.nav-link .right {
@@ -13047,7 +13047,7 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 }
 
 .nav-sidebar>.nav-item {
-	margin-bottom: 0
+	/* margin-bottom: 0 */
 }
 
 .nav-sidebar>.nav-item .nav-icon {
@@ -13323,8 +13323,12 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 
 .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active,
 .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
-	background-color: #088dd3;
-	color: #fff
+	text-shadow: rgb(0 0 0 / 25%) 0 -1px 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#334556), to(#2C4257)), #2A3F54;
+    background: linear-gradient(#0000003d, #33333382), #33333378;
+    -webkit-box-shadow: rgb(0 0 0 / 25%) 0 1px 0, inset rgb(255 255 255 / 16%) 0 1px 0;
+    box-shadow: rgb(0 0 0 / 25%) 0 1px 0, inset rgb(255 255 255 / 16%) 0 1px 0;
+    border-right: 5px solid #e72627;
 }
 
 .sidebar-dark-primary .nav-sidebar.nav-legacy>.nav-item>.nav-link.active,
@@ -15138,7 +15142,7 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 .sidebar-mini .main-sidebar .nav-child-indent.nav-legacy.nav-compact .nav-treeview .nav-treeview .nav-link,
 .sidebar-mini-md .main-sidebar .nav-child-indent.nav-legacy.nav-compact .nav-treeview .nav-treeview .nav-link,
 .sidebar-mini-xs .main-sidebar .nav-child-indent.nav-legacy.nav-compact .nav-treeview .nav-treeview .nav-link {
-	width: calc(250px - .5rem * 2)
+	/* width: calc(250px - .5rem * 2) */
 }
 
 .sidebar-mini .main-sidebar .nav-child-indent.nav-legacy.nav-compact .nav-treeview .nav-treeview .nav-treeview .nav-link,
@@ -15162,7 +15166,7 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 .sidebar-mini .main-sidebar .nav-link,
 .sidebar-mini-md .main-sidebar .nav-link,
 .sidebar-mini-xs .main-sidebar .nav-link {
-	width: calc(250px - .5rem * 2);
+	width: 250px;
 	transition: width ease-in-out .3s
 }
 
@@ -27491,15 +27495,15 @@ body.text-sm .input-group-text {
 }
 
 .card-info.card-outline {
-	border-top: 3px solid #17a2b8
+	border-top: 3px solid #e72627
 }
 
 .card-info.card-outline-tabs>.card-header a:hover {
-	border-top: 3px solid #dee2e6
+	border-top: 3px solid #e72627
 }
 
 .card-info.card-outline-tabs>.card-header a.active {
-	border-top: 3px solid #17a2b8
+	border-top: 3px solid #e72627
 }
 
 .bg-gradient-info>.card-header .btn-tool,
@@ -33949,11 +33953,11 @@ a.disabled.mailbox-attachment-close {
 }
 
 .small-box {
-	border-radius: .25rem;
-	box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
-	display: block;
-	margin-bottom: 20px;
-	position: relative
+    border-radius: 20px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .small-box>.inner {
@@ -33968,7 +33972,8 @@ a.disabled.mailbox-attachment-close {
 	position: relative;
 	text-align: center;
 	text-decoration: none;
-	z-index: 10
+	z-index: 10;
+	border-radius: 0px 0px 15px 15px;
 }
 
 .small-box>.small-box-footer:hover {
@@ -35738,7 +35743,7 @@ a.disabled.mailbox-attachment-close {
 
 .login-box,
 .register-box {
-	width: 400px;
+	width: 450px;
 }
 
 @media (max-width:576px) {

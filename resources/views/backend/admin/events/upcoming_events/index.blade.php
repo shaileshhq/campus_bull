@@ -5,8 +5,8 @@
     </section>
     <div class="row">
         <div class="col-12 col-sm-12">
-            <div class="card card-primary card-tabs">
-                <div class="card-header p-0 pl-1 pt-1">
+            <div class="card card-danger card-tabs">
+                <div class="card-header p-0">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
                         <a class="nav-link @if(Route::currentRouteName() == 'all_events')active @endif" href="{{route('all_events')}}" role="tab" aria-selected="true">All Events</a>
@@ -61,7 +61,7 @@
                                                 <td>{{date('d-m-Y', $events->start_date)}}</td>
                                                 <td>{{date('d-m-Y', $events->end_date)}}</td>
                                                 <td class="d-flex">
-                                                    <a class="btn btn-primary btn-sm mr-1" href="{{ route('upcoming_events.edit',$events->id) }}"><i class="far fa-edit"></i></a>
+                                                    <a class="btn btn-success btn-sm mr-1" href="{{ route('upcoming_events.edit',$events->id) }}"><i class="far fa-edit"></i></a>
                                                     {!! Form::open(['method' => 'DELETE','route' => ['upcoming_events.destroy', $events->id],'style'=>'display:inline']) !!}
                                                         <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
                                                     {!! Form::close() !!}

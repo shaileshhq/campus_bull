@@ -42,7 +42,7 @@
                                         <td> {{$notice->title}} </td>
                                         <td>{!!$notice->description!!}</td>
                                         <td>
-                                            <a class="btn btn-primary btn-sm mr-1" href="{{ route('notice.edit',$notice->id) }}"><i class="far fa-edit"></i></a>
+                                            <a class="btn btn-success btn-sm mr-1" href="{{ route('notice.edit',$notice->id) }}"><i class="far fa-edit"></i></a>
                                             {!! Form::open(['method' => 'DELETE','route' => ['notice.destroy', $notice->id],'style'=>'display:inline']) !!}
                                                 <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
                                             {!! Form::close() !!}

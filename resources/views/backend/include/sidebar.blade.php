@@ -7,19 +7,8 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
-        <div class="user-panel mt-2 pb-2 mb-2 d-flex">
-            <div class="image">
-                <img src="{{ asset('public/dashboard_css/dist/img/user1.png') }}" class="img-circle elevation-1"
-                    alt="User Image">
-            </div>
-            <div class="info">
-                <a href="#" class="d-block"> {{ Auth::user()->name }}</a>
-            </div>
-        </div>
-
         <!-- Sidebar Menu -->
-        <nav class="mt-2">
+        <nav class="">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                 <li class="nav-item">
@@ -31,13 +20,13 @@
                
                 <li class="nav-item">
                     <a href="{{ route('course.index') }}" class="nav-link @if (Route::currentRouteName() == 'course.index') active @endif">
-                        <i class="fas fa-user-graduate nav-icon"></i>
+                        <i class="fas fa-book nav-icon"></i>
                         <p>Course </p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('collage.index') }}" class="nav-link @if (Route::currentRouteName() == 'collage.index') active @endif">
-                        <i class="fas fa-user-graduate nav-icon"></i>
+                        <i class="fas fa-building nav-icon"></i>
                         <p>College </p>
                     </a>
                 </li>
@@ -82,14 +71,14 @@
               
                <li class="nav-item">
                     <a href="{{ route('all_enquiry') }}" class="nav-link @if (Route::currentRouteName() == 'all_enquiry') active @endif">
-                        <i class="fas fa-user-graduate nav-icon"></i>
+                        <i class="fas fa-envelope nav-icon"></i>
                         <p>Enquiry </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a href="{{ route('all_contact') }}" class="nav-link @if (Route::currentRouteName() == 'all_contact') active @endif">
-                        <i class="fas fa-user-graduate nav-icon"></i>
+                        <i class="fas fa-phone nav-icon"></i>
                         <p>Contact Us </p>
                     </a>
                 </li>

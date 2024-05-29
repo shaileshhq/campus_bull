@@ -4,8 +4,8 @@
     .switch {
         position: relative;
         display: inline-block;
-        width: 60px;
-        height: 34px;
+        width: 50px;
+        height: 25px;
     }
 
     .switch input {
@@ -29,8 +29,8 @@
     .slider:before {
         position: absolute;
         content: "";
-        height: 26px;
-        width: 26px;
+        height: 16px;
+        width: 16px;
         left: 4px;
         bottom: 4px;
         background-color: white;
@@ -133,7 +133,7 @@
 
                                     </td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm mr-1"
+                                        <a class="btn btn-success  btn-sm mr-1"
                                             href="{{ route('student.edit', $data->id) }}"><i class="far fa-edit"></i></a>
                                     </td>
                                 </tr>

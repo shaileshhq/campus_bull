@@ -9,7 +9,7 @@
                 <div class="card-header">
                     <h3 class="card-title">College List</h3>
                     <a class="btn btn-primary btn-info float-right" href="{{ route('collage.create') }}"><i class="fa fa-plus"
-                            aria-hidden="true"></i>Add College</a>
+                            aria-hidden="true"></i> Add College</a>
                     <div class="card-tools">
                         <form class="mt-1 mr-4" action="" method="GET" id="valid_form">
                             <div class="input-group input-group" style="width: 250px;">
@@ -43,8 +43,8 @@
                             <td>{{$data->name}}</td>
                             <td>{{$data->type}}</td>
                             <td>
-                                <a class="btn btn-primary btn-sm mr-1" href="{{route('collage.edit',$data->id)}}"><i class="far fa-edit"></i></a>
-                                <a class="btn btn-primary btn-sm mr-1" href=""><i class="fa fa-trash"></i></a>
+                                <a class="btn btn-success  btn-sm mr-1" href="{{route('collage.edit',$data->id)}}"><i class="far fa-edit"></i></a>
+                                <a class="btn btn-danger btn-sm mr-1" href=""><i class="fa fa-trash"></i></a>
                             </td>
                             @empty
                                 <tr>
