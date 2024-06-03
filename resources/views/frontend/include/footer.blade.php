@@ -48,7 +48,7 @@
                             <p><i class="flaticon-phone-call"></i> <a href="tel:+91-1234567890">+91-1234567890</a></p>
                             <p><i class="flaticon-placeholder"></i> <a
                                     href="mailto:info@campus_bull.com">info@campus_bull.com</a></p>
-                            <p><i class="flaticon-open-mail"></i> <span>Varanasi, Uttar Pradesh, India (221010)</span>
+                            <p><i class="flaticon-open-mail"></i> <span>17, JDR complex new bel road Bengaluru (560094)</span>
                             </p>
                             <ul class="social">
                                 <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>

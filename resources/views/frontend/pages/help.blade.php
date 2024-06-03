@@ -60,7 +60,7 @@
                                         </div>
                                         <div class="info-content">
                                             <h5 class="title">Location</h5>
-                                            <p>Varanasi, Uttar Pradesh, India(221010)</p>
+                                            <p>17, JDR complex new bel road Bengaluru (560094)</p>
                                         </div>
                                     </div>
                                     <!-- Single Contact Info End -->
