@@ -4,8 +4,8 @@
                     <div class="header-top-wrapper">
                         <div class="header-top-info">
                             <ul>
-                                <li><span><i class="fa fa-volume-control-phone"></i> <a href="tel:+91-1234567890">+91-1234567890</a></span> </li>
-                                <li><span><i class="fa fa fa-whatsapp"></i> <a href="#" target="_blank">+91-1234567890</a></span> </li>
+                                <li><span><i class="fa fa-volume-control-phone"></i> <a href="tel:+91-8088899991">+91-8088899991</a></span> </li>
+                                <li><span><i class="fa fa fa-whatsapp"></i> <a href="https://wa.me/8088899991" target="_blank">+91-8088899991</a></span> </li>
                                 <li><span><i class="fa fa-envelope-o"></i> <a href="mailto:info@campusbull.com" target="_blank">info@campusbull.com</a></span> </li>
                             </ul>
                         </div>

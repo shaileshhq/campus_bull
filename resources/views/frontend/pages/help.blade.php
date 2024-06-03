@@ -32,8 +32,7 @@
                                         </div>
                                         <div class="info-content">
                                             <h5 class="title">Telephone</h5>
-                                            <p><a href="tel:1234567890">+91-1234567890</a></p>
-                                            <p><a href="tel:1234567890">+91-1234567890</a></p>
+                                            <p><a href="tel:8088899991">+91-8088899991</a></p>
                                         </div>
                                     </div>
                                     <!-- Single Contact Info End -->
