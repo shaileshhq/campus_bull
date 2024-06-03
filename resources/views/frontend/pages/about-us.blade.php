@@ -23,7 +23,7 @@
                <div class="col-lg-6">
                    <!-- About Images Start -->
                    <div class="about-content">
-                       <h3 class="title">Campus Bull</h3>
+                       <h1 class="title">Campus Bull</h1>
                        <p>We at Campus Bull(A unit of Globe Consulting Services), helps students in getting the besest posible college in their desied Branch. We try to make the counselling process very smooth for each student, so that they can take the most imortant decision of choosing their college easily.  </p>
                        {{-- <ul>
                            <li>Get access to 4,000+ of our top courses </li>

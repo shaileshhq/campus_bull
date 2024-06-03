@@ -8,7 +8,7 @@
                 <div class="col-md-8 m-auto">
                     <div class="slider-content">
                         <h5 class="sub-title">Start to new journey</h5>
-                        <h2 class="title">Experience a learning platform that take you next level</h2>
+                        <h1 class="title">Experience a learning platform that take you next level</h1>
                         <div class="slider-form">
                             <form action="#">
                                 <select class="custom-select">
@@ -32,7 +32,7 @@
         <div class="container">
             <!-- Section Title Start -->
             <div class="section-title text-center">
-                <h2 class="title"><span>Top Study Places</span></h2>
+                <h1 class="title"><span>Top Study Places</span></h1>
             </div>
             <!-- Section Title End -->
             <!-- Feature Category Wrapper Start -->
@@ -51,7 +51,7 @@
                                     </div>
                                 </div>
                                 <div class="box-content">
-                                    <h4 class="title"><a href="#">Delhi NCR</a></h4>
+                                    <h2 class="title"><a href="#">Delhi NCR</a></h2>
                                 </div>
                             </div>
                             <!-- Single Feature Category End -->
@@ -66,7 +66,7 @@
                                                 alt="Icon"></a>
                                     </div>
                                     <div class="box-content">
-                                        <h4 class="title"><a href="#">Banglore</a></h4>
+                                        <h2 class="title"><a href="#">Banglore</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@
                                     </div>
                                 </div>
                                 <div class="box-content">
-                                    <h4 class="title"><a href="#">Hydrabad</a></h4>
+                                    <h2 class="title"><a href="#">Hydrabad</a></h2>
                                 </div>
                             </div>
                             <!-- Single Feature Category End -->
@@ -98,7 +98,7 @@
                                     </div>
                                 </div>
                                 <div class="box-content">
-                                    <h4 class="title"><a href="#">Pune </a></h4>
+                                    <h2 class="title"><a href="#">Pune </a></h2>
                                 </div>
                             </div>
                             <!-- Single Feature Category End -->
@@ -114,7 +114,7 @@
                                     </div>
                                 </div>
                                 <div class="box-content">
-                                    <h4 class="title"><a href="#">Mumbai </a></h4>
+                                    <h2 class="title"><a href="#">Mumbai </a></h2>
                                 </div>
                             </div>
                             <!-- Single Feature Category End -->
@@ -130,7 +130,7 @@
                                     </div>
                                 </div>
                                 <div class="box-content">
-                                    <h4 class="title"><a href="#">Chennai </a></h4>
+                                    <h2 class="title"><a href="#">Chennai </a></h2>
                                 </div>
                             </div>
                             <!-- Single Feature Category End -->
@@ -151,7 +151,7 @@
         <div class="container">
             <!-- Section Title Start -->
             <div class="section-title text-center">
-                <h2 class="title"><span>Explore Courses</span></h2>
+                <h1 class="title"><span>Explore Courses</span></h1>
             </div>
             <!-- Section Title End -->
             <!-- Courses Wrapper Start -->
@@ -178,7 +178,7 @@
                                             <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
-                                            <h3 class="title"><a href="#">MBBS (MD)</a></h3>
+                                            <h1 class="title"><a href="#">MBBS (MD)</a></h1>
                                             <div class="top-meta">
                                                 <p>Full Time</p>
                                                 <span class="price">
@@ -220,7 +220,7 @@
                                             <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
-                                            <h3 class="title"><a href="#">MBBS (MD)</a></h3>
+                                            <h1 class="title"><a href="#">MBBS (MD)</a></h1>
                                             <div class="top-meta">
                                                 <p>Full Time</p>
                                                 <span class="price">
@@ -262,7 +262,7 @@
                                             <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
-                                            <h3 class="title"><a href="#">MBBS (MD)</a></h3>
+                                            <h1 class="title"><a href="#">MBBS (MD)</a></h1>
                                             <div class="top-meta">
                                                 <p>Full Time</p>
                                                 <span class="price">
@@ -304,7 +304,7 @@
                                             <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
-                                            <h3 class="title"><a href="#">MBBS (MD)</a></h3>
+                                            <h1 class="title"><a href="#">MBBS (MD)</a></h1>
                                             <div class="top-meta">
                                                 <p>Full Time</p>
                                                 <span class="price">
@@ -346,7 +346,7 @@
                                             <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
-                                            <h3 class="title"><a href="#">MBBS (MD)</a></h3>
+                                            <h1 class="title"><a href="#">MBBS (MD)</a></h1>
                                             <div class="top-meta">
                                                 <p>Full Time</p>
                                                 <span class="price">
@@ -398,7 +398,7 @@
         <div class="container">
             <!-- Section Title Start -->
             <div class="section-title text-center">
-                <h2 class="title"><span>Explore College List</span></h2>
+                <h1 class="title"><span>Explore College List</span></h1>
             </div>
             <!-- Section Title End -->
 
@@ -422,13 +422,13 @@
                                                         <div class="block_border"></div><span>{{$collage->type}}</span>
                                                     </div>
                                                     <div class="tupple_right_block d-none d-md-block">
-                                                        <h3 class="college_name"
-                                                            title="AVMC Puducherry - Aarupadai Veedu Medical College and Hospital, Puducherry"
-                                                            data-testid="college_name"><a
-                                                                href="#">{{$collage->name}}</a></h3>
-                                                        <div
-                                                            class="content_block d-none d-md-block d-md-flex flex-row justify-content-between">
-                                                            <div><span><i class="fa fa-map-marker" aria-hidden="true"></i> {{$collage->address}}</span> <span>{{$collage->type}}</span>
+                                                        <h1 class="college_name"
+                                                            title="{{$collage->name}}">
+                                                            <a href="#">{{$collage->name}}</a>
+                                                        </h1>
+                                                        <div class="content_block d-none d-md-block d-md-flex flex-row justify-content-between">
+                                                            <div>
+                                                                <span><i class="fa fa-map-marker" aria-hidden="true"></i> {{$collage->address}}</span> <span>{{$collage->type}}</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -572,7 +572,7 @@
         <div class="container">
             <!-- Section Title Start -->
             <div class="section-title text-center">
-                <h2 class="title"><span>The Next-Gen Counselling Platform</span></h2>
+                <h1 class="title"><span>The Next-Gen Counselling Platform</span></h1>
             </div>
             <!-- Section Title End -->
             <!-- Courses Wrapper Start -->
@@ -660,7 +660,7 @@
                     <div class="call-to-action-content-02 section-padding">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h2 class="title">Why trust Campus Bull? </h2>
+                            <h1 class="title">Why trust Campus Bull? </h1>
                             <p style="font-size: 15px;">Here's why ZyNerd is your ideal companion in your medical career
                                 journey.</p>
                         </div>
@@ -718,7 +718,7 @@
         <div class="container">
             <!-- Section Title Start -->
             <div class="section-title text-center">
-                <h2 class="title"><span>What Our Student Says</span></h2>
+                <h1 class="title"><span>What Our Student Says</span></h1>
             </div>
             <!-- Section Title End -->
         </div>

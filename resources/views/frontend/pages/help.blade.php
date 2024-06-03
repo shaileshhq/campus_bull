@@ -46,7 +46,6 @@
                                         <div class="info-content">
                                             <h5 class="title">Our Mail</h5>
                                             <p><a href="mailto:info@campusbull.com">info@campusbull.com</a></p>
-                                            <p><a href="mailto:info@campusbull.com">info@campusbull.com</a></p>
                                         </div>
                                     </div>
                                     <!-- Single Contact Info End -->

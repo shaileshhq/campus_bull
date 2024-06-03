@@ -28,9 +28,8 @@
                                                     <div class="block_border"></div><span>{{$value->type}}</span>
                                                 </div>
                                                 <div class="tupple_right_block d-none d-md-block">
-                                                    <h3 class="college_name"
-                                                        title="AVMC Puducherry - Aarupadai Veedu Medical College and Hospital, Puducherry"
-                                                        data-testid="college_name"><a href="{{route('college_details',$value->id)}}">{{$value->name}}</a></h3>
+                                                    <h1 class="college_name" title="{{$value->name}}"
+                                                        data-testid="college_name"><a href="{{route('college_details',$value->id)}}">{{$value->name}}</a></h1>
                                                     <div
                                                         class="content_block d-none d-md-block d-md-flex flex-row justify-content-between">
                                                         <div><span><i class="fa fa-map-marker" aria-hidden="true"></i>

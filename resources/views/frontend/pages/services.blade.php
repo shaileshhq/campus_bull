@@ -33,7 +33,7 @@
                                             <span class="tags">Education</span>
                                         </div>
                                         <div class="blog-content">
-                                            <h3 class="title"><a href="{{route('service_details')}}">NEET UG Counselling</a></h3>
+                                            <h1 class="title"><a href="{{route('service_details')}}">NEET UG Counselling</a></h1>
                                         </div>
                                     </div>
                                     <!-- Single Blog End -->
