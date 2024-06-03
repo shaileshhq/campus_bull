@@ -24,7 +24,7 @@
                    <!-- About Images Start -->
                    <div class="about-content">
                        <h3 class="title">Campus Bull</h3>
-                       <p>We at Campus Bull(Campus Bull), helps students in getting the besest posible college in their desied Branch. We try to make the counselling process very smooth for each student, so that they can take the most imortant decision of choosing their college easily.  </p>
+                       <p>We at Campus Bull(A unit of Globe Consulting Services), helps students in getting the besest posible college in their desied Branch. We try to make the counselling process very smooth for each student, so that they can take the most imortant decision of choosing their college easily.  </p>
                        {{-- <ul>
                            <li>Get access to 4,000+ of our top courses </li>
                            <li>Popular topics to learn now </li>

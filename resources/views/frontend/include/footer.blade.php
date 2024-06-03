@@ -65,7 +65,7 @@
         <!-- Footer Widget Wrapper End -->
         <!-- Footer Copyright End -->
         <div class="footer-copyright text-center">
-            <p>&copy;2024 Campus Bull All rights reserved. </p>
+            <p>&copy;2024 Campus Bull (A unit of Globe Consulting Services) All rights reserved. </p>
         </div>
         <!-- Footer Copyright End -->
     </div>
