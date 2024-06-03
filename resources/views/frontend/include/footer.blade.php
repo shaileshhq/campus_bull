@@ -8,9 +8,7 @@
                     <div class="footer-widget">
                         <h4 class="footer-widget-title">About Campus Bull</h4>
                         <div class="widget-info">
-                            <p> Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a
-                                document or a typeface without relying on meaningful content. Lorem ipsum may be used as
-                                a placeholder before the final copy is available.</p>
+                            <p> We at Campus Bull(A unit of Globe Consulting Services), helps students in getting the besest posible college in their desied Branch.</p>
                         </div>
                     </div>
                     <!-- Footer Widget End -->
