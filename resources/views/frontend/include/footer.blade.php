@@ -45,7 +45,7 @@
                     <div class="footer-widget">
                         <h4 class="footer-widget-title">Contact Us</h4>
                         <div class="widget-info">
-                            <p><i class="flaticon-phone-call"></i> <a href="tel:+91-8088899991">+91-8088899991</a></p>
+                            <p><i class="flaticon-phone-call"></i> <a href="tel:+91-9341888827">+91-9341888827</a>, <a href="tel:+91-9036344111">+91-9036344111</a></p>
                             <p><i class="flaticon-placeholder"></i> <a
                                     href="mailto:info@campus_bull.com">info@campus_bull.com</a></p>
                             <p><i class="flaticon-open-mail"></i> <span>17, JDR complex new bel road Bengaluru (560094)</span>
@@ -73,7 +73,7 @@
 
 <div class="whatsp">
     <!--- whatsapp icon start here -->
-    <a href="https://wa.me/8088899991" target="_blank">
+    <a href="https://wa.me/9341888827" target="_blank">
         <img src="{{ asset('public/front_css/assets/images/neet-whatsapp.png') }}">
     </a>
 </div>
@@ -82,7 +82,7 @@
 <script>
     jQuery(function($) {
         var path = window.location.href;
-        if (path == 'http://localhost/campus_bull/') {} else {
+        if (path == 'https://campusbull.com/') {} else {
             // because the 'href' property of the DOM element is the absolute path
             $('.main-menu li a').removeClass('active');
             $('.main-menu li a').each(function() {
