@@ -183,18 +183,6 @@
                                                 <a class="tag">Full Time</a>
                                             </div>
                                             <h1 class="title"><a href="#">{{$course->name}}</a></h1>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
                                         </div>
                                         <div class="courses-meta">
                                             <a href="{{route('course_details')}}">
