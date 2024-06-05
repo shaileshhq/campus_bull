@@ -176,19 +176,13 @@
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <!-- Single Courses Start -->
-                                    @foreach (App\Models\Course::wheretake(6)->get() as $course)
+                                    @foreach (App\Models\Course::take(6)->get() as $course)
                                     <div class="single-course">
                                         <div class="courses-content">
                                             <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
-                                            <h1 class="title"><a href="#">MBBS (MD)</a></h1>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
+                                            <h1 class="title"><a href="#">{{$course->name}}</a></h1>
                                             <div class="top-meta">
                                                 <p>Full Time</p>
                                                 <span class="price">
