@@ -32,6 +32,22 @@
                </div>
            </div>
            <div class="col-xl-6 col-lg-6">
+
+            <div class="slider-form mt-0 mb-3">
+               <form action="#">
+                   <select class="custom-select">
+                       <option>Select Course</option>
+                       <option value="NEET UG">NEET UG</option>
+                       <option value="NEET PG">NEET PG</option>
+                     </select>
+                   <input type="text" placeholder="Rank...">
+                   @if(Auth::check())
+                     <a  @if(empty(optional(Auth::user()->payment)->user_id)) href="{{route('subscription_plans')}}" @else href="{{route('student_report')}}" @endif class="btn btn-primary btn-hover-heading-color" ><i class="fa fa-search"></i></a>
+                    @else
+                    <a href="{{route('user-login')}}"  class="btn btn-primary btn-hover-heading-color">  <i class="fa fa-search"></i></a>
+                    @endif
+               </form>
+           </div>
             <div class="border-0 shadow card">
                <div class="card-body">
                   <h4 class="text-theme text-center mb-3">

@@ -17,7 +17,11 @@
                                     <option value="NEET PG">NEET PG</option>
                                   </select>
                                 <input type="text" placeholder="Rank...">
-                                <button class="btn btn-primary btn-hover-heading-color"><i class="fa fa-search"></i></button>
+                                @if(Auth::check())
+                                  <a  @if(empty(optional(Auth::user()->payment)->user_id)) href="{{route('subscription_plans')}}" @else href="{{route('student_report')}}" @endif class="btn btn-primary btn-hover-heading-color" ><i class="fa fa-search"></i></a>
+                                 @else
+                                 <a href="{{route('user-login')}}"  class="btn btn-primary btn-hover-heading-color">  <i class="fa fa-search"></i></a>
+                                 @endif
                             </form>
                             <span>What are of courses would you like for search? <a href="#">Click Here..</a></span>
                         </div>
@@ -160,11 +164,10 @@
                 <div class="courses-tab">
                     <div class="tab-menu">
                         <ul class="nav justify-content-center">
-                            <li><button class="active" data-bs-toggle="tab" data-bs-target="#tab1">Neet PG</button></li>
-                            <li><button data-bs-toggle="tab" data-bs-target="#tab2">Neet UG</button></li>
-                            <li><button data-bs-toggle="tab" data-bs-target="#tab3">Neet UG</button></li>
-                            <li><button data-bs-toggle="tab" data-bs-target="#tab4">Neet UG</button></li>
-                            <li><button data-bs-toggle="tab" data-bs-target="#tab5">Neet UG</button></li>
+                           
+                            <li><button class="active" data-bs-toggle="tab" data-bs-target="#tab1">UG</button></li>
+                            <li><button class="active" data-bs-toggle="tab" data-bs-target="#tab2">PG</button></li>
+                           
                         </ul>
                     </div>
                     <!-- Courses Tab Content Start -->
@@ -173,6 +176,7 @@
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <!-- Single Courses Start -->
+                                    @foreach (App\Models\Course::wheretake(6)->get() as $course)
                                     <div class="single-course">
                                         <div class="courses-content">
                                             <div class="top-metas">
@@ -207,6 +211,7 @@
                                             </a>
                                         </div>
                                     </div>
+                                    @endforeach
                                     <!-- Single Courses End -->
                                 </div>
                             </div>
@@ -414,7 +419,7 @@
                                             <div class="left_side_tupple">
                                                 <div class="tupple_top_block">
                                                     <div class="image_block mb-2">
-                                                        <a href="#">
+                                                        <a href="{{route('college_details',$collage->id)}}">
                                                             <img class="border_radius5" quality="100" src="https://cache.careers360.mobi/media/presets/60X60/colleges/social-media/logo/Logo_of_Aarupadai_Veedu_Medical_College_and_Hospital_Puducherry_Logo.webp" alt="AVMC Puducherry" width="62" height="62">
                                                         </a>
                                                     </div>
@@ -424,7 +429,7 @@
                                                     <div class="tupple_right_block d-none d-md-block">
                                                         <h1 class="college_name"
                                                             title="{{$collage->name}}">
-                                                            <a href="#">{{$collage->name}}</a>
+                                                            <a href="{{route('college_details',$collage->id)}}">{{$collage->name}}</a>
                                                         </h1>
                                                         <div class="content_block d-none d-md-block d-md-flex flex-row justify-content-between">
                                                             <div>
@@ -433,7 +438,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <a class="general_text" href="#">
+                                                <a class="general_text" href="{{route('college_details',$collage->id)}}">
                                                      @foreach($collage->course_id as $course_id)
                                                       {{App\Models\Course::find($course_id)->name}} ,
                                                      @endforeach
