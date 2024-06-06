@@ -77,8 +77,18 @@ class CollageController extends Controller
             $course->thumbnail=$image;
         }
 
-        $course->meta_title=$request->meta_title;
         $course->collage_description=$request->collage_description;
+        $course->course_fees=$request->course_fees;
+        $course->cut_off=$request->cut_off;
+        $course->placement=$request->placement;
+        $course->reviews=$request->reviews;
+        $course->facilities=$request->facilities;
+        $course->question_answer=$request->question_answer;
+        $course->notable_alumni=$request->notable_alumni;
+        $course->collage_department=$request->collage_department;
+        $course->admission=$request->admission;
+
+        $course->meta_title=$request->meta_title;
         $course->meta_description=$request->meta_description;
         $course->save();
 
@@ -147,8 +157,19 @@ class CollageController extends Controller
             $course->thumbnail=$image;
         }
 
-        $course->meta_title=$request->meta_title;
         $course->collage_description=$request->collage_description;
+        $course->course_fees=$request->course_fees;
+        $course->cut_off=$request->cut_off;
+        $course->placement=$request->placement;
+        $course->reviews=$request->reviews;
+        $course->facilities=$request->facilities;
+        $course->question_answer=$request->question_answer;
+        $course->notable_alumni=$request->notable_alumni;
+        $course->collage_department=$request->collage_department;
+        $course->admission=$request->admission;
+
+
+        $course->meta_title=$request->meta_title;
         $course->meta_description=$request->meta_description;
         $course->save();
 

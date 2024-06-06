@@ -118,18 +118,90 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Meta Title</label>
-                                <input type="text" name="meta_title" placeholder="Enter Meta Title" class="form-control" value="{{$edit_data->meta_title}}" >
-                            </div>
-                        </div>
-
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>College Description</label>
                                 <textarea class="summernote" name="collage_description">{{$edit_data->collage_description}}
                                 </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Courses & Fees </label>
+                                <textarea class="summernote" name="course_fees">{{$edit_data->course_fees}}
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Admission </label>
+                                <textarea class="summernote" name="admission">{{$edit_data->admission}}
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Cut-offs</label>
+                                <textarea class="summernote" name="cut_off">{{$edit_data->cut_off}}
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Placements</label>
+                                <textarea class="summernote" name="placement">{{$edit_data->placement}}
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Reviews</label>
+                                <textarea class="summernote" name="reviews">{{$edit_data->reviews}}
+                                </textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Facilities</label>
+                                <textarea class="summernote" name="facilities">{{$edit_data->facilities}}
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Ques. & Ans</label>
+                                <textarea class="summernote" name="question_answer">{{$edit_data->question_answer}}
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Notable Alumni</label>
+                                <textarea class="summernote" name="notable_alumni">{{$edit_data->notable_alumni}}
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Colleges and Departments</label>
+                                <textarea class="summernote" name="collage_department">{{$edit_data->collage_department}}
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Meta Title</label>
+                                <input type="text" name="meta_title" placeholder="Enter Meta Title" class="form-control" value="{{$edit_data->meta_title}}" >
                             </div>
                         </div>
 

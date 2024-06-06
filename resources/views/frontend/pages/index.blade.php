@@ -128,9 +128,8 @@
                             <div class="single-feature-category">
                                 <div class="feature-category-box">
                                     <div class="box-icon">
-                                        <a href="#"><img
-                                                src="{{ asset('public/front_css/assets/images/temple.png') }}"
-                                                alt="Icon"></a>
+                                        <a href="#">
+                                            <img src="{{ asset('public/front_css/assets/images/temple.png') }}" alt="Icon"></a>
                                     </div>
                                 </div>
                                 <div class="box-content">
@@ -166,7 +165,7 @@
                         <ul class="nav justify-content-center">
                            
                             <li><button class="active" data-bs-toggle="tab" data-bs-target="#tab1">UG</button></li>
-                            <li><button class="active" data-bs-toggle="tab" data-bs-target="#tab2">PG</button></li>
+                            <li><button  data-bs-toggle="tab" data-bs-target="#tab2">PG</button></li>
                            
                         </ul>
                     </div>
@@ -176,7 +175,7 @@
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <!-- Single Courses Start -->
-                                    @foreach (App\Models\Course::take(6)->get() as $course)
+                                    @foreach (App\Models\Course::where('course_level','UG')->take(6)->get() as $course)
                                     <div class="single-course">
                                         <div class="courses-content">
                                             <div class="top-metas">
@@ -202,6 +201,7 @@
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <!-- Single Courses Start -->
+                                    @foreach (App\Models\Course::where('course_level','PG')->take(6)->get() as $course)
                                     <div class="single-course">
                                         <div class="courses-content">
                                             <div class="top-metas">
@@ -236,136 +236,12 @@
                                             </a>
                                         </div>
                                     </div>
+                                    @endforeach
                                     <!-- Single Courses End -->
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab3">
-                            <div class="row">
-                                <div class="col-lg-3 col-sm-6">
-                                    <!-- Single Courses Start -->
-                                    <div class="single-course">
-                                        <div class="courses-content">
-                                            <div class="top-metas">
-                                                <a class="tag">Full Time</a>
-                                            </div>
-                                            <h1 class="title"><a href="#">MBBS (MD)</a></h1>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="courses-meta">
-                                            <a href="#">
-                                                <p class="student"> Course Overview</p>
-                                                <div class="arw-rigt">
-                                                    <i class="fa fa-angle-right"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- Single Courses End -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab4">
-                            <div class="row">
-                                <div class="col-lg-3 col-sm-6">
-                                    <!-- Single Courses Start -->
-                                    <div class="single-course">
-                                        <div class="courses-content">
-                                            <div class="top-metas">
-                                                <a class="tag">Full Time</a>
-                                            </div>
-                                            <h1 class="title"><a href="#">MBBS (MD)</a></h1>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="courses-meta">
-                                            <a href="#">
-                                                <p class="student"> Course Overview</p>
-                                                <div class="arw-rigt">
-                                                    <i class="fa fa-angle-right"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- Single Courses End -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab5">
-                            <div class="row">
-                                <div class="col-lg-3 col-sm-6">
-                                    <!-- Single Courses Start -->
-                                    <div class="single-course">
-                                        <div class="courses-content">
-                                            <div class="top-metas">
-                                                <a class="tag">Full Time</a>
-                                            </div>
-                                            <h1 class="title"><a href="#">MBBS (MD)</a></h1>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="courses-meta">
-                                            <a href="#">
-                                                <p class="student"> Course Overview</p>
-                                                <div class="arw-rigt">
-                                                    <i class="fa fa-angle-right"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- Single Courses End -->
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                     <!-- Courses Tab Content End -->
                 </div>

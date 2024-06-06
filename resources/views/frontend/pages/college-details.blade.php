@@ -104,39 +104,43 @@
         <div class="tab-content border-0 shadow card p-3">
             <div id="overview" class="container tab-pane active">
                 <h3>Overview</h3>
-                <p> Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a
-                    typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the
-                    final copy is available.</p>
+               {{$collage->collage_description}}
             </div>
             <div id="courses-and-fees" class="container tab-pane fade">
                 <h3>Courses & Fees</h3>
+                {{$collage->course_fees}}
             </div>
             <div id="cut-offs" class="container tab-pane fade">
                 <h3>Cut-offs</h3>
+                {{$collage->cut_off}}
             </div>
             <div id="admissions" class="container tab-pane fade">
                 <h3>Admissions</h3>
-            </div>
-            <div id="cut-offs" class="container tab-pane fade">
-                <h3>Cut-offs</h3>
+                {{$collage->course_fees}}
             </div>
             <div id="placements" class="container tab-pane fade">
                 <h3>Placements</h3>
+                {{$collage->placement}}
             </div>
             <div id="reviews" class="container tab-pane fade">
                 <h3>Reviews</h3>
+                {{$collage->reviews}}
             </div>
             <div id="facilities" class="container tab-pane fade">
                 <h3>Facilities</h3>
+                {{$collage->facilities}}
             </div>
             <div id="ques-and-ans" class="container tab-pane fade">
                 <h3>Ques. & Ans</h3>
+                {{$collage->question_answer}}
             </div>
             <div id="notable-alumni" class="container tab-pane fade">
                 <h3>Notable Alumni</h3>
+                {{$collage->notable_alumni}}
             </div>
             <div id="colleges-and-departments" class="container tab-pane fade">
                 <h3>Colleges and Departments</h3>
+                {{$collage->collage_department}}
             </div>
         </div>
     </div>

@@ -117,12 +117,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Meta Title</label>
-                                <input type="text" name="meta_title" placeholder="Enter Meta Title" class="form-control"  >
-                            </div>
-                        </div>
+                       
 
                         <div class="col-md-12">
                             <div class="form-group">
@@ -134,11 +129,92 @@
 
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label>Meta Desciption</label>
+                                <label>Courses & Fees </label>
+                                <textarea class="summernote" name="course_fees">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Admission </label>
+                                <textarea class="summernote" name="admission">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Cut-offs</label>
+                                <textarea class="summernote" name="cut_off">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Placements</label>
+                                <textarea class="summernote" name="placement">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Reviews</label>
+                                <textarea class="summernote" name="reviews">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Facilities</label>
+                                <textarea class="summernote" name="facilities">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Ques. & Ans</label>
+                                <textarea class="summernote" name="question_answer">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Notable Alumni</label>
+                                <textarea class="summernote" name="notable_alumni">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Colleges and Departments</label>
+                                <textarea class="summernote" name="collage_department">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Meta Title</label>
+                                <input type="text" name="meta_title" placeholder="Enter Meta Title" class="form-control"  >
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Meta Description</label>
                                 <textarea class="summernote" name="meta_description">
                                 </textarea>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </form>
