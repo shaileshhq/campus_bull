@@ -165,7 +165,7 @@
                                  <h3 class="widget-title" style="font-weight: 600;">Counselling Support</h3>
 
                                  <!-- Widget Post Start -->
-                                 <div class="widget-post">
+                                 {{-- <div class="widget-post">
 
                                      <!-- Single Min Post Start -->
                                      <div class="single-mini-post">
@@ -215,7 +215,7 @@
                                    </div>
                                      <!-- Single Min Post End -->
 
-                                 </div>
+                                 </div> --}}
                                  <!-- Widget Post End -->
 
                              </div>
