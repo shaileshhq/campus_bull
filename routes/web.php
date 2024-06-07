@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AizUploadController;
 use App\Http\Controllers\Front\FrontController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\Ug\Front\UgFrontController;
 
 /*
 |--------------------------------------------------------------------------
@@ -104,6 +105,47 @@ Route::post('medical-admission-form', [FrontController::class, 'medical_form_sub
 Route::post('contact_us', [FrontController::class, 'contact_us'])->name('contact_us');
 
 Route::post('enquiry', [FrontController::class, 'enquiry'])->name('enquiry');
+
+Route::group(['prefix'=>'ug'],function(){
+    
+   
+    Route::get('/all-india-counselings', [UgFrontController::class, 'all_india_counselings'])->name('ug.all_india_counselings');
+    Route::get('/deemed-hospital-details', [UgFrontController::class, 'deemed_hospital_details'])->name('ug.deemed_hospital_details');
+    Route::get('/closing-rank', [UgFrontController::class, 'closing_rank'])->name('ug.closing_rank');
+    Route::get('/closing-rank-details', [UgFrontController::class, 'closing_rank_details'])->name('ug.closing_rank_details');
+    Route::get('/bond-details', [UgFrontController::class, 'bond_details'])->name('ug.bond_details');
+    Route::get('/stipend-details', [UgFrontController::class, 'stipend_details'])->name('ug.stipend_details');
+    Route::get('/fee-details', [UgFrontController::class, 'fee_details'])->name('ug.fee_details');
+    Route::get('/state-wise-counselings', [UgFrontController::class, 'state_wise_counselings'])->name('ug.state_wise_counselings');
+    Route::get('/state-wise-counseling-details-andhra', [UgFrontController::class, 'state_wise_counseling_details'])->name('ug.state_wise_counseling_details_andhra');
+    Route::get('/state-wise-counseling-details', [UgFrontController::class, 'state_wise_counseling_details'])->name('ug.state_wise_counseling_details')->middleware("checkSubscription");
+   
+    Route::get('/state-document', [UgFrontController::class, 'state_document'])->name('ug.state_document');
+   
+
+    Route::get('/student-report', [UgFrontController::class, 'student_report'])->name('ug.student_report');
+    Route::post('/student-report-details', [UgFrontController::class, 'student_report_details'])->name('ug.student_report_details');
+    Route::post('/student-report-closing-rank-details', [UgFrontController::class, 'student_report_closing_rank_details'])->name('ug.student_report_closing_rank_details');
+   
+
+    Route::get('/all-india-stipend-details', [UgFrontController::class, 'all_india_stipend_details'])->name('ug.all_india_stipend_details')->middleware("checkSubscription");
+    Route::get('/all-india-fee-details', [UgFrontController::class, 'all_india_fee_details'])->name('ug.all_india_fee_details')->middleware("checkSubscription");
+    Route::get('/all-india-closing-rank-details', [UgFrontController::class, 'all_india_closing_rank_details'])->name('ug.all_india_closing_rank_details')->middleware("checkSubscription");
+
+   
+
+
+    
+
+
+   
+
+
+    
+
+   
+
+});
 
 
 

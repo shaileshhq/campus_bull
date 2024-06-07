@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Front;
+namespace App\Http\Controllers\Ug\Front;
 
 
 use DB;
@@ -27,37 +27,37 @@ use App\Models\mark_vs_rank;
 use App\Models\uttarakhand;
 
 
-class FrontController extends Controller
+class UgFrontController extends Controller
 {
     public function index(){
-        return view('frontend.pages.index');
+        return view('ug.frontend.pages.index');
     }
     public function home(){
-        return view('frontend.pages.home');
+        return view('ug.frontend.pages.home');
     }
     public function contact(){
-        return view('frontend.pages.contact');
+        return view('ug.frontend.pages.contact');
     }
     
     public function subscription_plans(){
-        return view('frontend.pages.subscription-plans');
+        return view('ug.frontend.pages.subscription-plans');
     }
     public function closing_rank(Request $request){
         $state='all_indias';
         $list = DB::table($state)->take(1)->get();
         if($request->ajax()){
             $state=$request->state;
-            $list = DB::table(str_replace(' ','_',strtolower($state)))->take(1)->get();
-            return view('frontend.pages.closing-rank_table',compact('state','list'));
+            $list = DB::table('ug_'.str_replace(' ','_',strtolower($state)))->take(1)->get();
+            return view('ug.frontend.pages.closing-rank_table',compact('state','list'));
         }
-        return view('frontend.pages.closing-rank',compact('state','list'));
+        return view('ug.frontend.pages.closing-rank',compact('state','list'));
     }
     public function closing_rank_details(Request $request){
        $state=$request->state;
        $counseling_type=$request->counseling_type;
-        $list =  DB::table($state)->orderBy('id');
-        $college= DB::table($state)->groupBy('college')->get();
-        $category= DB::table($state)->groupBy('category')->get();
+        $list =  DB::table('ug_'.$state)->orderBy('id');
+        $college= DB::table('ug_'.$state)->groupBy('college')->get();
+        $category= DB::table('ug_'.$state)->groupBy('category')->get();
 
    
 
@@ -72,7 +72,7 @@ class FrontController extends Controller
             $round=2;
           }
           
-          if( $state=='andhra_pradeshes'  || $state=='gujarats' || $state=='haryanas' || $state=='jammu_and_kashmirs' || $state=='jharkhands' || $state=='keralas' || $state=='madhya_pradeshes' || $state=='maharashtras' || $state=='telanganas' || $state=="uttarakhands" || $state=='west_bengals' || $state=="deemeds" ){
+          if( $state=='andhra_pradeshes' || $state=='bihars' || $state=='gujarats' || $state=='haryanas' || $state=='jammu_and_kashmirs' || $state=='jharkhands' || $state=='keralas' || $state=='madhya_pradeshes' || $state=='maharashtras' || $state=='telanganas' || $state=="uttarakhands" || $state=='west_bengals' || $state=="deemeds" ){
             $round=3;
            
           }
@@ -122,42 +122,42 @@ class FrontController extends Controller
 
         $list= $list->paginate(100);
   if($request->ajax()){
-     return view('frontend.pages.closing-rank-details_table',compact('list','college','category','round'));
+     return view('ug.frontend.pages.closing-rank-details_table',compact('list','college','category','round'));
    }
 
-        return view('frontend.pages.closing-rank-details',compact('list','college','category','round'));
+        return view('ug.frontend.pages.closing-rank-details',compact('list','college','category','round'));
     }
     public function all_india_counselings(){
-        return view('frontend.pages.all-india-counselings');
+        return view('ug.frontend.pages.all-india-counselings');
     }
     public function state_wise_counselings(){
-        return view('frontend.pages.state-wise-counselings');
+        return view('ug.frontend.pages.state-wise-counselings');
     }
     public function state_wise_counseling_details(){
-        return view('frontend.pages.state-wise-counseling-details');
+        return view('ug.frontend.pages.state-wise-counseling-details');
     }
     public function about_us(){
-        return view('frontend.pages.about-us');
+        return view('ug.frontend.pages.about-us');
     }
     public function term_condition(){
-        return view('frontend.pages.term-and-condition');
+        return view('ug.frontend.pages.term-and-condition');
     }
     public function privacy_policy(){
-        return view('frontend.pages.privacy-policy');
+        return view('ug.frontend.pages.privacy-policy');
     }
     
     public function login(){
         if(Auth::check()){
             return redirect()->route('user_dashboard');
         }else{
-            return view('frontend.auth.login');
+            return view('ug.frontend.auth.login');
         }
     }
     public function register(){
         if(Auth::check()){
             return redirect()->route('user_dashboard');
         }else{
-        return view('frontend.auth.register');
+        return view('ug.frontend.auth.register');
         }
     }
     
@@ -324,7 +324,7 @@ public function password_forgot(Request $request){
 public function user_dashboard(){
         
     if(Auth::check()){
-        return view('frontend.user.profile');
+        return view('ug.frontend.user.profile');
     }
     return redirect()->route('user-login');
 }
@@ -374,7 +374,7 @@ function forgot_password(Request $request){
     if(Auth::check()){
         return redirect()->route('user_dashboard');
     }else{
-    return view('frontend.auth.forgot-password');
+    return view('ug.frontend.auth.forgot-password');
     }
 
 }
@@ -491,10 +491,10 @@ public function bond_details(Request $request){
 
      $list= $list->paginate(100);
 if($request->ajax()){
-  return view('frontend.pages.bond-details_table',compact('list','college','course','quota','category','round'));
+  return view('ug.frontend.pages.bond-details_table',compact('list','college','course','quota','category','round'));
 }
 
-     return view('frontend.pages.bond-details',compact('list','college','course','quota','category','round'));
+     return view('ug.frontend.pages.bond-details',compact('list','college','course','quota','category','round'));
  }
 
  public function stipend_details(Request $request){
@@ -609,10 +609,10 @@ if($request->ajax()){
 
      $list= $list->paginate(100);
 if($request->ajax()){
-  return view('frontend.pages.stipend-details_table',compact('list','college','course','quota','category','round'));
+  return view('ug.frontend.pages.stipend-details_table',compact('list','college','course','quota','category','round'));
 }
 
-     return view('frontend.pages.stipend-details',compact('list','college','course','quota','category','round'));
+     return view('ug.frontend.pages.stipend-details',compact('list','college','course','quota','category','round'));
  }
 
  
@@ -690,10 +690,10 @@ public function fee_details(Request $request){
 
      $list= $list->paginate(100);
 if($request->ajax()){
-  return view('frontend.pages.fee-details_table',compact('list','college','category','round'));
+  return view('ug.frontend.pages.fee-details_table',compact('list','college','category','round'));
 }
 
-     return view('frontend.pages.fee-details',compact('list','college','category','round'));
+     return view('ug.frontend.pages.fee-details',compact('list','college','category','round'));
  }
 
  public function all_india_stipend_details(Request $request){
@@ -818,10 +818,10 @@ if($request->ajax()){
 
      $list= $list->paginate(100);
 if($request->ajax()){
-  return view('frontend.pages.all-stipend-details_table',compact('list','college','course','quota','category','round'));
+  return view('ug.frontend.pages.all-stipend-details_table',compact('list','college','course','quota','category','round'));
 }
 
-     return view('frontend.pages.all-stipend-details',compact('list','college','course','quota','category','round'));
+     return view('ug.frontend.pages.all-stipend-details',compact('list','college','course','quota','category','round'));
  }
 
  public function all_india_fee_details(Request $request){
@@ -899,10 +899,10 @@ if($request->ajax()){
 
      $list= $list->paginate(100);
 if($request->ajax()){
-  return view('frontend.pages.all-fee-details_table',compact('list','college','category'));
+  return view('ug.frontend.pages.all-fee-details_table',compact('list','college','category'));
 }
 
-     return view('frontend.pages.all-fee-details',compact('list','college','category'));
+     return view('ug.frontend.pages.all-fee-details',compact('list','college','category'));
  }
 
  public function all_india_closing_rank_details(Request $request){
@@ -983,15 +983,15 @@ if($request->ajax()){
 
      $list= $list->paginate(100);
 if($request->ajax()){
-  return view('frontend.pages.all-india-closing-rank-details_table',compact('list','college','category','round'));
+  return view('ug.frontend.pages.all-india-closing-rank-details_table',compact('list','college','category','round'));
 }
 
-     return view('frontend.pages.all-india-closing-rank-details',compact('list','college','category','round'));
+     return view('ug.frontend.pages.all-india-closing-rank-details',compact('list','college','category','round'));
  }
 
 public function student_report(Request $request){
 
-  return view('frontend.pages.student-report');
+  return view('ug.frontend.pages.student-report');
 
 
 }
@@ -1020,7 +1020,7 @@ public function student_report_details(Request $request){
 //return $request->all();
 $counselling_preference=$request->counselling_preference;
 $input=$request->all();
-return view('frontend.pages.student-report_table',compact('counselling_preference','input'));
+return view('ug.frontend.pages.student-report_table',compact('counselling_preference','input'));
   
 }
 
@@ -1033,28 +1033,28 @@ public function student_report_closing_rank_details(Request $request){
     $cour=$request->course;
 
     if($request->type=='all'){
-        $list =  DB::table($state)->where('tuition_fees','<',$request->budget)->orderBy('id');
-        $category= DB::table($state)->groupBy('category')->get();
-        $college= DB::table($state)->groupBy('college')->get();
+        $list =  DB::table('ug_'.$state)->where('tuition_fees','<',$request->budget)->orderBy('id');
+        $category= DB::table('ug_'.$state)->groupBy('category')->get();
+        $college= DB::table('ug_'.$state)->groupBy('college')->get();
 
        }
        if($request->type=='deemed'){
-        $list =  DB::table($state)->where('tuition_fees','<',$request->budget)->where(function($query) use ($request) {
+        $list =  DB::table('ug_'.$state)->where('tuition_fees','<',$request->budget)->where(function($query) use ($request) {
                             $query->where('category','MNG');
                 })->orderBy('id');
-        $category= DB::table($state)->where(function($query) use ($request) {
+        $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MNG');
                 })->get();
-        $college= DB::table($state)->where(function($query) use ($request) {
+        $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MNG');
                 })->groupBy('college')->get();
 
        }
        if($request->type=='state_home'){
            
-        $list =  DB::table($state)->orderBy('id');
-        $category= DB::table($state)->groupBy('category')->get();
-        $college= DB::table($state)->groupBy('college')->get();
+        $list =  DB::table('ug_'.$state)->orderBy('id');
+        $category= DB::table('ug_'.$state)->groupBy('category')->get();
+        $college= DB::table('ug_'.$state)->groupBy('college')->get();
         
         
         
@@ -1136,27 +1136,27 @@ $new_array=[];
     
 
 if(!empty($request->submit)){
-      $pdf = PDF::loadView('frontend.pages.student-report-closing-rank-details_download',compact('list','category','round','state','type','rank','budget','college'));
+      $pdf = PDF::loadView('ug.frontend.pages.student-report-closing-rank-details_download',compact('list','category','round','state','type','rank','budget','college'));
         return $pdf->download('sdfsf.pdf');
 }
        $list=$this->paginate($new_array);
    if($request->ajax()){
-    return view('frontend.pages.student-report-closing-rank-details_table',compact('list','category','round','state','type','rank','budget','college'));
+    return view('ug.frontend.pages.student-report-closing-rank-details_table',compact('list','category','round','state','type','rank','budget','college'));
     }
-      return view('frontend.pages.student-report-closing-rank-details',compact('list','category','round','state','type','rank','budget','college'));
+      return view('ug.frontend.pages.student-report-closing-rank-details',compact('list','category','round','state','type','rank','budget','college'));
         
 
        }
        
        if($request->type=='state_other'){
-        $list =  DB::table($state)->orderBy('id');
+        $list =  DB::table('ug_'.$state)->orderBy('id');
        
         
          if($state=='andhra_pradeshes'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT');
                 })->groupBy('category')->get();
-              $college= DB::table($state)->where(function($query) use ($request) {
+              $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT');
                 })->groupBy('college')->get();
             $list=$list->where(function($query) use ($request) {
@@ -1164,10 +1164,10 @@ if(!empty($request->submit)){
                 });
           }
          if($state=='chhattisgarhs'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT')->orwhere('category','MGT OBC FEM')->orwhere('category','MGT OBC NC')->orwhere('category','MGT SC FEM')->orwhere('category','MGT SC NC')->orwhere('category','MGT ST FEM')->orwhere('category','MGT ST NC')->orwhere('category','MGT UR FEM')->orwhere('category','MGT UR NC');
                 })->groupBy('category')->get();
-              $college= DB::table($state)->where(function($query) use ($request) {
+              $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                              $query->where('category','MGT')->orwhere('category','MGT OBC FEM')->orwhere('category','MGT OBC NC')->orwhere('category','MGT SC FEM')->orwhere('category','MGT SC NC')->orwhere('category','MGT ST FEM')->orwhere('category','MGT ST NC')->orwhere('category','MGT UR FEM')->orwhere('category','MGT UR NC');
                 })->groupBy('college')->get();
             $list=$list->where(function($query) use ($request) {
@@ -1176,10 +1176,10 @@ if(!empty($request->submit)){
           }
           
          if($state=='haryanas'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT');
                 })->groupBy('category')->get();
-              $college= DB::table($state)->where(function($query) use ($request) {
+              $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT');
                 })->groupBy('college')->get();
             $list=$list->where(function($query) use ($request) {
@@ -1187,10 +1187,10 @@ if(!empty($request->submit)){
                 });
           } 
            if($state=='himachal_pradeshes'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','UR');
                 })->groupBy('category')->get();
-              $college= DB::table($state)->where(function($query) use ($request) {
+              $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','UR');
                 })->groupBy('college')->get();
             $list=$list->where(function($query) use ($request) {
@@ -1199,10 +1199,10 @@ if(!empty($request->submit)){
           } 
           
            if($state=='karnatakas'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','NRI')->orwhere('category','OPEN')->orwhere('category','OTHERS');
                 })->groupBy('category')->get();
-              $college= DB::table($state)->where(function($query) use ($request) {
+              $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','NRI')->orwhere('category','OPEN')->orwhere('category','OTHERS');
                 })->groupBy('college')->get();
             $list=$list->where(function($query) use ($request) {
@@ -1211,10 +1211,10 @@ if(!empty($request->submit)){
           } 
           
           if($state=='keralas'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','SM');
                 })->groupBy('category')->get();
-              $college= DB::table($state)->where(function($query) use ($request) {
+              $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','SM');
                 })->groupBy('college')->get();
             $list=$list->where(function($query) use ($request) {
@@ -1222,10 +1222,10 @@ if(!empty($request->submit)){
                 });
           } 
            if($state=='madhya_pradeshes'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','NRI')->orwhere('category','UR');
                 })->groupBy('category')->get();
-              $college= DB::table($state)->where(function($query) use ($request) {
+              $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','NRI')->orwhere('category','UR');
                 })->groupBy('college')->get();
             $list=$list->where(function($query) use ($request) {
@@ -1233,10 +1233,10 @@ if(!empty($request->submit)){
                 });
           } 
           if($state=='pondicherries'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT');
                 })->groupBy('category')->get();
-              $college= DB::table($state)->where(function($query) use ($request) {
+              $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT');
                 })->groupBy('college')->get();
             $list=$list->where(function($query) use ($request) {
@@ -1244,7 +1244,7 @@ if(!empty($request->submit)){
                 });
           } 
           if($state=='telanganas'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT')->orwhere('category','MGT_MSM');
                 })->groupBy('category')->get();
               $college= DB::table($state)->where(function($query) use ($request) {
@@ -1255,10 +1255,10 @@ if(!empty($request->submit)){
                 });
           } 
             if($state=='uttar_pradeshes'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','UROP');
                 })->groupBy('category')->get();
-              $college= DB::table($state)->where(function($query) use ($request) {
+              $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','UROP');
                 })->groupBy('college')->get();
             $list=$list->where(function($query) use ($request) {
@@ -1266,10 +1266,10 @@ if(!empty($request->submit)){
                 });
           } 
               if($state=='uttarkhands'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT');
                 })->groupBy('category')->get();
-              $college= DB::table($state)->where(function($query) use ($request) {
+              $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT');
                 })->groupBy('college')->get();
             $list=$list->where(function($query) use ($request) {
@@ -1277,10 +1277,10 @@ if(!empty($request->submit)){
                 });
           }
           if($state=='west_bengals'){
-              $category= DB::table($state)->where(function($query) use ($request) {
+              $category= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT');
                 })->groupBy('category')->get();
-              $college= DB::table($state)->where(function($query) use ($request) {
+              $college= DB::table('ug_'.$state)->where(function($query) use ($request) {
                             $query->where('category','MGT');
                 })->groupBy('college')->get();
             $list=$list->where(function($query) use ($request) {
@@ -1311,9 +1311,9 @@ if(!empty($request->submit)){
        }
        
         if($request->type=='aiims'){
-        $list =  DB::table($state)->orderBy('id');
-        $category= DB::table($state)->groupBy('category')->get();
-        $college= DB::table($state)->groupBy('college')->get();
+        $list =  DB::table('ug_'.$state)->orderBy('id');
+        $category= DB::table('ug_'.$state)->groupBy('category')->get();
+        $college= DB::table('ug_'.$state)->groupBy('college')->get();
         
         if( $state=='rajasthans' || $state=='tamil_nadus' ){
           
@@ -1416,16 +1416,16 @@ if(!empty($request->submit)){
     
 
   if(!empty($request->submit)){
-      $pdf = PDF::loadView('frontend.pages.student-report-closing-rank-details_download',compact('list','category','round','state','type','rank','budget','college'));
+      $pdf = PDF::loadView('ug.frontend.pages.student-report-closing-rank-details_download',compact('list','category','round','state','type','rank','budget','college'));
         return $pdf->download('sdfsf.pdf');
    }
       $list=$this->paginate($new_array);
    if($request->ajax()){
       
-    return view('frontend.pages.student-report-closing-rank-details_table',compact('list','category','round','state','type','rank','budget','college'));
+    return view('ug.frontend.pages.student-report-closing-rank-details_table',compact('list','category','round','state','type','rank','budget','college'));
     }
    
-      return view('frontend.pages.student-report-closing-rank-details',compact('list','category','round','state','type','rank','budget','college'));
+      return view('ug.frontend.pages.student-report-closing-rank-details',compact('list','category','round','state','type','rank','budget','college'));
        
       
     }
@@ -1437,7 +1437,7 @@ public function mark_vs_rank(Request $request){
      if(!empty($request->mark)){
       $data=mark_vs_rank::where('mark_start','>=',$request->mark)->orderBy('id','desc')->first();
      }
-      return view('frontend.pages.mark_vs_rank',compact('data'));
+      return view('ug.frontend.pages.mark_vs_rank',compact('data'));
      
     }
 
@@ -1620,9 +1620,9 @@ public function paginate($items, $perPage = 100, $page = null, $options = [])
 
 //       $list=$this->paginate($new_array);
 //   if($request->ajax()){
-//     return view('frontend.pages.student-report-closing-rank-details_table',compact('list','category','quota','round','state','type','rank','budget','cour','college'));
+//     return view('ug.frontend.pages.student-report-closing-rank-details_table',compact('list','category','quota','round','state','type','rank','budget','cour','college'));
 //     }
-//       return view('frontend.pages.student-report-closing-rank-details',compact('list','category','quota','round','state','type','rank','budget','cour','college'));
+//       return view('ug.frontend.pages.student-report-closing-rank-details',compact('list','category','quota','round','state','type','rank','budget','cour','college'));
         
 
 //       }
@@ -1832,7 +1832,7 @@ public function paginate($items, $perPage = 100, $page = null, $options = [])
 
 
     
-//         $pdf = PDF::loadView('frontend.pages.student-report-closing-rank-details_download',compact('list','category','quota','round','state','type','rank','budget','cour','college'));
+//         $pdf = PDF::loadView('ug.frontend.pages.student-report-closing-rank-details_download',compact('list','category','quota','round','state','type','rank','budget','cour','college'));
 //         return $pdf->download('sdfsf.pdf');
       
        
@@ -1844,14 +1844,14 @@ public function paginate($items, $perPage = 100, $page = null, $options = [])
     //     if(Auth::check()){
     //         return redirect()->route('user_dashboard');
     //     }
-    //     return view('frontend.auth.signup');
+    //     return view('ug.frontend.auth.signup');
     // }
 
     // public function user_login(){
     //     if(Auth::check()){
     //         return redirect()->route('user_dashboard');
     //     }
-    //     return view('frontend.auth.login');
+    //     return view('ug.frontend.auth.login');
     // }
 
    
@@ -1863,7 +1863,7 @@ public function paginate($items, $perPage = 100, $page = null, $options = [])
 
 //    public function user_account(){
 //         $user = User::where('id',Auth::user()->id)->first();
-//         return view('frontend.user.accountReview',compact('user'));
+//         return view('ug.frontend.user.accountReview',compact('user'));
 //     }
 
 
@@ -1952,13 +1952,13 @@ if($request->stat=='enable'){
 
  public function get_college_hospital(Request $request){
     
-    return view('frontend.pages.college-hospital');
+    return view('ug.frontend.pages.college-hospital');
      
     }
     
     public function deemed_hospital_details(Request $request){
     
-    return view('frontend.pages.deemed-college-hospital');
+    return view('ug.frontend.pages.deemed-college-hospital');
      
     }
     
@@ -1967,7 +1967,7 @@ if($request->stat=='enable'){
         
         $course=$request->course;
      $list =  DB::table($course)->orderBy('id')->get();
-    return view('frontend.pages.college-hospital-detail',compact('list'));
+    return view('ug.frontend.pages.college-hospital-detail',compact('list'));
      
     }
 
