@@ -1,1 +1,1 @@
-a:5:{s:6:"_flash";a:2:{s:3:"new";a:0:{}s:3:"old";a:0:{}}s:9:"_previous";a:1:{s:3:"url";s:44:"http://localhost/campus_bull/admin/dashboard";}s:6:"_token";s:40:"IAGWrGRYSJO87Fi0aOO6TvcY8e3xnmiIjYy6SuoT";s:50:"login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d";i:1;s:4:"auth";a:1:{s:21:"password_confirmed_at";i:1718104108;}}
+a:3:{s:6:"_flash";a:2:{s:3:"new";a:0:{}s:3:"old";a:0:{}}s:9:"_previous";a:1:{s:3:"url";s:39:"http://localhost/campus_bull/user-login";}s:6:"_token";s:40:"Y0U65FhVV0UGUnCeniRhWDGjKTOK2q9TwYGPbMEo";}

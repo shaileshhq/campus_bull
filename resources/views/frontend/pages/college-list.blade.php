@@ -19,8 +19,8 @@
                                                 <div class="image_block mb-2">
                                                     <a href="#">
                                                         <img class="border_radius5" quality="100"
-                                                            src="https://cache.careers360.mobi/media/presets/60X60/colleges/social-media/logo/Logo_of_Aarupadai_Veedu_Medical_College_and_Hospital_Puducherry_Logo.webp"
-                                                            alt="AVMC Puducherry" width="62" height="62">
+                                                            src="{{ asset('public/front_css/assets/images/college.png')}}"
+                                                            alt="{{$value->name}}" width="62" height="62">
                                                     </a>
                                                 </div>
                                                 <div class="content_block d-block d-md-none"><span><i

@@ -43,7 +43,7 @@
                                         </div>
                                         <div class="single-form">
                                             <label>Password</label>
-                                            <input type="password" class="form-control" name="password" placeholder="Enter Password "  value="{{old('password')}}">
+                                            <input type="password" class="form-control" name="password" placeholder="Enter Password"  value="{{old('password')}}">
                                              @error('password')
                                               <span  role="alert" style="color: red;margin-left: 5%;">
                                                <strong>{{ $message }}</strong>
