@@ -11,6 +11,7 @@ use Session;
 use App\Models\Rank;
 use App\Models\User;
 use Razorpay\Api\Api;
+use App\Models\Course;
 use App\Models\Collage;
 use App\Models\Enquiry;
 use App\Models\Payment;
@@ -2238,7 +2239,20 @@ class FrontController extends Controller
 
     public function collage_list(Request $request)
     {
-        $collages = Collage::orderBy('id', 'desc')->paginate(10);
+        $collages = Collage::orderBy('id', 'desc');
+        if($request->category){
+            $collages= $collages->where('category',$request->category);
+        }
+        if($request->type){
+            $collages= $collages->where('type',$request->type);
+        }
+        if($request->stream){
+            $collages= $collages->where('stream',$request->stream);
+        }
+        if($request->state){
+            $collages= $collages->where('state',$request->state);
+        }
+        $collages=$collages->paginate(10);
         return view('frontend.pages.college-list', compact('collages'));
     }
 
@@ -2246,5 +2260,10 @@ class FrontController extends Controller
     {
         $collage = Collage::find($id);
         return view('frontend.pages.college-details', compact('collage'));
+    }
+
+    public function course_details($id){
+        $course = Course::find($id);
+        return view('frontend.pages.course-details', compact('course'));
     }
 }
