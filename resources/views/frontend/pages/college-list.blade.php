@@ -88,16 +88,17 @@
                         <div class="sidebar-wrap-02">
                             <h3 class="title">Filters By</h3> <hr/>
                             <!-- Sidebar Wrapper Start -->
+                            <form method="GET">
                             <div class="sidebar-widget-02">
                                 <h3 class="widget-title">Category</h3>
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+                                            <input class="form-check-input" type="radio" value="University" name="category" id="checkbox1">
                                             <label class="form-check-label" for="checkbox1">University</label>
                                         </li>
                                         <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+                                            <input class="form-check-input" type="radio" value="College" name="category" id="checkbox2">
                                             <label class="form-check-label" for="checkbox2">College</label>
                                         </li>
                                     </ul>
@@ -109,16 +110,16 @@
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="checkbox21">
+                                            <input class="form-check-input" type="radio" value="Government" name="type" id="checkbox21">
                                             <label class="form-check-label" for="checkbox21">Government</label>
                                         </li>
                                         <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
+                                            <input class="form-check-input" type="radio" value="Semi Govt" name="type"
                                                 id="checkbox22">
                                             <label class="form-check-label" for="checkbox22">Semi Govt.</label>
                                         </li>
                                         <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
+                                            <input class="form-check-input" type="radio" value="Private" name="type"
                                                 id="checkbox23">
                                             <label class="form-check-label" for="checkbox23">Private</label>
                                         </li>
@@ -131,12 +132,12 @@
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
+                                            <input class="form-check-input" type="radio" value="Engineering" name="stream"
                                                 id="checkbox6">
                                             <label class="form-check-label" for="checkbox6">Engineering</label>
                                         </li>
                                         <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
+                                            <input class="form-check-input" type="radio" value="Medical" name="stream"
                                                 id="checkbox7">
                                             <label class="form-check-label" for="checkbox7">Medical</label>
                                         </li>
@@ -151,17 +152,17 @@
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
+                                            <input class="form-check-input" type="radio" value="Uttar Peadesh" name="state"
                                                 id="checkbox12">
                                             <label class="form-check-label" for="checkbox12">Uttar Peadesh</label>
                                         </li>
                                         <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
+                                            <input class="form-check-input" type="radio" value="Kolkata" name="state"
                                                 id="checkbox14">
                                             <label class="form-check-label" for="checkbox14">Kolkata</label>
                                         </li>
                                         <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
+                                            <input class="form-check-input" type="radio" value="Mumbai" name="state"
                                                 id="checkbox15">
                                             <label class="form-check-label" for="checkbox15">Mumbai</label>
                                         </li>
@@ -169,7 +170,8 @@
                                 </div>
                             </div>
                             <!-- Sidebar Wrapper End -->
-                            <a href="#" class="btn btn-primary btn-hover-heading-color mt-3">Search <i class="fa fa-search"></i></a>
+                            <button type="submit" class="btn btn-primary btn-hover-heading-color mt-3">Search <i class="fa fa-search"></i></a>
+                            </form>
                         </div>
                         <!-- Sidebar Wrapper End -->
                     </div>
