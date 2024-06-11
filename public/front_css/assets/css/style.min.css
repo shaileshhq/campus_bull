@@ -2298,7 +2298,7 @@ only screen and (max-width: 767px) {
 }
 
 .header-menu .main-menu li {
-	padding: 25px 20px;
+	padding: 25px 12px;
 	position: relative;
 	white-space: nowrap
 }
@@ -2576,7 +2576,7 @@ only screen and (max-width: 767px) {
     background: none;
     position: absolute;
     top: 0;
-    right: 15px;
+    right: 13px;
     color: #fff;
     font-size: 17px;
     background: #EB5353;
@@ -5176,7 +5176,8 @@ only screen and (max-width: 767px) {
 	-o-transition: all 0.3s linear;
 	transition: all 0.3s linear;
 	margin-top: 30px;
-	position: relative
+	position: relative;
+	border-top: 3px solid #ff4041;
 }
 
 .single-course .courses-image {
@@ -5209,7 +5210,8 @@ only screen and (max-width: 767px) {
 }
 
 .single-course .courses-content {
-	padding: 20px
+	padding: 20px;
+	min-height: 160px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -11852,7 +11854,7 @@ only screen and (max-width: 767px) {
     content: '';
     width: 100%;
     height: 100%;
-    background: #eb53530d;
+    background: #dddddd2b;
 	top: 0;
 	left: 0
 }
@@ -11883,9 +11885,7 @@ only screen and (max-width: 767px) {
 
 .sidebar-details-video-description .sidebar-description {
     padding: 20px 25px 5px;
-    border: 1px solid #eeeeee;
-    box-shadow: 0px 0px 0px 5px rgb(255 255 255 / 40%), 0px 4px 20px rgb(0 0 0 / 33%);
-
+	box-shadow: 0 0 15px rgb(102 102 102 / 10%);
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -11919,7 +11919,7 @@ only screen and (max-width: 575px) {
 
 .sidebar-details-video-description .sidebar-description .description-list {
 	padding-top: 0px;
-	padding-bottom: 15px
+	padding-bottom: 10px
 }
 
 .sidebar-details-video-description .sidebar-description .description-list li {
@@ -12383,8 +12383,8 @@ ul.footer-nav-menu li:after {
     overflow: auto;
 }
 
-.home-cards{
-	height: 300px;
+.home-cards {
+    min-height: 373px;
     overflow: auto;
 }
 .hg-ovrflw{
@@ -13012,4 +13012,84 @@ select:focus {
 }
 .custom-select option{
 	padding: 10px;
+}
+
+
+.search-form {
+	margin-top: 20px
+}
+
+.search-form form {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+	display: flex;
+}
+
+.search-form form input {
+	width: 65%;
+	border: 1px solid #ebebeb;
+	height: 50px;
+	padding-left: 10px;
+	color: #666666;
+	background-color: #ffffff;
+	border-radius: 4px;
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.search-form form select{
+	width: 30%;
+	border: 1px solid #ebebeb;
+	height: 50px;
+	padding-left: 10px;
+	color: #666666;
+	background-color: #ffffff;
+	border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (max-width: 575px) {
+	.search-form form input {
+		height: 50px;
+	}
+	.search-form form select{
+		height: 50px;
+	}
+}
+
+.search-form form .btn {
+	position: relative;
+	top: 0;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+    border-radius: 0;
+	margin-right: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (max-width: 575px) {
+	.search-form form .btn {
+		height: 50px;
+		line-height: 50px;
+		right: 0;
+	}
+	.search-form form .btn-primary{
+		     margin-right: 0;
+	}
+}
+
+.search-form span {
+	color: #EB5353;;
+	display: block;
+	margin-top: 25px
+}
+
+.search-form span a {
+	color: #666666
+}
+
+.search-form span a:hover {
+	color: #EB5353
 }

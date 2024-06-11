@@ -39,7 +39,7 @@
                         </thead>
                         <tbody>
                             @forelse ($list as $key=>$data)
-
+                            <tr>
                             <td> {{$key+1}} </td>
                             <td>{{$data->name}}</td>
                             <td>{{$data->course_level}}</td>
@@ -48,6 +48,7 @@
                                 <a class="btn btn-success btn-sm mr-1" href="{{route('course.edit',$data->id)}}"><i class="far fa-edit"></i></a>
                                 <a class="btn btn-danger btn-sm mr-1" href=""><i class="fa fa-trash"></i></a>
                             </td>
+                            </tr>
                             @empty
                                 <tr>
                                     <td colspan="10" class="text-center text-info">Opps!! There Are No Data Found..</td>

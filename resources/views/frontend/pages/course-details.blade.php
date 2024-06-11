@@ -65,10 +65,8 @@
                     <div class="sidebar-details-wraps">
                         <!-- Sidebar Details Video Description Start -->
                         <div class="sidebar-details-video-description">
-                            <div class="sidebar-video p-0">
+                            <div class="sidebar-video p-0 mt-4">
                                 <img src="{{ asset('public/front_css/assets/images/sidebar-video.jpg')}}" alt="video">
-                                <a href="https://youtu.be/cdZHQFCqK3g" class="play videoLightbox" href="#"><i
-                                        class="fa fa-play"></i></a>
                             </div>
                             <div class="sidebar-description">
                                 <div class="price">

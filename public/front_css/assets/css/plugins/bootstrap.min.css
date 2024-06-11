@@ -7183,7 +7183,8 @@ fieldset:disabled .btn {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1rem 1rem
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #ddd;
 }
 
 .offcanvas-header .btn-close {
@@ -7200,7 +7201,7 @@ fieldset:disabled .btn {
 
 .offcanvas-body {
 	flex-grow: 1;
-	padding: 1rem 1rem;
+	padding: 0 1rem 1rem;
 	overflow-y: auto
 }
 

@@ -173,9 +173,9 @@
                     <div class="tab-content courses-tab-content">
                         <div class="tab-pane active" id="tab1">
                             <div class="row">
+                                @foreach (App\Models\Course::where('course_level','UG')->take(6)->get() as $course)
                                 <div class="col-lg-3 col-sm-6">
                                     <!-- Single Courses Start -->
-                                    @foreach (App\Models\Course::where('course_level','UG')->take(6)->get() as $course)
                                     <div class="single-course">
                                         <div class="courses-content">
                                             <div class="top-metas">
@@ -192,34 +192,22 @@
                                             </a>
                                         </div>
                                     </div>
-                                    @endforeach
                                     <!-- Single Courses End -->
-                                </div>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                         <div class="tab-pane" id="tab2">
                             <div class="row">
+                                @foreach (App\Models\Course::where('course_level','PG')->take(6)->get() as $course)
                                 <div class="col-lg-3 col-sm-6">
                                     <!-- Single Courses Start -->
-                                    @foreach (App\Models\Course::where('course_level','PG')->take(6)->get() as $course)
                                     <div class="single-course">
                                         <div class="courses-content">
                                             <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
                                             <h1 class="title"><a href="#">MBBS (MD)</a></h1>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
-                                            <div class="top-meta">
-                                                <p>Full Time</p>
-                                                <span class="price">
-                                                    <span class="sale-price">Free</span>
-                                                </span>
-                                            </div>
                                             <div class="top-meta">
                                                 <p>Full Time</p>
                                                 <span class="price">
@@ -236,9 +224,9 @@
                                             </a>
                                         </div>
                                     </div>
-                                    @endforeach
                                     <!-- Single Courses End -->
-                                </div>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                        

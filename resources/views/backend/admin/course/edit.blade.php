@@ -101,6 +101,10 @@
                                     <option value="6" @if($edit_data->semeter == '6') selected @endif>6 Semester</option>
                                     <option value="7" @if($edit_data->semeter == '7') selected @endif>7 Semester</option>
                                     <option value="8" @if($edit_data->semeter == '8') selected @endif>8 Semester</option>
+                                    <option value="9" @if($edit_data->semeter == '9') selected @endif>9 Semester</option>
+                                    <option value="10" @if($edit_data->semeter == '10') selected @endif>10 Semester</option>
+                                    <option value="11" @if($edit_data->semeter == '11') selected @endif>11 Semester</option>
+                                    <option value="12" @if($edit_data->semeter == '12') selected @endif>12 Semester</option>
                                 </select>
                             </div>
                         </div>

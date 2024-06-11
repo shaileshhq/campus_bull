@@ -40,10 +40,12 @@
                             <li><a href="@if (Auth::check()) {{ route('home_user') }} @else {{ route('index') }} @endif"
                                     class="active">Home </a></li>
                             <li><a href="{{ route('about_us') }}">About Us</a></li>
+                            <li><a href="{{ route('course') }}">Courses</a></li>
                             <li><a href="{{ route('college_list') }}">College</a></li>
                             <li><a href="{{ route('services') }}">Services</a></li>
                             <li><a href="{{ route('help') }}">Contact Us </a></li>
-                            @if (Auth::check())
+                            @if (Auth::check() && (Auth::user()->user_type!='admin'))
+                            
                                 <li><a href="{{ route('subscription_plans') }}">Subscription Plans </a></li>
                                 <li><a href="{{ route('user_dashboard') }}">Profile </a></li>
                             @endif
@@ -99,12 +101,15 @@
                                 href="@if (Auth::check()) {{ route('home_user') }} @else {{ '/' }} @endif">Home
                             </a></li>
                         <li><a href="{{ route('about_us') }}">About Us</a></li>
+                        <li><a href="{{ route('course') }}">Courses</a></li>
                         <li><a href="{{ route('college_list') }}">College</a></li>
                         <li><a href="{{ route('services') }}">Services</a></li>
                         <li><a href="{{ route('help') }}">Contact Us </a></li>
                         @if (Auth::check())
+                            @if(Auth::user()->user_type!='admin'))
                             <li><a href="{{ route('subscription_plans') }}">Subscription Plans </a></li>
                             <li><a href="{{ route('user_dashboard') }}">Profile </a></li>
+                            @endif
                             <li><a href="{{ route('user_logout') }}">Logout</a></li>
                         @else
                             <li><a href="{{ route('user-login') }}">Login</a></li>
@@ -117,7 +122,7 @@
         <!-- Offcanvas End -->
 
 
-        @if (Auth::check())
+        @if (Auth::check() && Auth::user()->user_type!='admin')
             <div class="section bg-header" style="border-bottom: 1px solid #dddddd6b;">
                 <div class="container">
                     <div class="bg-custom-theme">

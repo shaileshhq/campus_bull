@@ -100,6 +100,10 @@
                                     <option value="6">6 Semester</option>
                                     <option value="7">7 Semester</option>
                                     <option value="8">8 Semester</option>
+                                    <option value="9">9 Semester</option>
+                                    <option value="10">10 Semester</option>
+                                    <option value="11">11 Semester</option>
+                                    <option value="12">12 Semester</option>
                                 </select>
                             </div>
                         </div>

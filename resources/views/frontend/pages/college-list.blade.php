@@ -89,63 +89,56 @@
                             <h3 class="title">Filters By</h3> <hr/>
                             <!-- Sidebar Wrapper Start -->
                             <div class="sidebar-widget-02">
-                                <h3 class="widget-title">Exam</h3>
-
+                                <h3 class="widget-title">Category</h3>
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="checkbox1">
-                                            <label class="form-check-label" for="checkbox1">Neet PG</label>
+                                            <label class="form-check-label" for="checkbox1">University</label>
                                         </li>
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="checkbox2">
-                                            <label class="form-check-label" for="checkbox2">Neet MDS</label>
+                                            <label class="form-check-label" for="checkbox2">College</label>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <!-- Sidebar Wrapper End -->
-
                             <!-- Sidebar Wrapper Start -->
                             <div class="sidebar-widget-02">
-                                <h3 class="widget-title">OWNERSHIP</h3>
-
+                                <h3 class="widget-title">Mode Of Study</h3>
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="checkbox3">
-                                            <label class="form-check-label" for="checkbox3">Private</label>
+                                            <input class="form-check-input" type="checkbox" value="" id="checkbox21">
+                                            <label class="form-check-label" for="checkbox21">Government</label>
                                         </li>
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value=""
-                                                id="checkbox4">
-                                            <label class="form-check-label" for="checkbox4">Government</label>
+                                                id="checkbox22">
+                                            <label class="form-check-label" for="checkbox22">Semi Govt.</label>
+                                        </li>
+                                        <li class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="checkbox23">
+                                            <label class="form-check-label" for="checkbox23">Private</label>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <!-- Sidebar Wrapper End -->
-
-                            <!-- Sidebar Wrapper Start -->
                             <div class="sidebar-widget-02">
-                                <h3 class="widget-title">FEE</h3>
-
+                                <h3 class="widget-title">Stream</h3>
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value=""
                                                 id="checkbox6">
-                                            <label class="form-check-label" for="checkbox6">Up to 1 Lakh</label>
+                                            <label class="form-check-label" for="checkbox6">Engineering</label>
                                         </li>
                                         <li class="form-check">
                                             <input class="form-check-input" type="checkbox" value=""
                                                 id="checkbox7">
-                                            <label class="form-check-label" for="checkbox7">Up to 2 Lakh</label>
-                                        </li>
-                                        <li class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="checkbox8">
-                                            <label class="form-check-label" for="checkbox8">Up to 3 Lakh</label>
+                                            <label class="form-check-label" for="checkbox7">Medical</label>
                                         </li>
                                     </ul>
                                 </div>
@@ -155,7 +148,6 @@
                             <!-- Sidebar Wrapper Start -->
                             <div class="sidebar-widget-02">
                                 <h3 class="widget-title">State</h3>
-
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
@@ -177,7 +169,7 @@
                                 </div>
                             </div>
                             <!-- Sidebar Wrapper End -->
-
+                            <a href="#" class="btn btn-primary btn-hover-heading-color mt-3">Search <i class="fa fa-search"></i></a>
                         </div>
                         <!-- Sidebar Wrapper End -->
                     </div>
