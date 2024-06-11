@@ -147,12 +147,12 @@
                             <!-- Sidebar Wrapper End -->
 
                             <!-- Sidebar Wrapper Start -->
-                            <div class="sidebar-widget-02">
+                            {{-- <div class="sidebar-widget-02">
                                 <h3 class="widget-title">State</h3>
                                 <div class="widget-checkbox">
                                     <ul class="checkbox-list">
                                         <li class="form-check">
-                                            <input class="form-check-input" type="radio" value="Uttar Peadesh" name="state"
+                                            <input class="form-check-input" type="radio" value="UTTAR PRADESH" name="state"
                                                 id="checkbox12">
                                             <label class="form-check-label" for="checkbox12">Uttar Peadesh</label>
                                         </li>
@@ -168,7 +168,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!-- Sidebar Wrapper End -->
                             <button type="submit" class="btn btn-primary btn-hover-heading-color mt-3">Search <i class="fa fa-search"></i></a>
                             </form>
