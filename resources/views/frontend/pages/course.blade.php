@@ -20,6 +20,7 @@
             <!-- About Wrapper Start -->
             <div class="about-wrapper">
                 <div class="row align-items-center">
+                    @foreach (App\Models\Course::get() as $course)
                     <div class="col-lg-3 col-sm-6">
                         <!-- Single Courses Start -->
                         <div class="single-course">
@@ -27,10 +28,10 @@
                                 <div class="top-metas">
                                     <a class="tag">Full Time</a>
                                 </div>
-                                <h1 class="title"><a href="#">B.Sc Computer Science</a></h1>
+                                <h1 class="title"><a href="#">{{$course->name}}</a></h1>
                             </div>
                             <div class="courses-meta">
-                                <a href="{{route('course_details')}}">
+                                <a href="{{route('course_details',$course->id)}}">
                                     <p class="student"> Course Overview</p>
                                     <div class="arw-rigt">
                                         <i class="fa fa-angle-right"></i>
@@ -40,6 +41,7 @@
                         </div>
                         <!-- Single Courses End -->
                     </div>
+                    @endforeach
                 </div>
             </div>
             <!-- About Wrapper End -->

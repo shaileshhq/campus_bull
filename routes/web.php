@@ -51,7 +51,7 @@ Route::get('/privacy-policy', [FrontController::class, 'privacy_policy'])->name(
 Route::get('/state-document', [FrontController::class, 'state_document'])->name('state_document');
 Route::post('rozer/payment/pay-success', [FrontController::class,'payment'])->name('payment.rozer');
 Route::view('/course', 'frontend.pages.course')->name('course');
-Route::view('/course-details', 'frontend.pages.course-details')->name('course_details');
+Route::get('/course-details/{id}',[FrontController::class, 'course_details'])->name('course_details');
 Route::view('/services', 'frontend.pages.services')->name('services');
 Route::view('/service-details', 'frontend.pages.service-details')->name('service_details');
 

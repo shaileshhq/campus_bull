@@ -181,10 +181,10 @@
                                             <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
-                                            <h1 class="title"><a href="#">{{$course->name}}</a></h1>
+                                            <h1 class="title"><a href="{{route('course_details',$course->id)}}">{{$course->name}}</a></h1>
                                         </div>
                                         <div class="courses-meta">
-                                            <a href="{{route('course_details')}}">
+                                            <a href="{{route('course_details',$course->id)}}">
                                                 <p class="student"> Course Overview</p>
                                                 <div class="arw-rigt">
                                                     <i class="fa fa-angle-right"></i>
@@ -207,7 +207,7 @@
                                             <div class="top-metas">
                                                 <a class="tag">Full Time</a>
                                             </div>
-                                            <h1 class="title"><a href="#">MBBS (MD)</a></h1>
+                                            <h1 class="title"><a href="{{route('course_details',$course->id)}}">{{$course->name}}<</a></h1>
                                             <div class="top-meta">
                                                 <p>Full Time</p>
                                                 <span class="price">
@@ -216,7 +216,7 @@
                                             </div>
                                         </div>
                                         <div class="courses-meta">
-                                            <a href="#">
+                                            <a href="{{route('course_details',$course->id)}}">
                                                 <p class="student"> Course Overview</p>
                                                 <div class="arw-rigt">
                                                     <i class="fa fa-angle-right"></i>

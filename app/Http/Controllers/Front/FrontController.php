@@ -11,6 +11,7 @@ use Session;
 use App\Models\Rank;
 use App\Models\User;
 use Razorpay\Api\Api;
+use App\Models\Course;
 use App\Models\Collage;
 use App\Models\Enquiry;
 use App\Models\Payment;
@@ -2246,5 +2247,10 @@ class FrontController extends Controller
     {
         $collage = Collage::find($id);
         return view('frontend.pages.college-details', compact('collage'));
+    }
+
+    public function course_details($id){
+        $course = Course::find($id);
+        return view('frontend.pages.course-details', compact('course'));
     }
 }
