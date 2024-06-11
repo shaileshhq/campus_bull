@@ -53771,3 +53771,27 @@ a.text-muted:hover {
 ::-webkit-scrollbar-thumb:window-inactive {
     background: #418dd3; 
 }
+.stretch-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+}
+.card.card-img-holder {
+    position: relative;
+}
+.stretch-card > .card {
+    width: 100%;
+    min-width: 100%;
+}
+.card.card-img-holder .card-img-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}

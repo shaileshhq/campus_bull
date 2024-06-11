@@ -23,61 +23,44 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-info">
-                        <div class="inner">
-                            <h3><span class="counter-value">{{App\Models\Collage::get()->count()}}</span></h3>
-                            <p>Collage</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-bag"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                <div class="col-md-3 stretch-card grid-margin">
+                    <div class="card bg-gradient-danger card-img-holder text-white small-box">
+                      <div class="card-body">
+                        <img src="{{asset('public/backend/circle.svg')}}" class="card-img-absolute" alt="circle-image">
+                        <h3><span class="counter-value">{{App\Models\Collage::get()->count()}}</span></h3>
+                        <h6 class="card-text">Collage</h6>
+                      </div>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-success">
-                        <div class="inner">
-                            <h3><span class="counter-value">{{App\Models\Course::get()->count()}}</span></h3>
-                            <p>Course</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                <div class="col-md-3 stretch-card grid-margin">
+                    <div class="card bg-gradient-success card-img-holder text-white small-box">
+                      <div class="card-body">
+                        <img src="{{asset('public/backend/circle.svg')}}" class="card-img-absolute" alt="circle-image">
+                        <h3><span class="counter-value">{{App\Models\Course::get()->count()}}</span></h3>
+                        <h6 class="card-text">Course</h6>
+                      </div>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-warning">
-                        <div class="inner">
-                            <h3><span class="counter-value">{{App\Models\User::where('user_type','customer')->get()->count()}}</span></h3>
-
-                            <p>Users</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-person-add"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                <div class="col-md-3 stretch-card grid-margin">
+                    <div class="card bg-gradient-secondary card-img-holder text-white small-box">
+                      <div class="card-body">
+                        <img src="{{asset('public/backend/circle.svg')}}" class="card-img-absolute" alt="circle-image">
+                        <h3><span class="counter-value">{{App\Models\User::where('user_type','customer')->get()->count()}}</span></h3>
+                        <h6 class="card-text">Users</h6>
+                      </div>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-danger">
-                        <div class="inner">
-                            <h3><span class="counter-value">{{App\Models\Enquiry::get()->count()}}</span></h3>
-
-                            <p>Enquiry </p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-pie-graph"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                <div class="col-md-3 stretch-card grid-margin">
+                    <div class="card bg-gradient-info card-img-holder text-white small-box">
+                      <div class="card-body">
+                        <img src="{{asset('public/backend/circle.svg')}}" class="card-img-absolute" alt="circle-image">
+                        <h3><span class="counter-value">{{App\Models\Enquiry::get()->count()}}</span></h3>
+                        <h6 class="card-text">Enquiry</h6>
+                      </div>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
             </div>

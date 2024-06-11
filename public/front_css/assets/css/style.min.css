@@ -2298,7 +2298,7 @@ only screen and (max-width: 767px) {
 }
 
 .header-menu .main-menu li {
-	padding: 25px 12px;
+	padding: 25px 10px;
 	position: relative;
 	white-space: nowrap
 }
