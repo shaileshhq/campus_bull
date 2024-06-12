@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{asset('public/dashboard_css/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css')}}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
    </head>
-   <body oncopy="return false" oncut="return false"  onselectstart="return false">
+   <body>
       <div class="main-wrapper">
          <!-- Preloader Start  -->
          {{-- <div class="preloader">
