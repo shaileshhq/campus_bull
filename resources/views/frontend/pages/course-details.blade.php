@@ -50,8 +50,8 @@
                             </div>
                             <div class="sidebar-description">
                                 <div class="price">
-                                    {{-- <span class="sale-price">Rs. 3 Lakh</span>
-                                    <span class="regular-price">Rs. 3.75 Lakh</span> --}}
+                                    <span class="sale-price">Rs. 499/-</span>
+                                    <span class="regular-price">Rs. 799/-</span>
                                 </div>
                                 {{-- <a class="btn btn-primary btn-hover-heading-color w-100" href="#">Course Details</a> --}}
                                 <ul class="description-list">
