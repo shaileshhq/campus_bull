@@ -107,6 +107,8 @@ Route::post('contact_us', [FrontController::class, 'contact_us'])->name('contact
 
 Route::post('enquiry', [FrontController::class, 'enquiry'])->name('enquiry');
 
+Route::get('/mark_vs_rank', [FrontController::class, 'mark_vs_rank'])->name('mark_vs_rank');
+
 Route::group(['prefix'=>'ug'],function(){
     
    

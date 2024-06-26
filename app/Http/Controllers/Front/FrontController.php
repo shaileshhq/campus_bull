@@ -2266,4 +2266,14 @@ class FrontController extends Controller
         $course = Course::find($id);
         return view('frontend.pages.course-details', compact('course'));
     }
+
+    public function mark_vs_rank(Request $request){
+     
+        $data=[];
+        if(!empty($request->mark)){
+         $data=Rank::where('marks','>=',$request->mark)->orderBy('id','desc')->first();
+        }
+         return view('frontend.pages.mark_vs_rank',compact('data'));
+        
+       }
 }
