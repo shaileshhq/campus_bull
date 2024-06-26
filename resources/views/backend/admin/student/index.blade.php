@@ -96,6 +96,7 @@
                                 <th>Score</th>
                                 <th>Exam Type</th>
                                 <th>Subscription</th>
+                                <th>Date</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -131,6 +132,9 @@
                                             <span class="slider round"></span>
                                         </label>
 
+                                    </td>
+                                    <td>
+                                        {{ $data->created_at}}
                                     </td>
                                     <td>
                                         <a class="btn btn-success  btn-sm mr-1"

@@ -7,7 +7,7 @@
         <div class="col-md-12">
             <div class="card card-outline card-info">
                 <div class="card-header">
-                    <h2 class="card-title">Enquiry</h2>
+                    <h2 class="card-title">Contact Us</h2>
                 </div>
                 <div class="card-body p-0">
                     <table class="table table-striped">
