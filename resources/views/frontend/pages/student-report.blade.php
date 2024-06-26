@@ -20,7 +20,7 @@
                         <form id="serch_form" method="POST" action="{{route('student_report_details')}}">
                             @csrf()
                         <div class="row mb-2">
-                            <h1>College Prediction on behalf of rank </h1>
+                            <h3>College Prediction on behalf of rank </h3>
                             <div class="col-md-3">
                                 {{-- @if(empty(Auth::user()->customer->rank))
                                 <p style="color:red;">Please Update your rank from profile. <a style="color:blue;" href="{{route('user_dashboard')}}#profile">Click Here</a></p>
