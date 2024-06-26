@@ -72,10 +72,20 @@
 
                     <div class="card-tools">
                         <form class="mt-1 mr-4" action="" method="GET" id="valid_form">
+                            <div>
+                                <label>Exam Type</label>
+                                <select class="form-control" name="exam_type">
+                                    <option value="">Select</option>
+                                    <option value="UG" >UG</option>
+                                    <option value="PG"  >PG</option>
+                                </select>
+                            </div>
                             <div class="input-group input-group" style="width: 250px;">
                                 <input type="text" name="search" class="form-control float-right"
                                     placeholder="Enter Phone "
                                     @isset($search) value="{{ $search }}" @endisset>
+                            </div>
+                            <div>
                                 <div class="input-group-append">
                                     <button type="submit" class="btn btn-default">
                                         <i class="fas fa-search"></i>
