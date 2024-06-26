@@ -358,6 +358,7 @@ class FrontController extends Controller
             $user = new User;
             $user->user_type = 'customer';
             $user->name = $request->name;
+            $user->email = $request->email;
             $user->phone = $request->phone;
             $user->password = Hash::make($request->password);
             $user->save();

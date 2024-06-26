@@ -65,6 +65,11 @@
                                             <input type="number" class="form-control" id="phone" name="phone" placeholder="Phone" required>
                                             <span id="phone_error" class="otp_send"></span>
                                         </div>
+                                        <div class="single-form">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                            <span id="email" class="email"></span>
+                                        </div>
                                         <div id="otp" >
                                         <div class="single-form">
                                             <!--<input type="text" class="form-control" id="check_otp" name="check_otp" placeholder="OTP" required>-->
