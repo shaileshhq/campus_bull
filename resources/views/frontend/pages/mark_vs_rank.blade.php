@@ -50,7 +50,7 @@
                         <div class="section-title text-center">
                            <h2><span>Your Expected Rank Should Be Approx</span> </h2><br>
                            <h5>@if(!empty($data)) {{$data->rank}} @else {{'No Rank Found'}} @endif</h5>
-                         @if(!empty($data))  <p style="color:green;">To Know Your Collage . <a style="color:blue;" href="{{route('student_report','rank='.$data->rank)}}">Click Here</a></p>  @endif
+                         @if(!empty($data))  <p style="color:green;">To Know Your College . <a style="color:blue;" href="{{route('student_report','rank='.$data->rank)}}">Click Here</a></p>  @endif
                         </div>
                         <div class="bg-light text-center">
                          

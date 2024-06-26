@@ -28,7 +28,7 @@
                       <div class="card-body">
                         <img src="{{asset('public/backend/circle.svg')}}" class="card-img-absolute" alt="circle-image">
                         <h3><span class="counter-value">{{App\Models\Collage::get()->count()}}</span></h3>
-                        <h6 class="card-text">Collage</h6>
+                        <h6 class="card-text">College</h6>
                       </div>
                     <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>

@@ -121,9 +121,9 @@
                             </div>
                             <div class="col-md-3" style="margin-top: 43px;">
                                 <div class="form-group  ">
-                                     @if(!empty(Auth::user()->customer->rank))
+                                    
                                       <button class="btn btn-primary btn-hover-heading-color"> Filter </button>
-                                     @endif
+                                    
                             </div>
                             </div>
 
