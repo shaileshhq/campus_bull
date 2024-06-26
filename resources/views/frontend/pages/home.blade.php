@@ -22,11 +22,10 @@
                        <div class="sidebar-description">
                         <ul class="description-list">
                            @if(Auth::user()->customer->exam_type=='PG')
-                              <li><a href="#"><i class="fa fa-file-o"></i> NEET Rank</a></li>
-                              <li><a href="#"><i class="fa fa-file-o"></i> Rank Predictor </a></li>
-                              <li><a href="#"><i class="fa fa-file-o"></i> Mock Test </a></li>
-                              <li><a href="#"><i class="fa fa-file-o"></i> Preffered college </a></li>
-                              <li><a href="#"><i class="fa fa-file-o"></i> My Guide Expert Counselling </a></li>
+                              <li><a href="{{route('student_report')}}"><i class="fa fa-file-o"></i> College Predictor </a></li>
+                              <li><a href="{{route('mark_vs_rank')}}"><i class="fa fa-file-o"></i> Rank Predictor </a></li>
+                              <li><a href="{{route('college_list')}}"><i class="fa fa-file-o"></i> Preffered college </a></li>
+                              <li><a href="{{route('subscription_plans')}}"><i class="fa fa-file-o"></i> My Guide Expert Counselling </a></li>
                             @endif
                             @if(Auth::user()->customer->exam_type=='UG')
                              
