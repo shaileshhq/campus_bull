@@ -156,6 +156,10 @@
                             <li class="nav-item">
                                 <a href="/dnb-beds" class="custom-link">DNB Hospital By Details</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="{{ route('mark_vs_rank') }}" class="custom-link">College Hospital
+                                    Rank Predictor</a>
+                            </li>
                         </ul>
                         @endif
 
