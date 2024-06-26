@@ -68,29 +68,34 @@
         <div class="col-md-12">
             <div class="card card-outline card-info">
                 <div class="card-header">
-                    <h3 class="card-title">Student List</h3>
-
-                    <div class="card-tools">
-                        <form class="mt-1 mr-4" action="" method="GET" id="valid_form">
-                            <div>
-                                <label>Exam Type</label>
+                    <div class="">
+                        <form action="" method="GET" id="valid_form">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h3>Student List</h3>
+                                </div>
+                                <div class="col-3">
+                                <label>Exam Type</label><br/>
                                 <select class="form-control" name="exam_type">
                                     <option value="">Select</option>
                                     <option value="UG" >UG</option>
                                     <option value="PG"  >PG</option>
                                 </select>
                             </div>
-                            <div class="input-group input-group" style="width: 250px;">
+                            <div class="col-3">
+                                <label>Phone</label><br/>
                                 <input type="text" name="search" class="form-control float-right"
-                                    placeholder="Enter Phone "
-                                    @isset($search) value="{{ $search }}" @endisset>
+                                placeholder="Enter Phone "
+                                @isset($search) value="{{ $search }}" @endisset>
                             </div>
-                            <div>
+                            <div class="col-2">
+                                <label>Filter</label><br/>
                                 <div class="input-group-append">
                                     <button type="submit" class="btn btn-default">
-                                        <i class="fas fa-search"></i>
+                                        Search
                                     </button>
                                 </div>
+                            </div>
                             </div>
                         </form>
                     </div>
