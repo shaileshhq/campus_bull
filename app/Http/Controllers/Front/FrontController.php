@@ -417,7 +417,7 @@ class FrontController extends Controller
         $customer = Customer::where('user_id', $user->id)->first();
         $customer->dob = $request->dob;
         $customer->state = $request->state;
-        $customer->neet_score = $request->neet_score;
+        $customer->score = $request->score;
         if (Auth::user()->id == 13) {
             $customer->rank = $request->rank;
         } else {

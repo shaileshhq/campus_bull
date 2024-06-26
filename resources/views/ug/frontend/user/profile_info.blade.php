@@ -46,7 +46,7 @@
                 <!-- Single Form Start -->
                 <div class="single-form">
                     <label>Neet Score</label>
-                    <input type="text" class="form-control" placeholder="Neet Score*" name="neet_score" value="{{Auth::user()->customer->neet_score}}">
+                    <input type="text" class="form-control" placeholder="Neet Score*" name="score" value="{{Auth::user()->customer->score}}">
                 </div>
                 <!-- Single Form End -->
             </div>
