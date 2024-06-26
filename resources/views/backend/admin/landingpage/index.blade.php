@@ -26,7 +26,7 @@
                                     <tr>
                                         
                                         <td>{{ $enquiry->name }}</td>
-                                        <td>{{ $enquiry->collage->name }}</td>
+                                        <td>{{ optional($enquiry->collage)->name }}</td>
                                         <td><a href="tel:{{ $enquiry->phone }}"> {{ $enquiry->phone }}</a></td>
                                         <td>{{ $enquiry->email }}</td>
                                         <td>{{ $enquiry->message }}</td>
