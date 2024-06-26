@@ -1156,37 +1156,37 @@ class FrontController extends Controller
         $cour = $request->course;
 
         if ($request->type == 'all') {
-            $list =  DB::table($state)->where('year', 2023)->where('course_fee', '<', $request->budget)->where(function ($query) use ($request) {
+            $list =  DB::table($state)->where('course_fee', '<', $request->budget)->where(function ($query) use ($request) {
                 $query->where('quota', 'AIQ')->orwhere('quota', 'AMU')->orwhere('quota', 'BHU')->orwhere('quota', 'CIQ')->orwhere('quota', 'DU')->orwhere('quota', 'IP')->orwhere('quota', 'DNB Post MBBS')->orwhere('quota', 'NBE Diploma');
             })->orderBy('id');
-            $category = DB::table($state)->where('year', 2023)->groupBy('category')->get();
-            $quota = DB::table($state)->where('year', 2023)->orderBy('id')->groupBy('quota')->get();
-            $college = DB::table($state)->where('year', 2023)->where(function ($query) use ($request) {
+            $category = DB::table($state)->groupBy('category')->get();
+            $quota = DB::table($state)->orderBy('id')->groupBy('quota')->get();
+            $college = DB::table($state)->where(function ($query) use ($request) {
                 $query->where('quota', 'AIQ')->orwhere('quota', 'AMU')->orwhere('quota', 'BHU')->orwhere('quota', 'CIQ')->orwhere('quota', 'DU')->orwhere('quota', 'IP')->orwhere('quota', 'DNB Post MBBS')->orwhere('quota', 'NBE Diploma');
             })->groupBy('college')->get();
         }
         if ($request->type == 'deemed') {
-            $list =  DB::table($state)->where('year', 2023)->where('course_fee', '<', $request->budget)->where(function ($query) use ($request) {
+            $list =  DB::table($state)->where('course_fee', '<', $request->budget)->where(function ($query) use ($request) {
                 $query->where('quota', 'MNG')->orwhere('quota', 'NRI')->orwhere('quota', 'JM')->orwhere('quota', 'MM');
             })->orderBy('id');
-            $category = DB::table($state)->where('year', 2023)->where(function ($query) use ($request) {
+            $category = DB::table($state)->where(function ($query) use ($request) {
                 $query->where('quota', 'MNG')->orwhere('quota', 'NRI')->orwhere('quota', 'JM')->orwhere('quota', 'MM');
             })->groupBy('category')->get();
-            $quota = DB::table($state)->where('year', 2023)->orderBy('id')->where(function ($query) use ($request) {
+            $quota = DB::table($state)->orderBy('id')->where(function ($query) use ($request) {
                 $query->where('quota', 'MNG')->orwhere('quota', 'NRI')->orwhere('quota', 'JM')->orwhere('quota', 'MM');
             })->groupBy('quota')->get();
-            $college = DB::table($state)->where('year', 2023)->where(function ($query) use ($request) {
+            $college = DB::table($state)->where(function ($query) use ($request) {
                 $query->where('quota', 'MNG')->orwhere('quota', 'NRI')->orwhere('quota', 'JM')->orwhere('quota', 'MM');
             })->groupBy('college')->get();
         }
         if ($request->type == 'state_home') {
 
-            $list =  DB::table($state)->where('year', 2023)->where(function ($query) use ($request) {
+            $list =  DB::table($state)->where(function ($query) use ($request) {
                 $query->where('course_fee', '<', $request->budget);
             })->orderBy('id');
-            $category = DB::table($state)->where('year', 2023)->groupBy('category')->get();
-            $quota = DB::table($state)->where('year', 2023)->orderBy('id')->groupBy('quota')->get();
-            $college = DB::table($state)->where('year', 2023)->groupBy('college')->get();
+            $category = DB::table($state)->groupBy('category')->get();
+            $quota = DB::table($state)->orderBy('id')->groupBy('quota')->get();
+            $college = DB::table($state)->groupBy('college')->get();
 
 
 
@@ -1311,12 +1311,12 @@ class FrontController extends Controller
             return view('frontend.pages.student-report-closing-rank-details', compact('list', 'category', 'quota', 'round', 'state', 'type', 'rank', 'budget', 'cour', 'college'));
         }
         if ($request->type == 'state_other') {
-            $list =  DB::table($state)->where('year', 2023)->where(function ($query) use ($request) {
+            $list =  DB::table($state)->where(function ($query) use ($request) {
                 $query->where('course_fee', '<', $request->budget);
             })->orderBy('id');
-            $category = DB::table($state)->where('year', 2023)->groupBy('category')->get();
-            $quota = DB::table($state)->where('year', 2023)->orderBy('id')->groupBy('quota')->get();
-            $college = DB::table($state)->where('year', 2023)->groupBy('college')->get();
+            $category = DB::table($state)->groupBy('category')->get();
+            $quota = DB::table($state)->orderBy('id')->groupBy('quota')->get();
+            $college = DB::table($state)->groupBy('college')->get();
 
             if ($state == 'bihars') {
                 $list = $list->where(function ($query) use ($request) {

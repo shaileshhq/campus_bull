@@ -26,7 +26,7 @@
                           <input type="hidden" name="budget" value="{{request('budget')}}">
                           <input type="hidden" name="course" value="{{$cour}}">
                           
-                          {{--   <div class="col-md-3 mt-3">
+                            <div class="col-md-3 mt-3">
                                 <div class="form-group">
                                     <label for="year">Year :</label>
                                     <select class="form-control  select2" name="year[]" id="year" onchange="filter_data()" multiple>
@@ -35,7 +35,7 @@
                                     </select>
                                 </div>
                             </div>
-                            --}}
+                           
                           
                             <div class="col-md-3">
                                 <div class="form-group mt-3 ">
