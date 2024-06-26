@@ -1151,7 +1151,7 @@ class FrontController extends Controller
 
         $state = $request->state;
         $budget = request('budget');
-        $rank = Auth::user()->customer->rank;
+        $rank = request('rank');
         $type = request('type');
         $cour = $request->course;
 

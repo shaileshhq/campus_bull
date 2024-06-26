@@ -21,11 +21,19 @@
                        </div>
                        <div class="sidebar-description">
                         <ul class="description-list">
-                            <li><a href="#"><i class="fa fa-file-o"></i> NEET Rank</a></li>
-                            <li><a href="#"><i class="fa fa-file-o"></i> Rank Predictor </a></li>
-                            <li><a href="#"><i class="fa fa-file-o"></i> Mock Test </a></li>
-                            <li><a href="#"><i class="fa fa-file-o"></i> Preffered college </a></li>
-                            <li><a href="#"><i class="fa fa-file-o"></i> My Guide Expert Counselling </a></li>
+                           @if(Auth::user()->customer->exam_type=='PG')
+                              <li><a href="#"><i class="fa fa-file-o"></i> NEET Rank</a></li>
+                              <li><a href="#"><i class="fa fa-file-o"></i> Rank Predictor </a></li>
+                              <li><a href="#"><i class="fa fa-file-o"></i> Mock Test </a></li>
+                              <li><a href="#"><i class="fa fa-file-o"></i> Preffered college </a></li>
+                              <li><a href="#"><i class="fa fa-file-o"></i> My Guide Expert Counselling </a></li>
+                            @endif
+                            @if(Auth::user()->customer->exam_type=='UG')
+                             
+                              <li><a href="{{route('ug.student_report')}}"><i class="fa fa-file-o"></i> College Predictor </a></li>
+                              <li><a href="{{route('college_list')}}"><i class="fa fa-file-o"></i> Preffered College </a></li>
+                              <li><a href="{{route('subscription_plans')}}"><i class="fa fa-file-o"></i> My Guide Expert Counselling </a></li>
+                            @endif
                         </ul>
                        </div>
                    </div>
@@ -33,17 +41,35 @@
            </div>
            <div class="col-xl-6 col-lg-6 mb-3">
             <div class="search-form mt-0 mb-3">
-               <form action="#">
+               @if(Auth::check())
+                  @if(Auth::user()->customer->exam_type=='UG')
+                  <form action="{{route('ug.student_report')}}">
+                  @endif
+                  @if(Auth::user()->customer->exam_type=='PG')
+                   <form action="{{route('student_report')}}">
+                  @endif
+              
+               @else
+                <form action="{{route('user-login')}}">
+               @endif
                    <select class="custom-select">
-                       <option>Select Course</option>
+                       @if(Auth::user()->customer->exam_type=='UG')
                        <option value="NEET UG">NEET UG</option>
+                       @endif
+                       @if(Auth::user()->customer->exam_type=='PG')
                        <option value="NEET PG">NEET PG</option>
+                       @endif
                      </select>
-                   <input type="text" placeholder="Rank...">
+                   <input type="text" name="rank" placeholder="Rank..." required>
                    @if(Auth::check())
-                     <a  @if(empty(optional(Auth::user()->payment)->user_id)) href="{{route('subscription_plans')}}" @else href="{{route('student_report')}}" @endif class="btn btn-primary btn-hover-heading-color" ><i class="fa fa-search"></i></a>
+                     @if(empty(optional(Auth::user()->payment)->user_id))
+                      <a   href="{{route('subscription_plans')}}"   class="btn btn-primary btn-hover-heading-color" ><i class="fa fa-search"></i></a>
+                     @else 
+                     <button type="submit"   class="btn btn-primary btn-hover-heading-color" ><i class="fa fa-search"></i></button>
+                     @endif
+
                     @else
-                    <a href="{{route('user-login')}}"  class="btn btn-primary btn-hover-heading-color">  <i class="fa fa-search"></i></a>
+                      <a href="{{route('user-login')}}"  class="btn btn-primary btn-hover-heading-color">  <i class="fa fa-search"></i></a>
                     @endif
                </form>
            </div>

@@ -22,12 +22,12 @@
                         <div class="row mb-2">
                           
                             <div class="col-md-3">
-                                @if(empty(Auth::user()->customer->rank))
+                                {{-- @if(empty(Auth::user()->customer->rank))
                                 <p style="color:red;">Please Update your rank from profile. <a style="color:blue;" href="#">Click Here</a></p>
-                                @endif
+                                @endif --}}
                                 <div class="form-group mt-3 ">
                                     <label for="college">NEET UG Rank :</label>
-                                    <input type="number" class="form-control" name="rank" id="rank" placeholder="Enter Rank" value="{{Auth::user()->customer->rank}}" {{'disabled'}} required/>   
+                                    <input type="number" class="form-control" name="rank" id="rank" placeholder="Enter Rank" value="@if(request('rank')){{request('rank')}}@else{{Auth::user()->customer->rank}}@endif"  required/>   
                                    
                                 </div>
                             </div>

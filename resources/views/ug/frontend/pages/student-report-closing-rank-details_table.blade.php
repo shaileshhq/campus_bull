@@ -24,6 +24,6 @@
        </tbody>
     </table>
     <div class="mt-3">
-                                @include('pagination',['list' =>$list,'class'=>'rank_details'])
-                                 </div>
+       @include('pagination',['list' =>$list,'class'=>'rank_details'])
+    </div>
  </div>

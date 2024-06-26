@@ -22,7 +22,7 @@
                         <div class="row mb-2">
                           <input type="hidden" name="state" value="{{request('state')}}">
                           <input type="hidden" name="type" value="{{request('type')}}">
-                          <input type="hidden" name="rank" value="{{Auth::user()->customer->rank}}">
+                          <input type="hidden" name="rank" value="{{request('rank')}}">
                           <input type="hidden" name="budget" value="{{request('budget')}}">
                             <div class="col-md-3">
                                 <div class="form-group mt-3 ">

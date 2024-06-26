@@ -34,7 +34,7 @@
                                                  
                                                     <input type="hidden" name="state" value="{{$state}}">
                                                       <input type="hidden" name="type" value="state_other">
-                                                        <input type="hidden" name="rank" value="{{Auth::user()->customer->rank}}">
+                                                        <input type="hidden" name="rank" value="{{request('rank')}}">
                                                         <input type="hidden" name="budget" value="{{$input['budget']}}">
                                                   
                                               <button class="btn btn-primary btn-hover-heading-color" type="submit" >{{str_replace('_',' ',strtoupper($state))}}</button>
@@ -65,7 +65,7 @@
                                                  
                                                     <input type="hidden" name="state" value="{{$input['domicile']}}">
                                                       <input type="hidden" name="type" value="state_home">
-                                                         <input type="hidden" name="rank" value="{{Auth::user()->customer->rank}}">
+                                                         <input type="hidden" name="rank" value="{{request('rank')}}">
                                                         <input type="hidden" name="budget" value="{{$input['budget']}}">
                                                   
                                                  <button class="btn btn-primary btn-hover-heading-color" type="submit" >{{str_replace('_',' ',strtoupper($input['domicile']))}}</button>
@@ -95,7 +95,7 @@
                                                  
                                                     <input type="hidden" name="state" value="deemeds">
                                                       <input type="hidden" name="type" value="deemed">
-                                                         <input type="hidden" name="rank" value="{{Auth::user()->customer->rank}}">
+                                                         <input type="hidden" name="rank" value="{{request('rank')}}">
                                                         <input type="hidden" name="budget" value="{{$input['budget']}}">
                                                   
                                                  <button class="btn btn-primary btn-hover-heading-color" type="submit" >{{str_replace('_',' ',strtoupper($counselling))}}</button>
@@ -125,7 +125,7 @@
                                                  
                                                     <input type="hidden" name="state" value="{{$counselling}}">
                                                       <input type="hidden" name="type" value="all">
-                                                         <input type="hidden" name="rank" value="{{Auth::user()->customer->rank}}">
+                                                         <input type="hidden" name="rank" value="{{request('rank')}}">
                                                         <input type="hidden" name="budget" value="{{$input['budget']}}">
                                                   
                                               <button class="btn btn-primary btn-hover-heading-color" type="submit" >{{str_replace('_',' ',strtoupper($counselling))}}</button>

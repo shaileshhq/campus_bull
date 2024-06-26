@@ -1028,7 +1028,7 @@ public function student_report_closing_rank_details(Request $request){
  
     $state=$request->state;
     $budget=request('budget');
-    $rank=Auth::user()->customer->rank;
+    $rank=request('rank');
     $type=request('type');
     $cour=$request->course;
 
@@ -1394,8 +1394,7 @@ if(!empty($request->submit)){
          });
      }
 
-     $new_array=[];
-      $list=$list->get();
+    
        
     $new_array=[];
       $list=$list->get();
