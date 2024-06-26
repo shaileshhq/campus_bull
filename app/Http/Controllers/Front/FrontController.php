@@ -242,7 +242,7 @@ class FrontController extends Controller
         if ($request->phone != '' && preg_match($mobileregex, $request->phone) === 1) {
             $customer = User::where('phone', $request->phone)->count();
             if ($customer == 0) {
-                $mob_otp = rand(1000, 9999);;
+                $mob_otp = rand(1000, 9999);
                 Session::forget('mob_otp');
                 Session::put('mob_otp', [$mob_otp]);
 
