@@ -25,7 +25,7 @@ class CustomerController extends Controller
         }
         if(!empty($request->exam_type)){
             $exam_type=$request->exam_type;
-            $list = $list->whereHas('customers', function($q,$exam_type){
+            $list = $list->whereHas('customer', function($q) use ($exam_type){
                 $q->where('exam_type', $exam_type);
             }); 
         }
