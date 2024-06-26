@@ -233,7 +233,7 @@ class FrontController extends Controller
     public function send_otp_sms($to, $name, $text)
     {
 
-        //  $response = Msg91::sms()->to(['91'.$to]) ->flow("61c566bb0840836b8241ca1d")->variable('USER', $name)->variable('OTP', $text)->send();
+          $response = Msg91::sms()->to(['91'.$to]) ->flow("61c566bb0840836b8241ca1d")->variable('USER', $name)->variable('OTP', $text)->send();
     }
 
     public function otp_send(Request $request)

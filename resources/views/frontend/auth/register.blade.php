@@ -72,8 +72,8 @@
                                         </div>
                                         <div id="otp" >
                                         <div class="single-form">
-                                            <!--<input type="text" class="form-control" id="check_otp" name="check_otp" placeholder="OTP" required>-->
-                                            <!--<span id="otp_error" class="otp_send"></span>-->
+                                            <input type="text" class="form-control" id="check_otp" name="check_otp" placeholder="OTP" required>
+                                            <span id="otp_error" class="otp_send"></span>
                                         </div>
                                         <div class="single-form" id="password_div" >
                                             <label>Password</label>
@@ -116,18 +116,18 @@ $("#phone").keyup(function(){
              
                if(response.status==true){
                    $('#otp').show();
-                    //  $('#phone_error').html('Otp Send Successfully !');
+                     $('#phone_error').html('Otp Send Successfully !');
 
-                    //  var otp=response.otp;
-                    //  $.validator.addMethod(
-                    //      'otpcheck',
-                    //       function (value, element) {
-                    //           return value == otp;
-                    //         },
-                    //          'Invalid Otp.'
-                    //          );
+                     var otp=response.otp;
+                     $.validator.addMethod(
+                         'otpcheck',
+                          function (value, element) {
+                              return value == otp;
+                            },
+                             'Invalid Otp.'
+                             );
 
-                    //   return true;
+                      return true;
                }
                  if(response.status==false){
                   $('#phone_error').html('Number Already Exits !');
@@ -181,10 +181,10 @@ $("#phone").keyup(function(){
       name: "required",
       neet_score:"required",
       phone: "required",
-    //   check_otp: {
-    //     required: true,
-    //     otpcheck:true
-    //   },
+      check_otp: {
+        required: true,
+        otpcheck:true
+      },
       password: {
         required: true,
         minlength: 5
@@ -195,10 +195,10 @@ $("#phone").keyup(function(){
         name: "Please enter your Name",
         neet_score: "Please enter your NEET Score",
         phone: "Please enter phone",
-        // check_otp:{
-        //     required: "Please provide  Otp",
-        //     otpcheck:"Invalid Otp"
-        // },
+        check_otp:{
+            required: "Please provide  Otp",
+            otpcheck:"Invalid Otp"
+        },
       password: {
         required: "Please provide password",
         minlength: "Your password must be at least 5 characters long"
