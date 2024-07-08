@@ -82,7 +82,7 @@
                                 <div class="card mt-3 home-card">
                                     <div class="border-0 card">
                                         <div class="card-body p-0" id="table">
-                                            @include('frontend.pages.student-report-closing-rank-details_table')
+                                            @include('ug.frontend.pages.student-report-closing-rank-details_table')
                                         </div>
                                     </div>
                                     
