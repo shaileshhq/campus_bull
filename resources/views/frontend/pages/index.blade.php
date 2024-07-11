@@ -631,27 +631,6 @@
                         </div>
                         <!-- Single Testimonial End -->
                     </div>
-                    <div class="swiper-slide">
-                        <!-- Single Testimonial Start -->
-                        <div class="single-testimonial-02">
-                            <div class="testimonial-text">
-                                <p>Campus Bull are great team of professional to work with. Even when i got the seat then
-                                    also
-                                    Varun insisted me personally to go for document verification in Karnataka which turned
-                                    to be the best decision of my life.</p>
-                            </div>
-                            <div class="testimonial-meta">
-                                <div class="testimonial-quote">
-                                    <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
-                                </div>
-                                <div class="meta-content">
-                                    <h5 class="name">Shailesh Ravat</h5>
-                                    <p class="designation">(M.D Medicine)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Testimonial End -->
-                    </div>
                 </div>
 
                 <div class="swiper-pagination"></div>
