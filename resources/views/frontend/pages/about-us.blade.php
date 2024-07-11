@@ -67,18 +67,15 @@
                         <!-- Single Testimonial Start -->
                         <div class="single-testimonial-02">
                             <div class="testimonial-text">
-                                <p>Campus Bull are great team of professional to work with. Even when i got the seat then
-                                    also
-                                    Varun insisted me personally to go for document verification in Karnataka which turned
-                                    to be the best decision of my life.</p>
+                                <p>Found everything I wanted and it solved all of my queries for which I was searching a lot....very helpful site. A must visit.... kudos to the team!</p>
                             </div>
                             <div class="testimonial-meta">
                                 <div class="testimonial-quote">
                                     <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
                                 </div>
                                 <div class="meta-content">
-                                    <h5 class="name">Shailesh Ravat</h5>
-                                    <p class="designation">(M.D Medicine)</p>
+                                    <h5 class="name">Neha Gupta</h5>
+                                    <p class="designation">Medical Aspirant </p>
                                 </div>
                             </div>
                         </div>
@@ -88,18 +85,15 @@
                         <!-- Single Testimonial Start -->
                         <div class="single-testimonial-02">
                             <div class="testimonial-text">
-                                <p>Campus Bull are great team of professional to work with. Even when i got the seat then
-                                    also
-                                    Varun insisted me personally to go for document verification in Karnataka which turned
-                                    to be the best decision of my life.</p>
+                                <p>When you look back in life , this app would have played a huge role in laying the foundation of your career decisions.</p>
                             </div>
                             <div class="testimonial-meta">
                                 <div class="testimonial-quote">
                                     <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
                                 </div>
                                 <div class="meta-content">
-                                    <h5 class="name">Shailesh Ravat</h5>
-                                    <p class="designation">(M.D Medicine)</p>
+                                <h5 class="name">Abhishek Singh</h5>
+                                <p class="designation">Medical Aspirant </p>
                                 </div>
                             </div>
                         </div>
@@ -109,18 +103,15 @@
                         <!-- Single Testimonial Start -->
                         <div class="single-testimonial-02">
                             <div class="testimonial-text">
-                                <p>Campus Bull are great team of professional to work with. Even when i got the seat then
-                                    also
-                                    Varun insisted me personally to go for document verification in Karnataka which turned
-                                    to be the best decision of my life.</p>
+                                <p>No need to find colleges in other sites, this is the best site in India to know about any colleges in India.</p>
                             </div>
                             <div class="testimonial-meta">
                                 <div class="testimonial-quote">
                                     <img src="{{ asset('public/front_css/assets/images/user.jpg') }}" alt="Author">
                                 </div>
                                 <div class="meta-content">
-                                    <h5 class="name">Shailesh Ravat</h5>
-                                    <p class="designation">(M.D Medicine)</p>
+                                <h5 class="name">Ranjit yadav</h5>
+                                <p class="designation">Medical Aspirant </p>
                                 </div>
                             </div>
                         </div>
