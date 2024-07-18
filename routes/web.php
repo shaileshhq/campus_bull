@@ -33,6 +33,7 @@ Route::get('/', [App\Http\Controllers\Front\FrontController::class, 'index'])->n
 Route::get('/home', [App\Http\Controllers\Front\FrontController::class, 'home'])->name('home_user');
 Route::get('/contact-us', [FrontController::class, 'help'])->name('help');
 Route::get('/subscription-plans', [FrontController::class, 'subscription_plans'])->name('subscription_plans');
+
 Route::get('/all-india-counselings', [FrontController::class, 'all_india_counselings'])->name('all_india_counselings');
 Route::get('/deemed-hospital-details', [FrontController::class, 'deemed_hospital_details'])->name('deemed_hospital_details');
 Route::get('/closing-rank', [FrontController::class, 'closing_rank'])->name('closing_rank');
