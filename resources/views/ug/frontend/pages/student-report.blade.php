@@ -90,8 +90,8 @@
                                     <label for="course">Counselling Preference :</label>
                                     <select class="form-control  select2" name="counselling_preference[]" id="counselling_preference" tabindex="-1"
                                         aria-hidden="true" onchange="fetch_state()"   multiple required>
-                                        <option value="all_indias">All India</option>
-                                        <option value="deemed">Deemed</option>
+                                        {{-- <option value="all_indias">All India</option>
+                                        <option value="deemed">Deemed</option> --}}
                                           <!--<option value="aiims">Aiims</option>-->
                                         <option value="state_home">State Counselling (Home State)</option>
                                         <option value="state_other">State Counselling (Other State)</option>
