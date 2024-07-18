@@ -37,9 +37,7 @@
                                     <select class="form-control" name="domicile" id="domicile" tabindex="-1"
                                         aria-hidden="true"  required>
                                         <option value="" > Select State</option>
-                                        <option value="andhra_pradeshes" >  Andhra Pradesh</option>
-                                        <option value="assams" >   Assam</option>
-                                        <option value="bihars" >   Bihar</option>
+                                        <option value="bihars" >  Bihar</option>
                                         <option value="chhattisgarhs" >  Chhattisgarh</option>
                                         <option value="gujarats" >   Gujarat</option>
                                         <option value="haryanas" >   Haryana</option>
@@ -47,15 +45,11 @@
                                         <option value="jammu_and_kashmirs" >Jammu and Kashmir</option>
                                         <option value="jharkhands">Jharkhand</option>
                                         <option value="karnatakas">Karnataka</option>
-                                        <option value="keralas">Kerala</option>
                                         <option value="madhya_pradeshes">Madhya Pradesh</option>
                                         <option value="maharashtras">Maharashtra</option>
                                         <option value="pondicherries">Pondicherry</option>
                                         <option value="punjabs">Punjab</option>
-                                        <option value="rajasthans">Rajasthan</option>
-                                        <option value="tamil_nadus">Tamil Nadu</option>
                                         <option value="telanganas">Telangana</option>
-                                        <option value="tripuras">Tripura</option>
                                         <option value="uttar_pradeshes">Uttar Pradesh</option>
                                         <option value="uttarakhands">Uttarakhand</option>
                                         <option value="west_bengals">West Bengal</option>
@@ -178,7 +172,7 @@
           $("#counselling_preference_other_state").empty();
              if(counselling_preference_other_state.includes('state_other')){
                 $("#counselling_preference_other_state").prop('required',true)
-                $("#counselling_preference_other_state").append('<option value="andhra_pradeshes">Andhra Pradesh</option><option value="chhattisgarhs" >Chhattisgarh</option><option value="haryanas">Haryana</option><option value="karnatakas">Karnataka</option><option value="madhya_pradeshes">Madhya Pradesh</option><option value="pondicherries">Pondicherry</option><option value="rajasthans">Rajasthan</option><option value="tamil_nadus">Tamil Nadu</option><option value="telanganas">Telangana</option><option value="uttar_pradeshes">Uttar Pradesh</option><option value="uttarakhands">Uttarakhand</option><option value="west_bengals">West Bengal</option>');
+                $("#counselling_preference_other_state").append('<option value="" > Select State</option><option value="bihars" >  Bihar</option><option value="chhattisgarhs" >  Chhattisgarh</option><option value="gujarats" > Gujarat</option><option value="haryanas" >   Haryana</option><option value="himachal_pradeshes" >Himachal Pradesh</option><option value="jammu_and_kashmirs" >Jammu and Kashmir</option><option value="jharkhands">Jharkhand</option><option value="karnatakas">Karnataka</option><option value="madhya_pradeshes">Madhya Pradesh</option><option value="maharashtras">Maharashtra</option><option value="pondicherries">Pondicherry</option><option value="punjabs">Punjab</option><option value="telanganas">Telangana</option><option value="uttar_pradeshes">Uttar Pradesh</option><option value="uttarakhands">Uttarakhand</option><option value="west_bengals">West Bengal</option>');
              }
               
       }
