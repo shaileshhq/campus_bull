@@ -17,7 +17,7 @@ use App\Http\Controllers\Ug\Front\UgFrontController;
 |
 */
 
-
+Route::view('cash_payment_verification', 'frontend.cash_payment_verification')->name('cash_payment_verification');
 //Route::get('/deemed', [App\Http\Controllers\Front\FrontController::class, 'new_deemed']);
 Route::get('/deemed_fees', [App\Http\Controllers\Front\FrontController::class, 'deemed_fees'])->name('deemed_fees');
 Route::get('/deemed_details', [App\Http\Controllers\Front\FrontController::class, 'deemed_details'])->name('deemed_details');
