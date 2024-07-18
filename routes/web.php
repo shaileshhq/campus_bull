@@ -17,7 +17,7 @@ use App\Http\Controllers\Ug\Front\UgFrontController;
 |
 */
 
-Route::view('cash_payment_verification', 'frontend.cash_payment_verification')->name('cash_payment_verification');
+
 //Route::get('/deemed', [App\Http\Controllers\Front\FrontController::class, 'new_deemed']);
 Route::get('/deemed_fees', [App\Http\Controllers\Front\FrontController::class, 'deemed_fees'])->name('deemed_fees');
 Route::get('/deemed_details', [App\Http\Controllers\Front\FrontController::class, 'deemed_details'])->name('deemed_details');
@@ -47,7 +47,7 @@ Route::get('/state-wise-counseling-details-andhra', [FrontController::class, 'st
 Route::get('/state-wise-counseling-details', [FrontController::class, 'state_wise_counseling_details'])->name('state_wise_counseling_details')->middleware("checkSubscription");
 Route::get('/about-us', [FrontController::class, 'about_us'])->name('about_us');
 Route::get('/college-list',[FrontController::class, 'collage_list'])->name('college_list');
-Route::get('/college-details/{id}', [FrontController::class, 'collage_details'])->name('college_details');
+Route::get('/college-details/{id}', [FrontController::class, ''])->name('college_details');
 Route::get('/term-and-condition', [FrontController::class, 'term_condition'])->name('term_condition');
 Route::get('/privacy-policy', [FrontController::class, 'privacy_policy'])->name('privacy_policy');
 Route::get('/state-document', [FrontController::class, 'state_document'])->name('state_document');
