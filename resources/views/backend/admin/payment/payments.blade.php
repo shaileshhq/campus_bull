@@ -94,7 +94,7 @@
                             @foreach ($list as $key=> $data)
                                 <tr>
                                     <td>{{$key+1}}</td>
-                                    <td>{{$data->user_id}}</td>
+                                    <td>{{$data->user->name}}</td>
                                     <td>{{$data->payment_id}}</td>
                                     <td>{{$data->payment_amount}}</td>
                                     <td>{{$data->method}}</td>

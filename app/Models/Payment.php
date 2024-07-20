@@ -19,4 +19,9 @@ class Payment extends Model
         'plan_status',
     ];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class); 
+    }
+
 }
