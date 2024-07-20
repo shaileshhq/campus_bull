@@ -72,9 +72,9 @@
                         <form action="" method="GET" id="valid_form">
                             <div class="row">
                             <div class="col-3">
-                                <label>Phone</label><br/>
+                                <label>Type</label><br/>
                                 <input type="text" name="search" class="form-control float-right"
-                                placeholder="Enter Phone "
+                                placeholder="Enter Phone,Name"
                                 @isset($search) value="{{ $search }}" @endisset>
                             </div>
                             <div class="col-2">
