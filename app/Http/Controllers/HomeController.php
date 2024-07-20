@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Auth;
 use App\Models\User;
+use Illuminate\Http\Request;
+use App\Models\PaymentTransaction;
 
 
 class HomeController extends Controller
@@ -58,6 +59,13 @@ class HomeController extends Controller
               'plan_name'=>'Plan of '.$request->amount,
               'plan_status'=>'success',
           ]);
+
+          $response_data=json_decode($request->payment_details);
+          $payment = PaymentTransaction::where('mt_id',$response_data->data->merchantTransactionId)->first();
+          $payment->payment_details = $request->payment_details;
+          $payment->status = 'success';
+          $payment->save();
+
           return back();
       } else {
           Payment::where('user_id', $request->user_id)->delete();
