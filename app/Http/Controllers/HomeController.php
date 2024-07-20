@@ -45,4 +45,25 @@ class HomeController extends Controller
 
 
     }
+
+    function update_status_subscription(Request $request)
+    {
+      if ($request->stat == 'enable') {
+          Payment::create([
+              'user_id'=>$request->user_id,
+              'payment_id'=>rand(11111,99999),
+              'payment_amount'=>$request->amount,
+              'method'=>'upi',
+              'currency'=>'INR',
+              'plan_name'=>'Plan of '.$request->amount,
+              'plan_status'=>'success',
+          ]);
+          return back();
+      } else {
+          Payment::where('user_id', $request->user_id)->delete();
+          return 0;
+      }
+   } 
+
+    
 }
