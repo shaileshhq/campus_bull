@@ -67,7 +67,7 @@ class HomeController extends Controller
           $payment->status = 'success';
           $payment->save();
 
-          return back();
+         return redirect()->route('home_user');
       } else {
           Payment::where('user_id', $request->user_id)->delete();
           return 0;
