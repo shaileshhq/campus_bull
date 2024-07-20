@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => ['api/*', 'sanctum/csrf-cookie','phonepe/redirectUrl','phonepe/callback'],
 
     'allowed_methods' => ['*'],
 

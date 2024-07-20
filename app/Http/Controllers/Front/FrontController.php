@@ -27,6 +27,7 @@ use Illuminate\Support\Collection;
 use App\Http\Controllers\Controller;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Validator;
+use App\Http\Controllers\PhonepeController;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 
@@ -51,9 +52,11 @@ class FrontController extends Controller
         return view('frontend.pages.subscription-plans');
     }
 
-    public function subscription_plans_pay()
+    public function subscription_plans_pay(Request $request)
     {
-        return view('frontend.pages.subscription-plans-pay');
+        $request->merge(['amount' => 1, 'type' => 'subscription_payment','id'=>$request->id,'phone'=>Auth::user()->phone]);
+        $phonepe = new PhonepeController;
+        return redirect($phonepe->payWithPhonePe($request));
     }
 
     public function deemed_fees()
