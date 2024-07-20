@@ -54,7 +54,7 @@
                                     </div><br><br>
                                     <div class="pricig-header">
                                         @if (empty(optional(Auth::user()->payment)->user_id))
-                                            <a class="btn btn-white btn-hover-heading-color" href="{{route('subscription_plans_pay')}}" id="pay-btn">Pay
+                                            <a class="btn btn-white btn-hover-heading-color" href="{{route('subscription_plans_pay')}}?id=1" id="pay-btn">Pay
                                                 Now</a>
                                         @else
                                         @if (optional(Auth::user()->payment)->plan_name=='Plan of 2359')
