@@ -95,7 +95,7 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>User</th>
+                                <th>User Details</th>
                                 <th>Payment Id</th>
                                 <th>Amount</th>
                                 <th>Plan</th>
@@ -108,9 +108,12 @@
                             @foreach ($list as $key=> $data)
                                 <tr>
                                     <td>{{$key+1}}</td>
-                                    <td>{{$data->user->name}}</td>
+                                    <td>
+                                        Name:{{$data->user->name}}<br>
+                                        Phone:{{$data->user->phone}}<br>
+                                    </td>
                                     <td>{{$data->payment_id}}</td>
-                                    <td>{{$data->payment_amount}}</td>
+                                    <td>Rs.{{$data->payment_amount}}</td>
                                     <td>{{$data->plan_name}}</td>
                                     <td>{{$data->plan_status}}</td>
                                     <td>{{$data->created_at}}</td>

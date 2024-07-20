@@ -38,6 +38,12 @@ class CustomerController extends Controller
     public function subscribed_user(Request $request)
     {
         $list= Payment::orderBy('id','DESC');
+        if(!empty($request->search)){
+            $search=$request->search;
+            $list = $list->WhereHas('user', function($query) use ($search) {
+                $query-> where('phone','like','%'.$search)->orwhere('name','like','%'.$search);
+            }); 
+        }
         $list=$list->paginate(25);
         return view('backend.admin.payment.payments',compact('list'));
     }
@@ -45,7 +51,12 @@ class CustomerController extends Controller
     public function transaction_histroy(Request $request)
     {
         $list= PaymentTransaction::orderBy('id','DESC');
-       
+        if(!empty($request->search)){
+            $search=$request->search;
+            $list = $list->WhereHas('user', function($query) use ($search) {
+                $query-> where('phone','like','%'.$search)->orwhere('name','like','%'.$search);
+            }); 
+        }
         $list=$list->paginate(25);
         return view('backend.admin.payment.transaction',compact('list'));
     }

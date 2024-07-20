@@ -95,7 +95,7 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>User</th>
+                                <th>User Details</th>
                                 <th>Transaction Type</th>
                                 <th>Method</th>
                                 <th>Payment Details</th>
@@ -110,7 +110,10 @@
                             @foreach ($list as $key=> $data)
                                 <tr>
                                     <td>{{$key+1}}</td>
-                                    <td>{{$data->user->name}}</td>
+                                    <td>
+                                        Name:{{$data->user->name}}<br>
+                                        Phone:{{$data->user->phone}}<br>
+                                    </td>
                                     <td>{{$data->transaction_type}}</td>
                                     <td>{{$data->payment_method}}</td>
                                     <td>
@@ -119,7 +122,7 @@
                                         Transaction Id : {{$payment_details->data->transactionId}}
                                         @endif
                                     </td>
-                                    <td>{{$data->amount}}</td>
+                                    <td>Rs.{{$data->amount}}</td>
                                     <td>{{$data->mt_id}}</td>
                                     <td>{{$data->status}}</td>
                                     <td>{{$data->created_at}}</td>
