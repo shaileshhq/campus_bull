@@ -83,7 +83,6 @@
                                 <th>User</th>
                                 <th>Payment Id</th>
                                 <th>Amount</th>
-                                <th>Method</th>
                                 <th>Plan</th>
                                 <th>Status</th>
                                 <th>Date</th>
@@ -97,7 +96,6 @@
                                     <td>{{$data->user->name}}</td>
                                     <td>{{$data->payment_id}}</td>
                                     <td>{{$data->payment_amount}}</td>
-                                    <td>{{$data->method}}</td>
                                     <td>{{$data->plan_name}}</td>
                                     <td>{{$data->plan_status}}</td>
                                     <td>{{$data->created_at}}</td>
