@@ -6,6 +6,7 @@ use Auth;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\PaymentTransaction;
+use App\Models\Payment;
 
 
 class HomeController extends Controller
