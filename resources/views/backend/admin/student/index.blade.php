@@ -135,8 +135,8 @@
                                             <div class="form-group">
                                                 <select class="form-control" id="package_{{ $data->id }}">
                                                     <option value=""> Select Package</option>
-                                                    <option value="2359"> Package ₹ 1990/- </option>
-                                                    {{-- <option value="29499"> Package ₹ 24999/- </option> --}}
+                                                    <option value="4718"> Package ₹ 3999/- </option>
+                                                    <option value="29499"> Package ₹ 24999/- </option> 
                                                 </select>
                                         @endif
                                         <br>
