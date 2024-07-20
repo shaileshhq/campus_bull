@@ -54,7 +54,7 @@ class FrontController extends Controller
 
     public function subscription_plans_pay(Request $request)
     {
-        $request->merge(['amount' => 1, 'type' => 'subscription_payment','id'=>$request->id,'phone'=>Auth::user()->phone]);
+        $request->merge(['amount' => 1, 'type' => 'subscription_payment','id'=>$request->id,'phone'=>Auth::user()->phone,'user_id'=>Auth::user()->id]);
         $phonepe = new PhonepeController;
         return redirect($phonepe->payWithPhonePe($request));
     }

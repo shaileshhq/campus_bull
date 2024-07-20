@@ -117,7 +117,7 @@ class PhonepeController extends Controller
                 session()->forget('mm_tid');
               
                 if($input['type']=='subscription_payment'){
-                    $request->merge(['type'=>$input['type'],'amount'=>$input['amount'],'id'=>$input['id'],'stat'=>'enable','payment_details'=>$data]);
+                    $request->merge(['type'=>$input['type'],'amount'=>$input['amount'],'id'=>$input['id'],'user_id'=>$input['user_id'],'stat'=>'enable','payment_details'=>$data]);
                     $home = new HomeController;
                     return $home->update_status_subscription($request);
                 }
@@ -242,7 +242,7 @@ class PhonepeController extends Controller
                 session()->forget('mm_tid');
 
                 if($input['type']=='subscription_payment'){
-                    $request->merge(['type'=>$input['type'],'amount'=>$input['amount'],'id'=>$input['id'],'stat'=>'enable','payment_details'=>$data]);
+                    $request->merge(['type'=>$input['type'],'amount'=>$input['amount'],'id'=>$input['id'],'user_id'=>$input['user_id'],'stat'=>'enable','payment_details'=>$data]);
                     $home = new HomeController;
                     return $home->update_status_subscription($request);
                 }
