@@ -57,7 +57,7 @@
                                             <a class="btn btn-white btn-hover-heading-color" href="{{route('subscription_plans_pay')}}?id=1" id="pay-btn">Pay
                                                 Now</a>
                                         @else
-                                        @if (optional(Auth::user()->payment)->plan_name=='Plan of 2359')
+                                        @if (optional(Auth::user()->payment)->plan_name=='Plan of 4718')
                                         <a class="btn btn-white btn-hover-heading-color">Subscribed</a>
                                      @endif
                                         @endif
@@ -100,7 +100,7 @@
                                             <a class="btn btn-white btn-hover-heading-color" href="{{route('subscription_plans_pay')}}?id=2" id="pay-btn">Pay
                                                 Now</a>
                                         @else
-                                         @if (optional(Auth::user()->payment)->plan_name=='Plan of 24999')
+                                         @if (optional(Auth::user()->payment)->plan_name=='Plan of 29499')
                                             <a class="btn btn-white btn-hover-heading-color">Subscribed</a>
                                          @endif
                                         @endif
