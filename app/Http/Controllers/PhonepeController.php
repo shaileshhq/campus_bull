@@ -25,9 +25,20 @@ class PhonepeController extends Controller
         Session::put('mm_tid', $merchantTransaction);
         $data =  $this->payload_creation($grand_total, $request->phone, $merchantTransaction);
 
-      
+        if($request->type=='subscription_payment'){
+            $payment = new PaymentTransaction;
+            $payment->user_id = Auth::user()->id;
+            $payment->transaction_type = 'subscription_payment';
+            $payment->user_type = 'user';
+            $payment->amount = $request->amount;
+            $payment->payment_method = 'phonepe';
+            $payment->payment_details = '';
+            $payment->status = 'initiated';
+            $payment->mt_id = $merchantTransaction;
+            $payment->save();
+        }
 
-      
+
 
         $curl = curl_init();
 
@@ -230,30 +241,10 @@ class PhonepeController extends Controller
                 session()->forget('data');
                 session()->forget('mm_tid');
 
-                if($input['type']=='vendor_product_recharge'){
-                    $request->merge(['category_id' => $input['category_id'],'type'=>$input['type'],'amount'=>$input['amount'],'payment_details'=>$data]);
-                    $vendor = new VendorController;
-                    return $vendor->vendor_categories_product_fess($request);
-                }
-                if($input['type']=='vendor_service_recharge'){
-                    $request->merge(['category_id' => $input['category_id'],'type'=>$input['type'],'amount'=>$input['amount'],'payment_details'=>$data]);
-                    $vendor = new VendorController;
-                    return $vendor->vendor_categories_service_fess($request);
-                }
-                if($input['type']=='customer_order'){
-                    $request->merge(['address_id' => $input['address_id'],'type'=>$input['type'],'payment_option'=>$input['payment_option'],'payment_details'=>$data]);
-                    $vendor = new OrderController;
-                    return $vendor->process_order($request);
-                }
-                if($input['type']=='vendor_registration_fee'){
-                    $request->merge(['type'=>$input['type'],'topup_category'=>$input['topup_category'],'registration_fee'=>$input['registration_fee'],'payment_details'=>$data,'amount'=>$input['amount']]);
-                    $vendor = new VendorController;
-                    return $vendor->vendor_registration_fess($request);
-                }
-                if($input['type']=='customer_registration_fees'){
-                    $request->merge(['type'=>$input['type'],'amount'=>$input['amount'],'payment_details'=>$data]);
-                    $customer = new CustomerController;
-                    return $customer->pay($request);
+                if($input['type']=='subscription_payment'){
+                    $request->merge(['type'=>$input['type'],'amount'=>$input['amount'],'id'=>$input['id'],'stat'=>'enable','payment_details'=>$data]);
+                    $home = new HomeController;
+                    return $home->update_status_subscription($request);
                 }
             }else {
                // dd($response_data);
