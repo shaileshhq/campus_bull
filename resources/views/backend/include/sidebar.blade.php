@@ -38,6 +38,20 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a href="{{ route('subscribed_user') }}" class="nav-link @if (Route::currentRouteName() == 'subscribed_user') active @endif">
+                        <i class="fas fa-user-graduate nav-icon"></i>
+                        <p>Subscribed User </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('transaction_histroy') }}" class="nav-link @if (Route::currentRouteName() == 'transaction_histroy') active @endif">
+                        <i class="fas fa-user-graduate nav-icon"></i>
+                        <p>Transaction Histroy</p>
+                    </a>
+                </li>
+
                 <li class="nav-item @if (Route::currentRouteName() == 'all_events' || Route::currentRouteName() == 'upcoming_events.index' || Route::currentRouteName() == 'upcoming_events.create' || Route::currentRouteName() == 'upcoming_events.edit' || Route::currentRouteName() == 'previous_events.index' || Route::currentRouteName() == 'previous_events.create' || Route::currentRouteName() == 'previous_events.edit') menu-is-opening menu-open @endif">
                     <a href="{{ route('all_events') }}"
                         class="nav-link @if (Route::currentRouteName() == 'all_events' || Route::currentRouteName() == 'upcoming_events.index' || Route::currentRouteName() == 'upcoming_events.create' || Route::currentRouteName() == 'upcoming_events.edit' || Route::currentRouteName() == 'previous_events.index' || Route::currentRouteName() == 'previous_events.create' || Route::currentRouteName() == 'previous_events.edit') active @endif">

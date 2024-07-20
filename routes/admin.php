@@ -39,6 +39,8 @@ Route::group(['middleware' => ['auth', 'can:accessAdminpanel']], function() {
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
     Route::resource('student', CustomerController::class);
+    Route::get('subscribed_user', [CustomerController::class, 'subscribed_user'])->name('subscribed_user');
+    Route::get('transaction_histroy', [CustomerController::class, 'transaction_histroy'])->name('transaction_histroy');
     Route::resource('course', CourseController::class);
     Route::resource('collage', CollageController::class);
     

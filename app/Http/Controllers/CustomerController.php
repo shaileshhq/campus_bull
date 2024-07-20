@@ -6,6 +6,8 @@ use App\Models\User;
 use App\Models\Customer;
 use Illuminate\Http\Request;
 use App\Models\StudentsExport;
+use App\Models\Payment;
+use App\Models\PaymentTransaction;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Maatwebsite\Excel\Facades\Excel;
@@ -31,6 +33,21 @@ class CustomerController extends Controller
         }
         $list=$list->paginate(25);
         return view('backend.admin.student.index',compact('list'));
+    }
+
+    public function subscribed_user(Request $request)
+    {
+        $list= Payment::orderBy('id','DESC');
+        $list=$list->paginate(25);
+        return view('backend.admin.payment.payments',compact('list'));
+    }
+
+    public function transaction_histroy(Request $request)
+    {
+        $list= PaymentTransaction::orderBy('id','DESC');
+       
+        $list=$list->paginate(25);
+        return view('backend.admin.payment.transaction',compact('list'));
     }
 
    public function export(){
