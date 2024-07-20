@@ -70,7 +70,22 @@
                 <div class="card-header">
                     <div class="">
                         <form action="" method="GET" id="valid_form">
-                           
+                            <div class="row">
+                            <div class="col-3">
+                                <label>Phone</label><br/>
+                                <input type="text" name="search" class="form-control float-right"
+                                placeholder="Enter Phone "
+                                @isset($search) value="{{ $search }}" @endisset>
+                            </div>
+                            <div class="col-2">
+                                <label>Filter</label><br/>
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
                         </form>
                     </div>
                 </div>

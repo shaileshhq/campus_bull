@@ -70,7 +70,22 @@
                 <div class="card-header">
                     <div class="">
                         <form action="" method="GET" id="valid_form">
-                           
+                            <div class="row">
+                            <div class="col-3">
+                                <label>Phone</label><br/>
+                                <input type="text" name="search" class="form-control float-right"
+                                placeholder="Enter Phone "
+                                @isset($search) value="{{ $search }}" @endisset>
+                            </div>
+                            <div class="col-2">
+                                <label>Filter</label><br/>
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -98,7 +113,12 @@
                                     <td>{{$data->user->name}}</td>
                                     <td>{{$data->transaction_type}}</td>
                                     <td>{{$data->payment_method}}</td>
-                                    <td></td>
+                                    <td>
+                                        @php $payment_details=json_decode($data->payment_details); @endphp
+                                        @if(!empty($payment_details->data))
+                                        Transaction Id : {{$payment_details->data->transactionId}}
+                                        @endif
+                                    </td>
                                     <td>{{$data->amount}}</td>
                                     <td>{{$data->mt_id}}</td>
                                     <td>{{$data->status}}</td>
