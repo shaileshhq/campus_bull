@@ -56,7 +56,7 @@ class FrontController extends Controller
     {
         $amount=1;
         if($request->id==1){
-          $amount=4718;
+          $amount=3538;
         }
         if($request->id==2){
             $amount=29499;

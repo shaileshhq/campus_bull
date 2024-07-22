@@ -31,7 +31,7 @@
                                 <div class="single-pricing active">
                                     <div class="pricig-header">
                                         <h3 class="title">Subsciption</h3>
-                                        <p>₹<span>3999</span> + 18% tax/-</p>
+                                        <p>₹<span>2999</span> + 18% tax/-</p>
                                         <hr>
                                     </div>
 
@@ -57,7 +57,7 @@
                                             <a class="btn btn-white btn-hover-heading-color" href="{{route('subscription_plans_pay')}}?id=1" id="pay-btn">Pay
                                                 Now</a>
                                         @else
-                                        @if (optional(Auth::user()->payment)->plan_name=='Plan of 4718')
+                                        @if (optional(Auth::user()->payment)->plan_name=='Plan of 3538')
                                         <a class="btn btn-white btn-hover-heading-color">Subscribed</a>
                                      @endif
                                         @endif
